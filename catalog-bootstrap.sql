@@ -268,6 +268,11 @@ COPY seed_loaders_project_types_games (loader_id, project_type_id, game_id) FROM
 
 INSERT INTO public.loaders_project_types_games (loader_id, project_type_id, game_id) SELECT actual.id, s.project_type_id, s.game_id FROM seed_loaders_project_types_games s JOIN seed_loaders seed ON seed.id = s.loader_id JOIN loaders actual ON actual.loader = seed.loader ON CONFLICT DO NOTHING;
 
+-- Every Minecraft Java loader/type pair needs a matching game association.
+INSERT INTO loaders_project_types_games (loader_id, project_type_id, game_id)
+SELECT joining_loader_id, joining_project_type_id, 1 FROM loaders_project_types
+ON CONFLICT DO NOTHING;
+
 INSERT INTO loader_field_enum_values (enum_id, value) SELECT e.id, l.loader FROM loader_field_enums e CROSS JOIN loaders l WHERE e.enum_name = 'mrpack_loaders' AND l.loader != 'mrpack' AND NOT EXISTS (SELECT 1 FROM loader_field_enum_values v WHERE v.enum_id = e.id AND v.value = l.loader);
 
 SELECT setval(pg_get_serial_sequence('project_types', 'id'), (SELECT MAX(id) FROM project_types));
