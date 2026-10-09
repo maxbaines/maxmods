@@ -8,6 +8,7 @@ ENV VERCEL_URL=mods.maxbain.es
 ENV VERCEL_GIT_REPO_OWNER=maxbaines
 ENV VERCEL_GIT_REPO_SLUG=maxmods
 ENV VERCEL_GIT_COMMIT_REF=selfhost
+ENV NODE_OPTIONS=--max-old-space-size=8192
 ENV FLAG_OVERRIDES='{"alwaysIgnoreErrorBanner":true,"enableMedalPromotion":false,"hidePlusPromoInUserMenu":true,"showProjectPageDownloadModalServersPromo":false,"showProjectPageCreateServersTooltip":false}'
 RUN pnpm install --frozen-lockfile --filter @modrinth/frontend...
 RUN pnpm i18n:coverage
