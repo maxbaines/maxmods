@@ -223,7 +223,7 @@ definePageMeta({
 })
 
 useHead({
-	title: () => `${formatMessage(messages.collectionsLongTitle)} - Modrinth`,
+	title: () => `${formatMessage(messages.collectionsLongTitle)} - MaxMods`,
 })
 
 const auth = await useAuth()

@@ -29,6 +29,6 @@ const auth = await useAuth()
 const reportId = useRouteId('report')
 
 useHead({
-	title: () => `${formatMessage(messages.reportTitle, { id: reportId })} - Modrinth`,
+	title: () => `${formatMessage(messages.reportTitle, { id: reportId })} - MaxMods`,
 })
 </script>

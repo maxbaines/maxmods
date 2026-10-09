@@ -274,7 +274,7 @@ const messages = defineMessages({
 
 useHead({
 	title() {
-		return `${formatMessage(messages.pageTitle)} - Modrinth`
+		return `${formatMessage(messages.pageTitle)} - MaxMods`
 	},
 })
 

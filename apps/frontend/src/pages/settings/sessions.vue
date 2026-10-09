@@ -103,7 +103,7 @@ const messages = defineMessages({
 })
 
 useHead({
-	title: () => `${formatMessage(commonSettingsMessages.sessions)} - Modrinth`,
+	title: () => `${formatMessage(commonSettingsMessages.sessions)} - MaxMods`,
 })
 
 const { data: sessions } = useQuery({

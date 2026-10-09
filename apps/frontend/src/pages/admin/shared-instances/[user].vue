@@ -362,7 +362,7 @@ const selectedContextErrorMessage = computed(() =>
 const banOwnerPending = computed(() => banOwnerMutation.isPending.value)
 
 useHead({
-	title: computed(() => `${user.value?.username ?? userId.value}'s shared instances - Modrinth`),
+	title: computed(() => `${user.value?.username ?? userId.value}'s shared instances - MaxMods`),
 })
 
 onServerPrefetch(() => Promise.all([userSuspense(), sharedInstancesSuspense()]))

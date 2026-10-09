@@ -17,7 +17,7 @@ const { formatMessage } = useVIntl()
 const messages = defineMessages({
 	title: {
 		id: 'servers.manage.content.title',
-		defaultMessage: 'Content - {serverName} - Modrinth',
+		defaultMessage: 'Content - {serverName} - MaxMods',
 	},
 })
 

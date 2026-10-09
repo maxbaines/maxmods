@@ -26,6 +26,6 @@ const languageSettings = ref<InstanceType<typeof LanguageSettings> | null>(null)
 const emptyLanguageState = { locale: '' }
 
 useHead({
-	title: () => `${formatMessage(commonSettingsMessages.language)} - Modrinth`,
+	title: () => `${formatMessage(commonSettingsMessages.language)} - MaxMods`,
 })
 </script>

@@ -558,7 +558,7 @@ const description =
 	'The Terms of Use of Modrinth, an open source modding platform focused on Minecraft.'
 
 useSeoMeta({
-	title: 'Terms of Use - Modrinth',
+	title: 'Terms of Use - MaxMods',
 	description,
 	ogTitle: 'Terms of Use',
 	ogDescription: description,

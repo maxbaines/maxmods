@@ -113,7 +113,7 @@ const messages = defineMessages({
 })
 
 useHead({
-	title: () => `${formatMessage(messages.headTitle)} - Modrinth`,
+	title: () => `${formatMessage(messages.headTitle)} - MaxMods`,
 })
 
 const auth = await useAuth()

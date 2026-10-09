@@ -117,7 +117,7 @@ definePageMeta({
 })
 
 useHead({
-	title: () => `${formatMessage(messages.headTitle)} - Modrinth`,
+	title: () => `${formatMessage(messages.headTitle)} - MaxMods`,
 })
 
 const { data: usersApps, refetch: refresh } = useQuery({

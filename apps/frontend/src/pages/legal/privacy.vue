@@ -314,7 +314,7 @@ const description =
 	'The Privacy Policy of Modrinth, an open source modding platform focused on Minecraft.'
 
 useSeoMeta({
-	title: 'Privacy Policy - Modrinth',
+	title: 'Privacy Policy - MaxMods',
 	description,
 	ogTitle: 'Privacy Policy',
 	ogDescription: description,

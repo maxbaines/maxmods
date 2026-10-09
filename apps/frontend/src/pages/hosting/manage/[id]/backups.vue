@@ -24,7 +24,7 @@ if (worldId.value) {
 }
 
 useHead({
-	title: `Backups - ${server.value?.name ?? 'Server'} - Modrinth`,
+	title: `Backups - ${server.value?.name ?? 'Server'} - MaxMods`,
 })
 </script>
 

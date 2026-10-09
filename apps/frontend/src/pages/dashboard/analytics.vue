@@ -14,6 +14,6 @@ definePageMeta({
 })
 
 useHead({
-	title: () => `${formatMessage(commonProjectSettingsMessages.analytics)} - Modrinth`,
+	title: () => `${formatMessage(commonProjectSettingsMessages.analytics)} - MaxMods`,
 })
 </script>

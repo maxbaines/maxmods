@@ -57,7 +57,7 @@ const description =
 	'The Security Notice of Modrinth, an open source modding platform focused on Minecraft.'
 
 useSeoMeta({
-	title: 'Security Notice - Modrinth',
+	title: 'Security Notice - MaxMods',
 	description,
 	ogTitle: 'Security Notice',
 	ogDescription: description,

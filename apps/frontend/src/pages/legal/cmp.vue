@@ -78,7 +78,7 @@ const description =
 	'The Rewards Program Terms of Modrinth, an open source modding platform focused on Minecraft.'
 
 useSeoMeta({
-	title: 'Rewards Program Terms - Modrinth',
+	title: 'Rewards Program Terms - MaxMods',
 	description,
 	ogTitle: 'Rewards Program Terms',
 	ogDescription: description,

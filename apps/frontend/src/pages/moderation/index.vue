@@ -175,7 +175,7 @@ import { getProjectTypeForUrlShorthand } from '~/helpers/projects.js'
 import { useModerationQueue } from '~/services/moderation/queue.ts'
 import { findNextEligibleQueueProject } from '~/services/moderation/queue-eligibility.ts'
 
-useHead({ title: 'Projects queue - Modrinth' })
+useHead({ title: 'Projects queue - MaxMods' })
 
 const { formatMessage } = useVIntl()
 const notificationManager = injectNotificationManager()

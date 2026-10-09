@@ -81,7 +81,7 @@ const developerModeBanner = defineMessages({
 })
 
 useHead({
-	title: () => `${formatMessage(messages.headTitle)} - Modrinth`,
+	title: () => `${formatMessage(messages.headTitle)} - MaxMods`,
 })
 
 const notifications = defineMessages({

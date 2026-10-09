@@ -71,7 +71,7 @@ const thumbnailPath = computed(() =>
 const dayjsDate = computed(() => dayjs(article.value.date))
 
 useSeoMeta({
-	title: () => `${articleTitle.value} - Modrinth News`,
+	title: () => `${articleTitle.value} - MaxMods News`,
 	ogTitle: () => articleTitle.value,
 	description: () => article.value.summary,
 	ogDescription: () => article.value.summary,

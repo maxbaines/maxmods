@@ -238,7 +238,7 @@ const description =
 	'The Content Rules of Modrinth, an open source modding platform focused on Minecraft.'
 
 useSeoMeta({
-	title: 'Content Rules - Modrinth',
+	title: 'Content Rules - MaxMods',
 	description,
 	ogTitle: 'Content Rules',
 	ogDescription: description,

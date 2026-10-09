@@ -33,7 +33,7 @@ import ModerationTechRevCard from '~/components/ui/moderation/ModerationTechRevC
 import { flattenFileReports } from '~/components/ui/moderation/tech-review/helpers'
 import { useTechReviewSources } from '~/components/ui/moderation/tech-review/use-tech-review-sources'
 
-useHead({ title: 'Tech review queue - Modrinth' })
+useHead({ title: 'Tech review queue - MaxMods' })
 
 const client = injectModrinthClient()
 const queryClient = useQueryClient()

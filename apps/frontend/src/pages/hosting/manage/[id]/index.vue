@@ -5,7 +5,7 @@ const { server } = injectModrinthServerContext()
 const flags = useFeatureFlags()
 
 useHead({
-	title: computed(() => `Overview - ${server.value?.name ?? 'Server'} - Modrinth`),
+	title: computed(() => `Overview - ${server.value?.name ?? 'Server'} - MaxMods`),
 })
 </script>
 

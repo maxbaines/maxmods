@@ -333,7 +333,7 @@ definePageMeta({
 })
 
 useHead({
-	title: `${formatMessage(commonSettingsMessages.pats)} - Modrinth`,
+	title: `${formatMessage(commonSettingsMessages.pats)} - MaxMods`,
 })
 
 const data = useNuxtApp()

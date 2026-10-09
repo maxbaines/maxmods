@@ -93,7 +93,7 @@ if (projectsResult.status === 'fulfilled') {
 	warmProjectCheckCaches(queryClient, projectsResult.value)
 }
 const title = computed(() =>
-	prefetchedUser ? `${prefetchedUser.username} - Modrinth` : 'User not found',
+	prefetchedUser ? `${prefetchedUser.username} - MaxMods` : 'User not found',
 )
 const description = computed(() => {
 	if (!prefetchedUser) {
