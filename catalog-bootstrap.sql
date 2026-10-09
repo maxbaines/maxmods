@@ -7,10 +7,8 @@ BEGIN;
 CREATE TEMP TABLE seed_project_types (LIKE public.project_types INCLUDING DEFAULTS) ON COMMIT DROP;
 
 COPY seed_project_types (id, name) FROM stdin;
-
 5	resourcepack
 6	shader
-
 \.
 
 INSERT INTO public.project_types (id, name) SELECT id, name FROM seed_project_types ON CONFLICT DO NOTHING;
@@ -18,7 +16,6 @@ INSERT INTO public.project_types (id, name) SELECT id, name FROM seed_project_ty
 CREATE TEMP TABLE seed_loaders (LIKE public.loaders INCLUDING DEFAULTS) ON COMMIT DROP;
 
 COPY seed_loaders (id, loader, icon, hidable, metadata) FROM stdin;
-
 1	forge	<svg xml:space="preserve" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="1.5" clip-rule="evenodd" viewBox="0 0 24 24">\n  <path fill="none" d="M0 0h24v24H0z"></path>\n  <path fill="none" stroke="currentColor" stroke-width="2" d="M2 7.5h8v-2h12v2s-7 3.4-7 6 3.1 3.1 3.1 3.1l.9 3.9H5l1-4.1s3.8.1 4-2.9c.2-2.7-6.5-.7-8-6Z"></path>\n</svg>	f	{}
 3	quilt	<svg xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="2" clip-rule="evenodd" viewBox="0 0 24 24">\n  <defs>\n    <path id="quilt" fill="none" stroke="currentColor" stroke-width="65.6" d="M442.5 233.9c0-6.4-5.2-11.6-11.6-11.6h-197c-6.4 0-11.6 5.2-11.6 11.6v197c0 6.4 5.2 11.6 11.6 11.6h197c6.4 0 11.6-5.2 11.6-11.7v-197Z"></path>\n  </defs>\n  <path fill="none" d="M0 0h24v24H0z"></path>\n  <use xlink:href="#quilt" stroke-width="65.6" transform="matrix(.03053 0 0 .03046 -3.2 -3.2)"></use>\n  <use xlink:href="#quilt" stroke-width="65.6" transform="matrix(.03053 0 0 .03046 -3.2 7)"></use>\n  <use xlink:href="#quilt" stroke-width="65.6" transform="matrix(.03053 0 0 .03046 6.9 -3.2)"></use>\n  <path fill="none" stroke="currentColor" stroke-width="70.4" d="M442.5 234.8c0-7-5.6-12.5-12.5-12.5H234.7c-6.8 0-12.4 5.6-12.4 12.5V430c0 6.9 5.6 12.5 12.4 12.5H430c6.9 0 12.5-5.6 12.5-12.5V234.8Z" transform="rotate(45 3.5 24) scale(.02843 .02835)"></path>\n</svg>	f	{}
 2	fabric	<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" fill-rule="evenodd" stroke-linecap="round" stroke-linejoin="round" clip-rule="evenodd" viewBox="0 0 24 24">\n  <path fill="none" d="M0 0h24v24H0z"/>\n  <path fill="none" stroke="currentColor" stroke-width="23" d="m820 761-85.6-87.6c-4.6-4.7-10.4-9.6-25.9 1-19.9 13.6-8.4 21.9-5.2 25.4 8.2 9 84.1 89 97.2 104 2.5 2.8-20.3-22.5-6.5-39.7 5.4-7 18-12 26-3 6.5 7.3 10.7 18-3.4 29.7-24.7 20.4-102 82.4-127 103-12.5 10.3-28.5 2.3-35.8-6-7.5-8.9-30.6-34.6-51.3-58.2-5.5-6.3-4.1-19.6 2.3-25 35-30.3 91.9-73.8 111.9-90.8" transform="matrix(.08671 0 0 .0867 -49.8 -56)"/>\n</svg>	f	{}
@@ -48,7 +45,6 @@ COPY seed_loaders (id, loader, icon, hidable, metadata) FROM stdin;
 27	legacy-fabric	<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><g clip-path="url(#clip0_6351_12952)"><path d="M21.3022 9.9787L13.8798 2.38379C13.4809 1.9763 12.978 1.55147 11.634 2.47049C9.90847 3.64961 10.9056 4.36921 11.1831 4.67266C11.8941 5.45296 18.4754 12.389 19.6113 13.6895C19.8281 13.9322 17.8511 11.7387 19.0477 10.2475C19.5159 9.64057 20.6085 9.20707 21.3022 9.98737C21.8658 10.6203 22.23 11.548 21.0074 12.5624C18.8656 14.331 12.1629 19.7064 9.99518 21.4925C8.91131 22.3855 7.52395 21.6919 6.89096 20.9723C6.24064 20.2006 4.23764 17.9724 2.44274 15.9263C1.96584 15.3801 2.08723 14.227 2.64218 13.7588C5.67703 11.1318 10.6108 7.36036 12.345 5.88646" stroke="currentColor" stroke-width="1.99422" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 13V17H10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M8 13V17H10" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></g><defs><clipPath id="clip0_6351_12952"><rect width="24" height="24" fill="white"/></clipPath></defs></svg>	f	{}
 28	nilloader	<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><ellipse cx="12" cy="11" rx="5" ry="8" stroke="currentColor" stroke-width="2"/><path d="M16.563 2.72485L6.75577 19.7114L12.3865 22.9624" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>	f	{}
 29	ornithe	<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 7H7.99" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M20.6 18H12C9.87827 18 7.84344 17.1572 6.34315 15.6569C4.84285 14.1566 4 12.1217 4 10V7.00001C3.99775 6.14792 4.26766 5.31737 4.7704 4.6294C5.27315 3.94142 5.98245 3.43197 6.79496 3.17527C7.60747 2.91857 8.48072 2.92804 9.28746 3.2023C10.0942 3.47657 10.7923 4.00129 11.28 4.70001L22 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7L2 7.5L4 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 18V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 17.75V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 18C15.7669 18 14.5637 17.62 13.5543 16.9117C12.5448 16.2035 11.7781 15.2014 11.3584 14.0419C10.9388 12.8824 10.8866 11.6218 11.2089 10.4315C11.5313 9.24128 12.2126 8.17927 13.16 7.39001" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>	f	{}
-
 \.
 
 INSERT INTO public.loaders (id, loader, icon, hidable, metadata) SELECT id, loader, icon, hidable, metadata FROM seed_loaders ON CONFLICT DO NOTHING;
@@ -56,7 +52,6 @@ INSERT INTO public.loaders (id, loader, icon, hidable, metadata) SELECT id, load
 CREATE TEMP TABLE seed_categories (LIKE public.categories INCLUDING DEFAULTS) ON COMMIT DROP;
 
 COPY seed_categories (id, category, project_type, icon, header, ordering) FROM stdin;
-
 10060	cursed	5	<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="7" y="7.5" width="10" height="14" rx="5"/><polyline points="2 12.5 4 14.5 7 14.5"/><polyline points="22 12.5 20 14.5 17 14.5"/><polyline points="3 21.5 5 18.5 7 17.5"/><polyline points="21 21.5 19 18.5 17 17.5"/><polyline points="3 8.5 5 10.5 7 11.5"/><polyline points="21 8.5 19 10.5 17 11.5"/><line x1="12" y1="7.5" x2="12" y2="21.5"/><path d="M15.38,8.82A3,3,0,0,0,16,7h0a3,3,0,0,0-3-3H11A3,3,0,0,0,8,7H8a3,3,0,0,0,.61,1.82"/><line x1="9" y1="4.5" x2="8" y2="2.5"/><line x1="15" y1="4.5" x2="16" y2="2.5"/></svg>	categories	0
 10061	locale	5	<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>	features	0
 10062	48x	5		resolutions	0
@@ -134,7 +129,6 @@ COPY seed_categories (id, category, project_type, icon, header, ordering) FROM s
 10019	magic	2	<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 4V2"></path><path d="M15 16v-2"></path><path d="M8 9h2"></path><path d="M20 9h2"></path><path d="M17.8 11.8 19 13"></path><path d="M15 9h0"></path><path d="M17.8 6.2 19 5"></path><path d="m3 21 9-9"></path><path d="M12.2 6.2 11 5"></path></svg>	categories	0
 10020	lightweight	2	<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.24 12.24a6 6 0 0 0-8.49-8.49L5 10.5V19h8.5z"></path><line x1="16" y1="8" x2="2" y2="22"></line><line x1="17.5" y1="15" x2="9" y2="15"></line></svg>\n	categories	0
 10029	social	1	<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-.9 3.8 8.5 8.5 0 0 1-7.6 4.7 8.38 8.38 0 0 1-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 0 1-.9-3.8 8.5 8.5 0 0 1 4.7-7.6 8.38 8.38 0 0 1 3.8-.9h.5a8.48 8.48 0 0 1 8 8v.5z"/></svg>	categories	0
-
 \.
 
 INSERT INTO public.categories (id, category, project_type, icon, header, ordering) SELECT id, category, project_type, icon, header, ordering FROM seed_categories ON CONFLICT DO NOTHING;
@@ -142,7 +136,6 @@ INSERT INTO public.categories (id, category, project_type, icon, header, orderin
 CREATE TEMP TABLE seed_loader_fields_loaders (LIKE public.loader_fields_loaders INCLUDING DEFAULTS) ON COMMIT DROP;
 
 COPY seed_loader_fields_loaders (loader_id, loader_field_id) FROM stdin;
-
 1	3
 3	3
 2	3
@@ -188,7 +181,6 @@ COPY seed_loader_fields_loaders (loader_id, loader_field_id) FROM stdin;
 27	9
 28	9
 29	9
-
 \.
 
 INSERT INTO public.loader_fields_loaders (loader_id, loader_field_id) SELECT loader_id, loader_field_id FROM seed_loader_fields_loaders ON CONFLICT DO NOTHING;
@@ -196,7 +188,6 @@ INSERT INTO public.loader_fields_loaders (loader_id, loader_field_id) SELECT loa
 CREATE TEMP TABLE seed_loaders_project_types (LIKE public.loaders_project_types INCLUDING DEFAULTS) ON COMMIT DROP;
 
 COPY seed_loaders_project_types (joining_loader_id, joining_project_type_id) FROM stdin;
-
 1	1
 2	1
 3	1
@@ -226,7 +217,6 @@ COPY seed_loaders_project_types (joining_loader_id, joining_project_type_id) FRO
 27	1
 28	1
 29	1
-
 \.
 
 INSERT INTO public.loaders_project_types (joining_loader_id, joining_project_type_id) SELECT joining_loader_id, joining_project_type_id FROM seed_loaders_project_types ON CONFLICT DO NOTHING;
@@ -234,7 +224,6 @@ INSERT INTO public.loaders_project_types (joining_loader_id, joining_project_typ
 CREATE TEMP TABLE seed_loaders_project_types_games (LIKE public.loaders_project_types_games INCLUDING DEFAULTS) ON COMMIT DROP;
 
 COPY seed_loaders_project_types_games (loader_id, project_type_id, game_id) FROM stdin;
-
 1	1	1
 2	1	1
 3	1	1
@@ -274,7 +263,6 @@ COPY seed_loaders_project_types_games (loader_id, project_type_id, game_id) FROM
 27	1	1
 28	1	1
 29	1	1
-
 \.
 
 INSERT INTO public.loaders_project_types_games (loader_id, project_type_id, game_id) SELECT loader_id, project_type_id, game_id FROM seed_loaders_project_types_games ON CONFLICT DO NOTHING;
