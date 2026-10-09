@@ -10,6 +10,8 @@ The web frontend runs at https://mods.maxbain.es, with its own Labrinth API at h
 
 Email uses Resend SMTP (`smtp.resend.com:465`, TLS, username `resend`) and `noreply@hungrycampers.com`. The sender domain must pass Resend DNS verification before signup verification and password reset emails can be delivered. Social login providers require separate OAuth applications and credentials.
 
+After the API has applied its migrations, load `catalog-bootstrap.sql` into PostgreSQL before building the frontend. It installs loaders, categories, and their mappings without the upstream fixture’s test users or destructive truncation; game versions are synchronized by Labrinth. Clear the tag cache after seeding an already-running instance.
+
 A fresh instance has no projects. Upstream featured collection and payout metadata are not available on this instance; the existing deployment feature flag suppresses the resulting build-state banner. All other generated metadata should be checked during builds.
 
 Persistent data lives in the PostgreSQL, Redis, Typesense, ClickHouse, Redpanda and RustFS volumes. Back up these volumes before updates. The backend image is pinned to an upstream digest; frontend source is maintained on the `selfhost` branch.
