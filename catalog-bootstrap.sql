@@ -47,7 +47,8 @@ COPY seed_loaders (id, loader, icon, hidable, metadata) FROM stdin;
 29	ornithe	<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8 7H7.99" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M20.6 18H12C9.87827 18 7.84344 17.1572 6.34315 15.6569C4.84285 14.1566 4 12.1217 4 10V7.00001C3.99775 6.14792 4.26766 5.31737 4.7704 4.6294C5.27315 3.94142 5.98245 3.43197 6.79496 3.17527C7.60747 2.91857 8.48072 2.92804 9.28746 3.2023C10.0942 3.47657 10.7923 4.00129 11.28 4.70001L22 20" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M4 7L2 7.5L4 8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M14 18V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M10 17.75V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/><path d="M17 18C15.7669 18 14.5637 17.62 13.5543 16.9117C12.5448 16.2035 11.7781 15.2014 11.3584 14.0419C10.9388 12.8824 10.8866 11.6218 11.2089 10.4315C11.5313 9.24128 12.2126 8.17927 13.16 7.39001" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>	f	{}
 \.
 
-INSERT INTO public.loaders (id, loader, icon, hidable, metadata) SELECT id, loader, icon, hidable, metadata FROM seed_loaders ON CONFLICT DO NOTHING;
+SELECT setval(pg_get_serial_sequence('loaders', 'id'), (SELECT MAX(id) FROM loaders));
+INSERT INTO public.loaders (loader, icon, hidable, metadata) SELECT loader, icon, hidable, metadata FROM seed_loaders ON CONFLICT DO NOTHING;
 
 CREATE TEMP TABLE seed_categories (LIKE public.categories INCLUDING DEFAULTS) ON COMMIT DROP;
 
@@ -183,7 +184,7 @@ COPY seed_loader_fields_loaders (loader_id, loader_field_id) FROM stdin;
 29	9
 \.
 
-INSERT INTO public.loader_fields_loaders (loader_id, loader_field_id) SELECT loader_id, loader_field_id FROM seed_loader_fields_loaders ON CONFLICT DO NOTHING;
+INSERT INTO public.loader_fields_loaders (loader_id, loader_field_id) SELECT actual.id, s.loader_field_id FROM seed_loader_fields_loaders s JOIN seed_loaders seed ON seed.id = s.loader_id JOIN loaders actual ON actual.loader = seed.loader ON CONFLICT DO NOTHING;
 
 CREATE TEMP TABLE seed_loaders_project_types (LIKE public.loaders_project_types INCLUDING DEFAULTS) ON COMMIT DROP;
 
@@ -219,7 +220,7 @@ COPY seed_loaders_project_types (joining_loader_id, joining_project_type_id) FRO
 29	1
 \.
 
-INSERT INTO public.loaders_project_types (joining_loader_id, joining_project_type_id) SELECT joining_loader_id, joining_project_type_id FROM seed_loaders_project_types ON CONFLICT DO NOTHING;
+INSERT INTO public.loaders_project_types (joining_loader_id, joining_project_type_id) SELECT actual.id, s.joining_project_type_id FROM seed_loaders_project_types s JOIN seed_loaders seed ON seed.id = s.joining_loader_id JOIN loaders actual ON actual.loader = seed.loader ON CONFLICT DO NOTHING;
 
 CREATE TEMP TABLE seed_loaders_project_types_games (LIKE public.loaders_project_types_games INCLUDING DEFAULTS) ON COMMIT DROP;
 
@@ -265,7 +266,7 @@ COPY seed_loaders_project_types_games (loader_id, project_type_id, game_id) FROM
 29	1	1
 \.
 
-INSERT INTO public.loaders_project_types_games (loader_id, project_type_id, game_id) SELECT loader_id, project_type_id, game_id FROM seed_loaders_project_types_games ON CONFLICT DO NOTHING;
+INSERT INTO public.loaders_project_types_games (loader_id, project_type_id, game_id) SELECT actual.id, s.project_type_id, s.game_id FROM seed_loaders_project_types_games s JOIN seed_loaders seed ON seed.id = s.loader_id JOIN loaders actual ON actual.loader = seed.loader ON CONFLICT DO NOTHING;
 
 INSERT INTO loader_field_enum_values (enum_id, value) SELECT e.id, l.loader FROM loader_field_enums e CROSS JOIN loaders l WHERE e.enum_name = 'mrpack_loaders' AND l.loader != 'mrpack' AND NOT EXISTS (SELECT 1 FROM loader_field_enum_values v WHERE v.enum_id = e.id AND v.value = l.loader);
 
