@@ -1,0 +1,194 @@
+services:
+  api:
+    image: ghcr.io/modrinth/labrinth@sha256:7a1e631a42b893f351714bbf624c4f6371fefc3f4b2a68fada8a12397688088d
+    restart: unless-stopped
+    mem_limit: 1536m
+    environment:
+      BIND_ADDR: 0.0.0.0:8000
+      SELF_ADDR: http://api:8000
+      SITE_URL: https://mods.maxbain.es
+      CDN_URL: https://files.mods.maxbain.es/public
+      DATABASE_URL: postgresql://maxmods:${POSTGRES_PASSWORD}@postgres/maxmods
+      DATABASE_MAX_CONNECTIONS: '16'
+      REDIS_URL: redis://redis:6379
+      REDIS_MAX_CONNECTIONS: '64'
+      REDIS_BLOCKING_MAX_CONNECTIONS: '8'
+      KAFKA_BOOTSTRAP_SERVERS: redpanda:9092
+      SEARCH_BACKEND: typesense
+      TYPESENSE_URL: http://search:8108
+      TYPESENSE_API_KEY: ${SEARCH_KEY}
+      CLICKHOUSE_URL: http://analytics:8123
+      CLICKHOUSE_DATABASE: maxmods
+      CLICKHOUSE_USER: maxmods
+      CLICKHOUSE_PASSWORD: ${CLICKHOUSE_PASSWORD}
+      CLICKHOUSE_REPLICATED: 'false'
+      STORAGE_BACKEND: s3
+      S3_PUBLIC_BUCKET_NAME: public
+      S3_PUBLIC_REGION: us-east-1
+      S3_PUBLIC_URL: https://files.mods.maxbain.es
+      S3_PUBLIC_USES_PATH_STYLE_BUCKET: 'true'
+      S3_PUBLIC_ACCESS_TOKEN: maxmods
+      S3_PUBLIC_SECRET: ${STORAGE_PASSWORD}
+      S3_PRIVATE_BUCKET_NAME: private
+      S3_PRIVATE_REGION: us-east-1
+      S3_PRIVATE_URL: https://files.mods.maxbain.es
+      S3_PRIVATE_USES_PATH_STYLE_BUCKET: 'true'
+      S3_PRIVATE_ACCESS_TOKEN: maxmods
+      S3_PRIVATE_SECRET: ${STORAGE_PASSWORD}
+      LABRINTH_ADMIN_KEY: ${ADMIN_KEY}
+      LABRINTH_EXTERNAL_NOTIFICATION_KEY: ${NOTIFICATION_KEY}
+      LABRINTH_SUBSCRIPTIONS_KEY: ${SUBSCRIPTIONS_KEY}
+      RATE_LIMIT_IGNORE_KEY: ${RATE_LIMIT_KEY}
+      ALLOWED_CALLBACK_URLS: '["mods.maxbain.es"]'
+      ANALYTICS_ALLOWED_ORIGINS: '["https://mods.maxbain.es"]'
+      WHITELISTED_MODPACK_DOMAINS: '["files.mods.maxbain.es","cdn.modrinth.com","github.com","raw.githubusercontent.com"]'
+      SMTP_HOST: ${SMTP_HOST:-localhost}
+      SMTP_PORT: ${SMTP_PORT:-465}
+      SMTP_TLS: tls
+      SMTP_USERNAME: resend
+      SMTP_PASSWORD: ${RESEND_API_KEY:-}
+      SMTP_FROM_NAME: MaxMods
+      SMTP_FROM_ADDRESS: ${SMTP_FROM_ADDRESS:-noreply@hungrycampers.com}
+      WEBAUTHN_RP_NAME: MaxMods
+      RUST_LOG: info,sqlx::query=warn
+      SENTRY_ENVIRONMENT: selfhost
+    depends_on:
+      postgres:
+        condition: service_healthy
+      redis:
+        condition: service_healthy
+      analytics:
+        condition: service_healthy
+      redpanda:
+        condition: service_healthy
+      storage-init:
+        condition: service_completed_successfully
+      search:
+        condition: service_started
+    healthcheck:
+      test: [CMD, curl, -fsS, http://localhost:8000/]
+      interval: 30s
+      timeout: 10s
+      retries: 5
+      start_period: 180s
+  postgres:
+    image: postgres:15-alpine
+    restart: unless-stopped
+    mem_limit: 768m
+    environment:
+      POSTGRES_USER: maxmods
+      POSTGRES_DB: maxmods
+      POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
+    volumes:
+      - postgres-data:/var/lib/postgresql/data
+    healthcheck:
+      test: [CMD-SHELL, 'pg_isready -U maxmods -d maxmods']
+      interval: 5s
+      timeout: 5s
+      retries: 20
+  redis:
+    image: redis:7-alpine
+    restart: unless-stopped
+    mem_limit: 384m
+    command: [redis-server, --appendonly, 'yes', --maxmemory, 256mb, --maxmemory-policy, noeviction]
+    volumes:
+      - redis-data:/data
+    healthcheck:
+      test: [CMD, redis-cli, ping]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+  search:
+    image: typesense/typesense:30.1
+    restart: unless-stopped
+    mem_limit: 1536m
+    environment:
+      TYPESENSE_API_KEY: ${SEARCH_KEY}
+      TYPESENSE_DATA_DIR: /data
+    volumes:
+      - search-data:/data
+  analytics:
+    image: clickhouse/clickhouse-server:26.8
+    restart: unless-stopped
+    mem_limit: 2048m
+    environment:
+      CLICKHOUSE_DB: maxmods
+      CLICKHOUSE_USER: maxmods
+      CLICKHOUSE_PASSWORD: ${CLICKHOUSE_PASSWORD}
+      CLICKHOUSE_DEFAULT_ACCESS_MANAGEMENT: '1'
+    volumes:
+      - analytics-data:/var/lib/clickhouse
+    healthcheck:
+      test: [CMD-SHELL, 'clickhouse-client --user maxmods --password "$${CLICKHOUSE_PASSWORD}" --query "SELECT 1"']
+      interval: 10s
+      timeout: 10s
+      retries: 20
+  redpanda:
+    image: redpandadata/redpanda:v26.1.10
+    restart: unless-stopped
+    mem_limit: 1536m
+    command:
+      - redpanda
+      - start
+      - --kafka-addr
+      - 0.0.0.0:9092
+      - --advertise-kafka-addr
+      - redpanda:9092
+      - --mode
+      - dev-container
+      - --smp
+      - '1'
+      - --memory
+      - 1G
+      - --reserve-memory
+      - 0M
+      - --default-log-level=warn
+    volumes:
+      - redpanda-data:/var/lib/redpanda/data
+    healthcheck:
+      test: [CMD, rpk, cluster, info, -X, brokers=localhost:9092]
+      interval: 10s
+      timeout: 10s
+      retries: 20
+  storage:
+    image: rustfs/rustfs:1.0.1
+    restart: unless-stopped
+    mem_limit: 1024m
+    command: [/data]
+    environment:
+      RUSTFS_ACCESS_KEY: maxmods
+      RUSTFS_SECRET_KEY: ${STORAGE_PASSWORD}
+      RUSTFS_ADDRESS: ':9000'
+      RUSTFS_CONSOLE_ENABLE: 'false'
+    volumes:
+      - storage-data:/data
+    healthcheck:
+      test: [CMD, curl, -fsS, http://localhost:9000/health]
+      interval: 10s
+      timeout: 5s
+      retries: 20
+  storage-init:
+    image: amazon/aws-cli:2.31.0
+    restart: 'no'
+    environment:
+      AWS_ACCESS_KEY_ID: maxmods
+      AWS_SECRET_ACCESS_KEY: ${STORAGE_PASSWORD}
+      AWS_DEFAULT_REGION: us-east-1
+      AWS_EC2_METADATA_DISABLED: 'true'
+    depends_on:
+      storage:
+        condition: service_healthy
+    entrypoint: [/bin/sh, -ec]
+    command:
+      - |
+        for bucket in public private; do
+          aws --endpoint-url http://storage:9000 s3api head-bucket --bucket "$$bucket" || aws --endpoint-url http://storage:9000 s3api create-bucket --bucket "$$bucket"
+        done
+        aws --endpoint-url http://storage:9000 s3api put-bucket-policy --bucket public --policy '{"Version":"2012-10-17","Statement":[{"Effect":"Allow","Principal":"*","Action":["s3:GetObject"],"Resource":["arn:aws:s3:::public/*"]}]}'
+volumes:
+  postgres-data:
+  redis-data:
+  search-data:
+  analytics-data:
+  redpanda-data:
+  storage-data:

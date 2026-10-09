@@ -1,0 +1,10 @@
+.git
+node_modules
+**/node_modules
+**/.nuxt
+**/.output
+target
+.turbo
+**/.env
+**/.env.*
+*.log

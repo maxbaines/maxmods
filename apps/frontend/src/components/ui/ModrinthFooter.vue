@@ -261,6 +261,7 @@ function developerModeIncrement() {
 </script>
 
 <template>
+	<div class="mx-auto max-w-[1280px] px-6 py-4 text-secondary">MaxMods is an independent Modrinth fork. <a href="https://github.com/maxbaines/maxmods/tree/selfhost">Source code</a></div>
 	<footer class="footer-brand-background border-0 border-t-[1px] border-solid">
 		<div class="mx-auto flex max-w-screen-xl flex-col gap-6 p-6 pb-20 sm:px-12 md:py-12">
 			<div
@@ -313,7 +314,7 @@ function developerModeIncrement() {
 							<IntlFormatted :message-id="messages.openSource">
 								<template #github-link="{ children }">
 									<a
-										href="https://github.com/modrinth/code"
+										href="https://github.com/maxbaines/maxmods/tree/selfhost"
 										class="text-brand hover:underline"
 										target="_blank"
 										rel="noopener"
@@ -360,7 +361,7 @@ function developerModeIncrement() {
 					v-if="config.public.owner && config.public.branch"
 					class="hover:underline"
 					target="_blank"
-					:href="`https://github.com/${config.public.owner}/code/tree/${config.public.branch}`"
+					:href="`https://github.com/${config.public.owner}/${config.public.slug}/tree/${config.public.branch}`"
 				>
 					{{ config.public.owner }}/{{ config.public.branch }}
 				</a>
@@ -372,7 +373,7 @@ function developerModeIncrement() {
 					v-else
 					class="text-link"
 					target="_blank"
-					:to="`https://github.com/${config.public.owner}/code/commit/${config.public.hash}`"
+					:to="`https://github.com/${config.public.owner}/${config.public.slug}/commit/${config.public.hash}`"
 				>
 					{{ config.public.hash }}
 				</AutoLink>

@@ -1,39 +1,19 @@
-# ![Modrinth Monorepo Cover](/.github/assets/monorepo_cover.png)
+# MaxMods
 
-![Issues](https://img.shields.io/github/issues-raw/Modrinth/code?color=c78aff&label=issues&style=for-the-badge)
-![Pull Requests](https://img.shields.io/github/issues-pr-raw/Modrinth/code?color=c78aff&label=PRs&style=for-the-badge)
-![Contributors](https://img.shields.io/github/contributors/Modrinth/code?color=c78aff&label=contributors&style=for-the-badge)
-![Lines of Code](https://img.shields.io/endpoint?url=https://loctopus.creeperkatze.dev/github/modrinth/code/badge?style=flat&logoColor=white&color=c78aff&style=for-the-badge)
-![Commit Activity](https://img.shields.io/github/commit-activity/m/Modrinth/code?color=c78aff&label=commits&style=for-the-badge)
-![Last Commit](https://img.shields.io/github/last-commit/Modrinth/code?color=c78aff&label=last%20commit&style=for-the-badge)
+An independent, self-hosted fork of [Modrinth](https://github.com/modrinth/code).
 
-## Modrinth Monorepo
+The web frontend runs at https://mods.maxbain.es, with its own Labrinth API at https://api.mods.maxbain.es and S3-compatible storage at https://files.mods.maxbain.es. It does not share Modrinth accounts or project data.
 
-Welcome to the Modrinth Monorepo, the primary codebase for the Modrinth web interface and app. It contains ![Lines of code](https://img.shields.io/endpoint?url=https://loctopus.creeperkatze.dev/github/modrinth/code/badge%3Fformat%3Dhuman&logoColor=white&color=black&label=) lines of code and has ![Contributors](https://img.shields.io/github/contributors/Modrinth/code?color=black&label=) contributors!
+## Deployment
 
-If you're not a developer and you've stumbled upon this repository, you can access the web interface on the [Modrinth website](https://modrinth.com) and download the latest release of the app [here](https://modrinth.com/app).
+`compose.coolify.yaml` defines the backend services and persistent volumes. Supply its password variables through Coolify; never commit deployment secrets. `Dockerfile.coolify` builds the frontend from source, using `nginx.frontend.conf` to block external advertising scripts without changing advertising or payment application code. Payment providers and paid hosting are unconfigured.
 
-## Development
+Email uses Resend SMTP (`smtp.resend.com:465`, TLS, username `resend`) and `noreply@hungrycampers.com`. The sender domain must pass Resend DNS verification before signup verification and password reset emails can be delivered. Social login providers require separate OAuth applications and credentials.
 
-This repository contains two primary packages. For detailed development information, please refer to their respective guides:
+A fresh instance has no projects. Upstream featured collection and payout metadata are not available on this instance; the existing deployment feature flag suppresses the resulting build-state banner. All other generated metadata should be checked during builds.
 
-- [Website frontend](https://docs.modrinth.com/contributing/knossos/)
-- [Desktop app](https://docs.modrinth.com/contributing/theseus/)
+Persistent data lives in the PostgreSQL, Redis, Typesense, ClickHouse, Redpanda and RustFS volumes. Back up these volumes before updates. The backend image is pinned to an upstream digest; frontend source is maintained on the `selfhost` branch.
 
-## Contributing
+## Licensing and attribution
 
-We welcome contributions! Before submitting any contributions, please read our [contributing guidelines](https://docs.modrinth.com/contributing/getting-started/).
-
-If you plan to fork this repository for your own purposes, please review our [copying guidelines](COPYING.md).
-
-## Security
-
-If you discover a security vulnerability within our codebase, please follow our [responsible disclosure guidelines](https://modrinth.com/legal/security).
-
-## Support
-
-If you need help with the Modrinth web interface or app, please visit our [support page](https://support.modrinth.com). For general inquiries, you can also join our [Discord server](https://discord.modrinth.com).
-
-## License
-
-All packages in this repository are licensed under their respective licenses. Refer to the LICENSE file in each package for more information.
+Original source retains its package licenses and copyright notices. See `COPYING.md` and package-specific license files. Restricted Modrinth logos and blog material have been replaced or removed. MaxMods is not affiliated with Rinth, Inc., Mojang or Microsoft.
