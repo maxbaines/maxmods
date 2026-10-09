@@ -3,7 +3,7 @@ services:
     image: ghcr.io/modrinth/labrinth@sha256:7a1e631a42b893f351714bbf624c4f6371fefc3f4b2a68fada8a12397688088d
     restart: unless-stopped
     mem_limit: 1536m
-    environment:
+    environment: &api-environment
       BIND_ADDR: 0.0.0.0:8000
       SELF_ADDR: http://api:8000
       SITE_URL: https://mods.maxbain.es
@@ -71,6 +71,23 @@ services:
       timeout: 10s
       retries: 5
       start_period: 180s
+  search-worker:
+    image: ghcr.io/modrinth/labrinth@sha256:7a1e631a42b893f351714bbf624c4f6371fefc3f4b2a68fada8a12397688088d
+    restart: unless-stopped
+    mem_limit: 768m
+    command: [/labrinth/labrinth, --run-background-task, incremental-index-search]
+    environment:
+      <<: *api-environment
+      DATABASE_MAX_CONNECTIONS: '4'
+      REDIS_MAX_CONNECTIONS: '16'
+    depends_on:
+      api:
+        condition: service_healthy
+    healthcheck:
+      test: [CMD-SHELL, 'kill -0 1']
+      interval: 30s
+      timeout: 5s
+      retries: 3
   postgres:
     image: postgres:15-alpine
     restart: unless-stopped
