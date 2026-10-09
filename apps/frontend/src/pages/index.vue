@@ -555,7 +555,7 @@ const messages = defineMessages({
 	},
 	discoverCreationsTagline: {
 		id: 'landing.section.for-players.tagline',
-		defaultMessage: 'Discover over {count, number} creations',
+		defaultMessage: 'Discover community creations',
 	},
 	shareContentTagline: {
 		id: 'landing.section.for-creators.tagline',

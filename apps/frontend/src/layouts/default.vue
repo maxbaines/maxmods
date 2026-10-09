@@ -1063,7 +1063,7 @@ const messages = defineMessages({
 	},
 	modrinthHomePage: {
 		id: 'layout.nav.modrinth-home-page',
-		defaultMessage: 'Modrinth home page',
+		defaultMessage: 'MaxMods home page',
 	},
 	createNew: {
 		id: 'layout.action.create-new',
@@ -1201,33 +1201,32 @@ useHead({
 	],
 })
 useSeoMeta({
-	title: 'Modrinth',
+	title: 'MaxMods',
 	description: () =>
 		formatMessage({
 			id: 'layout.meta.description',
 			defaultMessage:
-				'Download Minecraft mods, plugins, datapacks, shaders, resourcepacks, and modpacks on Modrinth. ' +
-				'Discover and publish projects on Modrinth with a modern, easy to use interface and API.',
+				'Download Minecraft mods, plugins, datapacks, shaders, resourcepacks, and modpacks on MaxMods. ' +
+				'Discover and publish projects on MaxMods with a modern, easy to use interface and API.',
 		}),
-	publisher: 'Modrinth',
+	publisher: 'MaxMods',
 	themeColor: '#1bd96a',
 	colorScheme: 'dark light',
 
 	// OpenGraph
-	ogTitle: 'Modrinth',
-	ogSiteName: 'Modrinth',
+	ogTitle: 'MaxMods',
+	ogSiteName: 'MaxMods',
 	ogDescription: () =>
 		formatMessage({
 			id: 'layout.meta.og-description',
 			defaultMessage: 'Discover and publish Minecraft content!',
 		}),
 	ogType: 'website',
-	ogImage: 'https://cdn.modrinth.com/modrinth-new.png',
+	ogImage: 'https://mods.maxbain.es/favicon.ico',
 	ogUrl: link,
 
 	// Twitter
 	twitterCard: 'summary',
-	twitterSite: '@modrinth',
 })
 
 const isMobileMenuOpen = ref(false)
