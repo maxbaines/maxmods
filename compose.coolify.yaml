@@ -43,8 +43,8 @@ services:
       ANALYTICS_ALLOWED_ORIGINS: '["https://modsynth.app","https://mods.maxbain.es"]'
       WHITELISTED_MODPACK_DOMAINS: '["files.modsynth.app","files.mods.maxbain.es","cdn.modrinth.com","github.com","raw.githubusercontent.com"]'
       SMTP_HOST: ${SMTP_HOST:-smtp.resend.com}
-      SMTP_PORT: ${SMTP_PORT:-465}
-      SMTP_TLS: tls
+      SMTP_PORT: ${SMTP_PORT:-587}
+      SMTP_TLS: requires_start_tls
       SMTP_USERNAME: resend
       SMTP_PASSWORD: ${RESEND_API_KEY:-}
       SMTP_FROM_NAME: Modsynth
