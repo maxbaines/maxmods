@@ -102,7 +102,7 @@
     "defaultMessage": "Pro váš dotaz nebyly nalezeny žádné výsledky!"
   },
   "browse.offline": {
-    "defaultMessage": "Právě nejste připojeni k internetu. Připojte se k internetu a prohlížejte si Modrinth!"
+    "defaultMessage": "Právě nejste připojeni k internetu. Připojte se k internetu a prohlížejte si Modsynth!"
   },
   "browse.search.placeholder": {
     "defaultMessage": "Najít {projectType}..."
@@ -240,7 +240,7 @@
     "defaultMessage": "Otevřít ve složce"
   },
   "button.open-in-modrinth": {
-    "defaultMessage": "Otevřít v Modrinth"
+    "defaultMessage": "Otevřít v Modsynth"
   },
   "button.play": {
     "defaultMessage": "Hrát"
@@ -1128,7 +1128,7 @@
     "defaultMessage": "odkaz-k-dilu"
   },
   "external-files.permissions-card.editor.modrinth-link-to-work": {
-    "defaultMessage": "Toto vypadá jako odkaz na Modrinth. Pokud je tento obsah dostupný na Modrinthu, váš pack byl pravděpodobně exportován nesprávně. Pokud jste ho stáhli z jiného webu, zkuste místo toho stáhnout verzi z Modrinthu; někdy nejde o totožné soubory."
+    "defaultMessage": "Toto vypadá jako odkaz na Modsynth. Pokud je tento obsah dostupný na Modrinthu, váš pack byl pravděpodobně exportován nesprávně. Pokud jste ho stáhli z jiného webu, zkuste místo toho stáhnout verzi z Modrinthu; někdy nejde o totožné soubory."
   },
   "external-files.permissions-card.editor.notes-label": {
     "defaultMessage": "Poznámky"
@@ -1149,7 +1149,7 @@
     "defaultMessage": "Přetažením nahrajte nebo kliknutím vyberte obrázek"
   },
   "external-files.permissions-card.editor.proof-warning.title": {
-    "defaultMessage": "Modrinth pracovníci mohou ověřit předložené důkazy"
+    "defaultMessage": "Modsynth pracovníci mohou ověřit předložené důkazy"
   },
   "external-files.permissions-card.editor.save": {
     "defaultMessage": "Uložit uvedení autora"
@@ -2712,16 +2712,16 @@
     "defaultMessage": "Přidávání platební metody"
   },
   "modal.open-in-app.get-app": {
-    "defaultMessage": "Získat Modrinth App"
+    "defaultMessage": "Získat Modsynth App"
   },
   "modal.open-in-app.opening-automatically": {
-    "defaultMessage": "Modrinth App se otevře automaticky..."
+    "defaultMessage": "Modsynth App se otevře automaticky..."
   },
   "modal.open-in-app.title": {
-    "defaultMessage": "Otevírání Modrinth App"
+    "defaultMessage": "Otevírání Modsynth App"
   },
   "modal.open-in-app.why-use": {
-    "defaultMessage": "Proč používat Modrinth App"
+    "defaultMessage": "Proč používat Modsynth App"
   },
   "notification.error.title": {
     "defaultMessage": "Došlo k chybě"
@@ -2784,7 +2784,7 @@
     "defaultMessage": "Moderátor"
   },
   "omorphia.component.badge.label.modrinth-team": {
-    "defaultMessage": "Modrinth tým"
+    "defaultMessage": "Modsynth tým"
   },
   "omorphia.component.badge.label.pending": {
     "defaultMessage": "Čekající"
@@ -2904,10 +2904,10 @@
     "defaultMessage": "Visa"
   },
   "profile.bio.fallback.creator": {
-    "defaultMessage": "Modrinth tvůrce."
+    "defaultMessage": "Modsynth tvůrce."
   },
   "profile.bio.fallback.user": {
-    "defaultMessage": "Modrinth uživatel."
+    "defaultMessage": "Modsynth uživatel."
   },
   "profile.block-user.admonition-title": {
     "defaultMessage": "Opravdu si přeješ zablokovat tohoto uživatele?"
@@ -2946,7 +2946,7 @@
     "defaultMessage": "{count, plural, one {# projekt} few {# projekty} other {# projektů}}"
   },
   "profile.details.error.github-popup-blocked": {
-    "defaultMessage": "Povolte vyskakovací okna pro Modrinth, pak to zkuste znovu."
+    "defaultMessage": "Povolte vyskakovací okna pro Modsynth, pak to zkuste znovu."
   },
   "profile.details.label.email-verified": {
     "defaultMessage": "Email ověřen"
@@ -3000,7 +3000,7 @@
     "defaultMessage": "{count, plural, one {projekt} few {projekty} other {projektů}}"
   },
   "profile.official-account": {
-    "defaultMessage": "Oficiální Modrinth účet"
+    "defaultMessage": "Oficiální Modsynth účet"
   },
   "profile.unblock-user.error-title": {
     "defaultMessage": "Odblokování uživatele selhalo"
@@ -4362,13 +4362,13 @@
     "defaultMessage": "Už máte server?"
   },
   "servers.list-empty.modrinth-hosting-label": {
-    "defaultMessage": "Modrinth Hosting"
+    "defaultMessage": "Modsynth Hosting"
   },
   "servers.list-empty.new-server-button": {
     "defaultMessage": "Nový server"
   },
   "servers.list-empty.no-servers-description": {
-    "defaultMessage": "Instalujte mody, zvěte přátele a hrajte společně, to vše z Modrinth App."
+    "defaultMessage": "Instalujte mody, zvěte přátele a hrajte společně, to vše z Modsynth App."
   },
   "servers.list-empty.one-click-mod-installs-description": {
     "defaultMessage": "Vyberte si své oblíbené mody a o zbytek se postaráme."
@@ -4413,7 +4413,7 @@
     "defaultMessage": "Probíhá nahrávání"
   },
   "servers.manage.contact-support-button": {
-    "defaultMessage": "Kontaktovat Modrinth Podporu"
+    "defaultMessage": "Kontaktovat Modsynth Podporu"
   },
   "servers.manage.error.details": {
     "defaultMessage": "Podrobnosti chyby:"
@@ -4440,7 +4440,7 @@
     "defaultMessage": "Úspěch"
   },
   "servers.manage.servers-title": {
-    "defaultMessage": "Modrinth Hosting"
+    "defaultMessage": "Modsynth Hosting"
   },
   "servers.manage.settings-hint.dismiss": {
     "defaultMessage": "Znovu nezobrazovat"
@@ -4572,7 +4572,7 @@
     "defaultMessage": "Kde byste chtěl/a mít umístěný svůj server?"
   },
   "servers.region.region-unsupported": {
-    "defaultMessage": "Chybí vaše oblast? <link>Dejte nám vědět, kde byste chtěl/a vidět Modrinth Hosting příště!</link>"
+    "defaultMessage": "Chybí vaše oblast? <link>Dejte nám vědět, kde byste chtěl/a vidět Modsynth Hosting příště!</link>"
   },
   "servers.region.southeast-asia": {
     "defaultMessage": "Jihovýchodní Asie"
@@ -4629,7 +4629,7 @@
     "defaultMessage": "Nastavte si svůj server (~2min)"
   },
   "servers.setup.onboarding.welcome.title": {
-    "defaultMessage": "Vítejte v Modrinth Hostingu"
+    "defaultMessage": "Vítejte v Modsynth Hostingu"
   },
   "servers.setup.uploading-modpack.header": {
     "defaultMessage": "Nahrávání modpacku"
@@ -5085,25 +5085,25 @@
     "defaultMessage": "{download_sum} Stažení"
   },
   "user.profile.badge.moderator.about.1": {
-    "defaultMessage": "Tento uživatel pracuje jako moderátor obsahu pro Modrinth."
+    "defaultMessage": "Tento uživatel pracuje jako moderátor obsahu pro Modsynth."
   },
   "user.profile.badge.moderator.about.2": {
-    "defaultMessage": "Moderátoři obsahu na Modrinthu kontrolují projekty, řeší nahlášení a pomáhají udržovat Modrinth bezpečný."
+    "defaultMessage": "Moderátoři obsahu na Modrinthu kontrolují projekty, řeší nahlášení a pomáhají udržovat Modsynth bezpečný."
   },
   "user.profile.badge.moderator.name": {
     "defaultMessage": "Moderátor obsahu"
   },
   "user.profile.badge.plus.name": {
-    "defaultMessage": "Člen Modrinth+"
+    "defaultMessage": "Člen Modsynth+"
   },
   "user.profile.badge.pride.name": {
     "defaultMessage": "Podporovatel Pride sbírky"
   },
   "user.profile.badge.staff.about.1": {
-    "defaultMessage": "Tento uživatel pracuje pro Modrinth."
+    "defaultMessage": "Tento uživatel pracuje pro Modsynth."
   },
   "user.profile.badge.staff.name": {
-    "defaultMessage": "Modrinth tým"
+    "defaultMessage": "Modsynth tým"
   },
   "version.content.name": {
     "defaultMessage": "Název"

@@ -508,7 +508,7 @@ const messages = defineMessages({
 	},
 })
 
-useHead({ title: () => `${formatMessage(messages.headTitle)} - MaxMods` })
+useHead({ title: () => `${formatMessage(messages.headTitle)} - Modsynth` })
 
 const user = await useUser()
 const projects = ref([])

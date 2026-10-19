@@ -85,7 +85,7 @@ const messages = defineMessages({
 
 useHead({
 	title() {
-		return `${formatMessage(messages.createAccountTitle)} - MaxMods`
+		return `${formatMessage(messages.createAccountTitle)} - Modsynth`
 	},
 })
 

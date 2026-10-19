@@ -206,7 +206,7 @@
 				</Button>
 				<ButtonLink
 					v-if="noticeButtons.support"
-					href="https://support.modrinth.com/en/"
+					href="https://modsynth.app/support"
 					target="_blank"
 					data-server-listing-button
 					><MessagesSquareIcon /> {{ formatMessage(messages.supportLabel) }}
@@ -364,7 +364,7 @@ const messages = defineMessages({
 	suspendedNotice: {
 		id: 'servers.listing.notice.suspended',
 		defaultMessage:
-			'Your server has been suspended. Please contact Modrinth Support for more information.',
+			'Your server has been suspended. Please contact Modsynth Support for more information.',
 	},
 	copyCodeToClipboardTooltip: {
 		id: 'servers.listing.copy-code-tooltip',

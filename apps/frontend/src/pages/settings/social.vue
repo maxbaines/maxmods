@@ -53,6 +53,6 @@ function unblockUser(userId: string): Promise<void> {
 }
 
 useHead({
-	title: () => `${formatMessage(commonSettingsMessages.social)} - MaxMods`,
+	title: () => `${formatMessage(commonSettingsMessages.social)} - Modsynth`,
 })
 </script>

@@ -127,7 +127,7 @@
 								<template #support-link="{ children }">
 									<a
 										class="inline underline"
-										href="https://support.modrinth.com"
+										href="https://modsynth.app/support"
 										target="_blank"
 										rel="noopener noreferrer"
 										><component :is="() => normalizeChildren(children)"

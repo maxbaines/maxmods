@@ -93,15 +93,15 @@ if (projectsResult.status === 'fulfilled') {
 	warmProjectCheckCaches(queryClient, projectsResult.value)
 }
 const title = computed(() =>
-	prefetchedUser ? `${prefetchedUser.username} - MaxMods` : 'User not found',
+	prefetchedUser ? `${prefetchedUser.username} - Modsynth` : 'User not found',
 )
 const description = computed(() => {
 	if (!prefetchedUser) {
 		return `There's no user here, check that you have the right link!`
 	}
 	return prefetchedUser.bio
-		? `${prefetchedUser.bio} - Download ${prefetchedUser.username}'s projects on Modrinth`
-		: `Download ${prefetchedUser.username}'s projects on Modrinth`
+		? `${prefetchedUser.bio} - Download ${prefetchedUser.username}'s projects on Modsynth`
+		: `Download ${prefetchedUser.username}'s projects on Modsynth`
 })
 
 useSeoMeta({

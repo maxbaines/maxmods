@@ -5,7 +5,7 @@
 		<p><strong>Last reviewed on: </strong><em>March 11th, 2025</em></p>
 		<p>
 			This Privacy Notice for California Residents supplements the information contained in the
-			<nuxt-link to="/legal/privacy">Privacy Policy</nuxt-link> of Rinth, Inc. (the "Company," "we,"
+			<nuxt-link to="/legal/privacy">Privacy Policy</nuxt-link> of the Modsynth operator (the "Company," "we,"
 			"us" or "our") and applies solely to all visitors, users, and others who reside in the State
 			of California ("consumers" or "you"). We adopt this notice to comply with the California
 			Consumer Privacy Act of 2018 (CCPA), as it may be amended, modified or supplemented from time
@@ -340,8 +340,8 @@
 		<h3>Exercising Access, Data Portability, and Deletion Rights</h3>
 		<p>
 			To exercise the access, data portability, and deletion rights described above, please submit a
-			verifiable consumer request to us by emailing us at
-			<a href="mailto:support@modrinth.com">support@modrinth.com</a>.
+			verifiable consumer request to us through
+			<a href="https://modsynth.app/support">Modsynth support</a>.
 		</p>
 		<p>
 			Only you, or a person registered with the California Secretary of State that you authorize to
@@ -448,17 +448,17 @@
 			your information described below and in the
 			<nuxt-link to="/legal/privacy">Privacy Policy</nuxt-link>, your choices and rights regarding
 			such use, or wish to exercise your rights under California law, please do not hesitate to
-			contact us at <a href="mailto:support@modrinth.com">support@modrinth.com</a>.
+			contact us at <a href="https://modsynth.app/support">Modsynth support</a>.
 		</p>
 	</div>
 </template>
 
 <script setup>
 const description =
-	'The California Privacy Notice of Modrinth, an open source modding platform focused on Minecraft.'
+	'The California Privacy Notice of Modsynth, an open source modding platform focused on Minecraft.'
 
 useSeoMeta({
-	title: 'California Privacy Notice - MaxMods',
+	title: 'California Privacy Notice - Modsynth',
 	description,
 	ogTitle: 'California Privacy Notice',
 	ogDescription: description,

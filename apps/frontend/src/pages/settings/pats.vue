@@ -293,7 +293,7 @@ const messages = defineMessages({
 	description: {
 		id: 'settings.pats.description',
 		defaultMessage:
-			"PATs can be used to access Modrinth's API. They can be created and revoked at any time. For more information, see <doc-link>Modrinth's API documentation</doc-link>.",
+			"PATs can be used to access Modsynth's API. They can be created and revoked at any time. For more information, see <doc-link>Modsynth's API documentation</doc-link>.",
 	},
 	create: {
 		id: 'settings.pats.action.create',
@@ -333,7 +333,7 @@ definePageMeta({
 })
 
 useHead({
-	title: `${formatMessage(commonSettingsMessages.pats)} - MaxMods`,
+	title: `${formatMessage(commonSettingsMessages.pats)} - Modsynth`,
 })
 
 const data = useNuxtApp()

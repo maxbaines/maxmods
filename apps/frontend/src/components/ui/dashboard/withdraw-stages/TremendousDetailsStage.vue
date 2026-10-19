@@ -1082,7 +1082,7 @@ const messages = defineMessages({
 	unverifiedEmailMessage: {
 		id: 'dashboard.creator-withdraw-modal.tremendous-details.unverified-email-message',
 		defaultMessage:
-			'The delivery email you have entered is not associated with your Modrinth account. Modrinth cannot recover rewards sent to an incorrect email address.',
+			'The delivery email you have entered is not associated with your Modsynth account. Modsynth cannot recover rewards sent to an incorrect email address.',
 	},
 	paymentMethod: {
 		id: 'dashboard.creator-withdraw-modal.tremendous-details.payment-method',

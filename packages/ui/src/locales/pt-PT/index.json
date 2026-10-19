@@ -1140,16 +1140,16 @@
     "defaultMessage": "Mantém ficheiros atualizados quando o servidor muda"
   },
   "modal.open-in-app.get-app": {
-    "defaultMessage": "Obter a Modrinth App"
+    "defaultMessage": "Obter a Modsynth App"
   },
   "modal.open-in-app.opening-automatically": {
-    "defaultMessage": "A Modrinth App vai abrir automaticamente..."
+    "defaultMessage": "A Modsynth App vai abrir automaticamente..."
   },
   "modal.open-in-app.title": {
-    "defaultMessage": "A abrir a Modrinth App"
+    "defaultMessage": "A abrir a Modsynth App"
   },
   "modal.open-in-app.why-use": {
-    "defaultMessage": "Razões para usar a Modrinth App"
+    "defaultMessage": "Razões para usar a Modsynth App"
   },
   "notification.error.title": {
     "defaultMessage": "Ocorreu um erro"
@@ -1179,7 +1179,7 @@
     "defaultMessage": "Moderador"
   },
   "omorphia.component.badge.label.modrinth-team": {
-    "defaultMessage": "Equipa do Modrinth"
+    "defaultMessage": "Equipa do Modsynth"
   },
   "omorphia.component.badge.label.pending": {
     "defaultMessage": "Pendente"
@@ -1293,10 +1293,10 @@
     "defaultMessage": "Visa"
   },
   "profile.bio.fallback.creator": {
-    "defaultMessage": "Um criador Modrinth."
+    "defaultMessage": "Um criador Modsynth."
   },
   "profile.bio.fallback.user": {
-    "defaultMessage": "Um utilizador Modrinth."
+    "defaultMessage": "Um utilizador Modsynth."
   },
   "profile.button.block": {
     "defaultMessage": "Bloquear"
@@ -1854,7 +1854,7 @@
     "defaultMessage": "O teu projeto tem múltiplos ambientes"
   },
   "project.settings.environment.notice.review-options.description": {
-    "defaultMessage": "Reformulámos o sistema de Ambientes no Modrinth e estão agora disponíveis novas opções. Certifica-te de que a opção correta está selecionada abaixo e clica em \"Verificar\" quando terminares!"
+    "defaultMessage": "Reformulámos o sistema de Ambientes no Modsynth e estão agora disponíveis novas opções. Certifica-te de que a opção correta está selecionada abaixo e clica em \"Verificar\" quando terminares!"
   },
   "project.settings.environment.notice.review-options.title": {
     "defaultMessage": "Por favor, revê as opções abaixo"
@@ -2220,7 +2220,7 @@
     "defaultMessage": "Onde queres que o teu servidor esteja localizado?"
   },
   "servers.region.region-unsupported": {
-    "defaultMessage": "Região não listada? <link>Deixa-nos saber onde gostarias de ver Modrinth Hosting a seguir!</link>"
+    "defaultMessage": "Região não listada? <link>Deixa-nos saber onde gostarias de ver Modsynth Hosting a seguir!</link>"
   },
   "servers.region.southeast-asia": {
     "defaultMessage": "Sudeste Asiático"
@@ -2757,10 +2757,10 @@
     "defaultMessage": "Tens alterações por guardar."
   },
   "unknown-file-warning-modal.mod-warning-body": {
-    "defaultMessage": " não está publicado no Modrinth. Recomendamos fortemente que apenas instales ficheiros de fontes que confies."
+    "defaultMessage": " não está publicado no Modsynth. Recomendamos fortemente que apenas instales ficheiros de fontes que confies."
   },
   "unknown-file-warning-modal.modpack-warning-body": {
-    "defaultMessage": " contém ficheiros que não foram publicados no Modrinth. Recomendamos fortemente que apenas instales ficheiros de fontes que confies."
+    "defaultMessage": " contém ficheiros que não foram publicados no Modsynth. Recomendamos fortemente que apenas instales ficheiros de fontes que confies."
   },
   "version.content.name": {
     "defaultMessage": "Nome"

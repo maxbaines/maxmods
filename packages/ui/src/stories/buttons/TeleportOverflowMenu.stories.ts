@@ -32,7 +32,7 @@ const options: ButtonMenuOption[] = [
 		label: 'Open website',
 		icon: ExternalIcon,
 		type: 'link',
-		href: 'https://modrinth.com',
+		href: 'https://modsynth.app',
 		target: '_blank',
 	},
 	{

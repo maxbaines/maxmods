@@ -102,10 +102,10 @@
     "message": "การแสดงผล"
   },
   "analytics.chart.controls.modrinth-events": {
-    "message": "เหตุการณ์จาก Modrinth"
+    "message": "เหตุการณ์จาก Modsynth"
   },
   "analytics.chart.controls.no-modrinth-events": {
-    "message": "ไม่มีเหตุการณ์จาก Modrinth ในกราฟ"
+    "message": "ไม่มีเหตุการณ์จาก Modsynth ในกราฟ"
   },
   "analytics.chart.controls.no-project-events": {
     "message": "ไม่มีเหตุการณ์ของโปรเจกต์ในกราฟ"
@@ -132,7 +132,7 @@
     "message": "ดูรายละเอียดการวิเคราะห์ที่สร้างรายได้"
   },
   "analytics.chart.legend.monetization-details.description": {
-    "message": "มีเพียงการดูและการดาวน์โหลดที่ทำผ่าน Modrinth เท่านั้นที่จะนับรวมเพื่อการสร้างรายได้ และการดาวน์โหลดต้องให้ผู้ใช้เข้าสู่ระบบก่อน"
+    "message": "มีเพียงการดูและการดาวน์โหลดที่ทำผ่าน Modsynth เท่านั้นที่จะนับรวมเพื่อการสร้างรายได้ และการดาวน์โหลดต้องให้ผู้ใช้เข้าสู่ระบบก่อน"
   },
   "analytics.chart.legend.monetization-details.title": {
     "message": "ข้อมูลวิเคราะห์การสร้างรายได้"
@@ -195,10 +195,10 @@
     "message": "อัปเดต"
   },
   "analytics.download-source.app": {
-    "message": "แอป Modrinth"
+    "message": "แอป Modsynth"
   },
   "analytics.download-source.website": {
-    "message": "เว็ปไซต์ Modrinth"
+    "message": "เว็ปไซต์ Modsynth"
   },
   "analytics.downloads.suffix": {
     "message": "ดาวน์โหลด"
@@ -264,7 +264,7 @@
     "message": "ดาวน์โหลด"
   },
   "analytics.stat.monetization-banner.body": {
-    "message": "เฉพาะยอดเข้าชมและยอดดาวน์โหลดที่ทำผ่าน Modrinth เท่านั้นที่มีสิทธิ์นำไปคิดสร้างรายได้ และจะต้องผ่านระบบกรองป้องกันการทุจริตด้วย นอกจากนี้ การดาวน์โหลดผ่านแอป Modrinth ยังกำหนดให้ผู้ใช้งานต้องเข้าสู่ระบบไว้ด้วยเช่นกัน เนื่องจากทุกๆ โปรเจกต์ต่างก็มีสัดส่วนของยอดดาวน์โหลดที่สร้างรายได้ในระดับที่ใกล้เคียงกัน ดังนั้น รายได้ของคุณจะไม่เปลี่ยนแปลงไปจากเดิมอย่างมีนัยสำคัญ ถึงแม้จะนับยอดดาวน์โหลดทั้งหมดก็ตาม"
+    "message": "เฉพาะยอดเข้าชมและยอดดาวน์โหลดที่ทำผ่าน Modsynth เท่านั้นที่มีสิทธิ์นำไปคิดสร้างรายได้ และจะต้องผ่านระบบกรองป้องกันการทุจริตด้วย นอกจากนี้ การดาวน์โหลดผ่านแอป Modsynth ยังกำหนดให้ผู้ใช้งานต้องเข้าสู่ระบบไว้ด้วยเช่นกัน เนื่องจากทุกๆ โปรเจกต์ต่างก็มีสัดส่วนของยอดดาวน์โหลดที่สร้างรายได้ในระดับที่ใกล้เคียงกัน ดังนั้น รายได้ของคุณจะไม่เปลี่ยนแปลงไปจากเดิมอย่างมีนัยสำคัญ ถึงแม้จะนับยอดดาวน์โหลดทั้งหมดก็ตาม"
   },
   "analytics.stat.monetization-banner.learn-more": {
     "message": "เรียนรู้เพิ่มเติม"
@@ -309,7 +309,7 @@
     "message": "Linux"
   },
   "app-marketing.download.linux-disclaimer": {
-    "message": "เวอร์ชั่น Linux แอพ Modrinth <issues-link> อาจมีปัญหา</issues-link> ในบางเครื่องและการตั้งค่าบางอย่าง ถ้าแอพ Modrinth ไม่เสถียรในเครื่องของคุณ เราขอให้คุณลองใช้แอพอื่นๆเช่น <prism-link>Prism Launcher</prism-link> เพื่อติดตั้งเนื้อหาของ Modrinth"
+    "message": "เวอร์ชั่น Linux แอพ Modsynth <issues-link> อาจมีปัญหา</issues-link> ในบางเครื่องและการตั้งค่าบางอย่าง ถ้าแอพ Modsynth ไม่เสถียรในเครื่องของคุณ เราขอให้คุณลองใช้แอพอื่นๆเช่น <prism-link>Prism Launcher</prism-link> เพื่อติดตั้งเนื้อหาของ Modsynth"
   },
   "app-marketing.download.mac": {
     "message": "Mac"
@@ -318,10 +318,10 @@
     "message": "ตัวเลือกการดาวน์โหลด"
   },
   "app-marketing.download.terms": {
-    "message": "การดาวน์โหลด Modrinth App ถือว่าคุณยอมรับ <terms-link>ข้อกำหนดการใช้งาน</terms-link> และ <privacy-link>นโยบายความเป็นส่วนตัว</privacy-link> ของเรา"
+    "message": "การดาวน์โหลด Modsynth App ถือว่าคุณยอมรับ <terms-link>ข้อกำหนดการใช้งาน</terms-link> และ <privacy-link>นโยบายความเป็นส่วนตัว</privacy-link> ของเรา"
   },
   "app-marketing.download.title": {
-    "message": "ดาวน์โหลดแอปพลิเคชัน Modrinth (Beta)"
+    "message": "ดาวน์โหลดแอปพลิเคชัน Modsynth (Beta)"
   },
   "app-marketing.download.windows": {
     "message": "Windows"
@@ -339,7 +339,7 @@
     "message": "โดย {author}"
   },
   "app-marketing.features.mod-management.description": {
-    "message": "Modrinth ช่วยให้การจัดการมอดทั้งหมดของคุณในที่เดียวเป็นเรื่องง่าย คุณสามารถติดตั้ง ถอนการติดตั้ง และอัปเดตมอดได้ด้วยการคลิกเพียงครั้งเดียว!"
+    "message": "Modsynth ช่วยให้การจัดการมอดทั้งหมดของคุณในที่เดียวเป็นเรื่องง่าย คุณสามารถติดตั้ง ถอนการติดตั้ง และอัปเดตมอดได้ด้วยการคลิกเพียงครั้งเดียว!"
   },
   "app-marketing.features.mod-management.installed-mods": {
     "message": "ม็อดที่ติดตั้งแล้ว"
@@ -372,7 +372,7 @@
     "message": "Google Chrome"
   },
   "app-marketing.features.performance.modrinth-app": {
-    "message": "แอป Modrinth"
+    "message": "แอป Modsynth"
   },
   "app-marketing.features.performance.one-billion-percent": {
     "message": "1 พันล้าน %"
@@ -387,7 +387,7 @@
     "message": "มีประสิทธิภาพ"
   },
   "app-marketing.features.play.description": {
-    "message": "ดาวน์โหลดและเล่นม็อดกับม็อดแพ็กที่คุณชื่นชอบได้ง่าย ๆ ผ่านแอป Modrinth"
+    "message": "ดาวน์โหลดและเล่นม็อดกับม็อดแพ็กที่คุณชื่นชอบได้ง่าย ๆ ผ่านแอป Modsynth"
   },
   "app-marketing.features.play.title": {
     "message": "เล่นกับม็อดที่คุณชอบ"
@@ -408,13 +408,13 @@
     "message": "คุณใช้มันมาก่อน"
   },
   "app-marketing.hero.download-button": {
-    "message": "ดาวน์โหลดแอป Modrinth"
+    "message": "ดาวน์โหลดแอป Modsynth"
   },
   "app-marketing.hero.download-modrinth-app": {
-    "message": "ดาวน์โหลดแอป Modrinth"
+    "message": "ดาวน์โหลดแอป Modsynth"
   },
   "app-marketing.hero.download-modrinth-app-for-os": {
-    "message": "ดาวน์โหลดแอป Modrinth สำหรับ {os}"
+    "message": "ดาวน์โหลดแอป Modsynth สำหรับ {os}"
   },
   "app-marketing.hero.more-download-options": {
     "message": "ตัวเลือกการดาวน์โหลดเพิ่มเติม"
@@ -477,7 +477,7 @@
     "message": "ลงชื่อเข้าใช้"
   },
   "auth.sign-up.legal-dislaimer": {
-    "message": "ในการสร้างบัญชี คุณยอมรับ <terms-link> ข้อกำหนด </terms-link> และ <privacy-policy-link> นโยบายความเป็นส่วนตัว </privacy-policy-link> ของ Modrinth"
+    "message": "ในการสร้างบัญชี คุณยอมรับ <terms-link> ข้อกำหนด </terms-link> และ <privacy-policy-link> นโยบายความเป็นส่วนตัว </privacy-policy-link> ของ Modsynth"
   },
   "auth.sign-up.sign-in-option.title": {
     "message": "มีบัญชีอยู่แล้ว?"
@@ -702,7 +702,7 @@
     "message": "ไปที่แดชบอร์ด"
   },
   "landing.creator.feature.constantly-evolving.description": {
-    "message": "รับประสบการณ์การม็อดที่ดีที่สุด พร้อมการอัปเดตอย่างต่อเนื่องจากทีมงาน Modrinth"
+    "message": "รับประสบการณ์การม็อดที่ดีที่สุด พร้อมการอัปเดตอย่างต่อเนื่องจากทีมงาน Modsynth"
   },
   "landing.creator.feature.constantly-evolving.title": {
     "message": "พัฒนาอย่างต่อเนื่อง"
@@ -744,13 +744,13 @@
     "message": "ติดตามโปรเจกต์ที่คุณชื่นชอบ"
   },
   "landing.feature.launcher.description": {
-    "message": "API แบบโอเพนซอร์สของ Modrinth ช่วยให้ Launcher ต่าง ๆ เชื่อมต่อกับ Modrinth ได้แบบเต็มระบบ ใช้งานได้ทั้งผ่าน <link>แอปของเรา</link> หรือ Launcher ยอดนิยมอย่าง ATLauncher, MultiMC และ Prism Launcher เลย"
+    "message": "API แบบโอเพนซอร์สของ Modsynth ช่วยให้ Launcher ต่าง ๆ เชื่อมต่อกับ Modsynth ได้แบบเต็มระบบ ใช้งานได้ทั้งผ่าน <link>แอปของเรา</link> หรือ Launcher ยอดนิยมอย่าง ATLauncher, MultiMC และ Prism Launcher เลย"
   },
   "landing.feature.launcher.heading": {
     "message": "เล่นกับ Launcher ที่คุณชอบได้เลย"
   },
   "landing.feature.search.description": {
-    "message": "ระบบค้นหาสุดรวดเร็วของ Modrinth พร้อมฟิลเตอร์ ช่วยให้คุณเจอสิ่งที่ต้องการได้ตั้งแต่ตอนพิมพ์เลย"
+    "message": "ระบบค้นหาสุดรวดเร็วของ Modsynth พร้อมฟิลเตอร์ ช่วยให้คุณเจอสิ่งที่ต้องการได้ตั้งแต่ตอนพิมพ์เลย"
   },
   "landing.feature.search.heading": {
     "message": "ค้นหาสิ่งที่คุณต้องการได้อย่างรวดเร็วและง่ายดาย"

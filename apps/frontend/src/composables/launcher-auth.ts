@@ -18,7 +18,7 @@ type QueryRoute = { query: LocationQuery }
 export const launcherAuthMessages = defineMessages({
 	handoffFailed: {
 		id: 'auth.sign-in.launcher.handoff-failed',
-		defaultMessage: "Couldn't finish signing in to the Modrinth App. Try again.",
+		defaultMessage: "Couldn't finish signing in to the Modsynth App. Try again.",
 	},
 })
 
@@ -63,7 +63,7 @@ export async function createLauncherHandoff(
 	const publicKey = getQueryString(route.query.key)
 	const nonce = getQueryString(route.query.nonce)
 	if (!publicKey || !nonce) {
-		throw new Error('Missing Modrinth App sign-in key')
+		throw new Error('Missing Modsynth App sign-in key')
 	}
 
 	const sealed = await sealLauncherSession(sessionToken, publicKey, nonce)

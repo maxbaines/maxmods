@@ -13,7 +13,7 @@
 			<template v-if="hasHitLimit">
 				{{ formatMessage(messages.limitReachedDescription, { type: typeName.singular, max }) }}
 				<div class="w-min">
-					<ButtonLink type="colored" color="red" to="https://support.modrinth.com" target="_blank">
+					<ButtonLink type="colored" color="red" to="https://modsynth.app/support" target="_blank">
 						<MessageIcon />{{ formatMessage(messages.contactSupport) }}</ButtonLink
 					>
 				</div>
@@ -30,7 +30,7 @@
 					<ButtonLink
 						type="colored"
 						color="orange"
-						to="https://support.modrinth.com"
+						to="https://modsynth.app/support"
 						target="_blank"
 					>
 						<MessageIcon />{{ formatMessage(messages.contactSupport) }}</ButtonLink

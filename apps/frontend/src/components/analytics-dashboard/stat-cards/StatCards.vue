@@ -15,7 +15,7 @@
 				<ButtonLink
 					type="colored"
 					color="blue"
-					href="https://modrinth.com/legal/cmp-info"
+					href="https://modsynth.app/legal/cmp-info"
 					target="_blank"
 					class="w-fit !px-4"
 				>

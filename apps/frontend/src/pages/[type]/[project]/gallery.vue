@@ -290,7 +290,7 @@ const galleryViewer = useTemplateRef('galleryViewer')
 // SEO
 const title = computed(() => `${project.value.title} - Gallery`)
 const description = computed(
-	() => `View ${project.value.gallery?.length ?? 0} images of ${project.value.title} on Modrinth.`,
+	() => `View ${project.value.gallery?.length ?? 0} images of ${project.value.title} on Modsynth.`,
 )
 
 useSeoMeta({

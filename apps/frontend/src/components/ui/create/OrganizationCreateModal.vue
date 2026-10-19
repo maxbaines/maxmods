@@ -27,7 +27,7 @@
 					</span>
 				</label>
 				<div class="text-input-wrapper">
-					<div class="text-input-wrapper__before">https://modrinth.com/organization/</div>
+					<div class="text-input-wrapper__before">https://modsynth.app/organization/</div>
 					<Input
 						id="slug"
 						v-model="slug"

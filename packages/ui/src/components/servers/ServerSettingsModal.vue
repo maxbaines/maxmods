@@ -116,7 +116,7 @@ const tabs = computed<TabbedModalTab[]>(() =>
 			return {
 				name,
 				icon: tab.icon,
-				href: tab.href ? `https://modrinth.com${tab.href(ctx)}` : undefined,
+				href: tab.href ? `https://modsynth.app${tab.href(ctx)}` : undefined,
 				shown,
 			}
 		}

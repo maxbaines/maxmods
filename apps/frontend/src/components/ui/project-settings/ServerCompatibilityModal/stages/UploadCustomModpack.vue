@@ -43,7 +43,7 @@
 				<span class="max-w-[90%] text-left text-primary">
 					Do you have the appropriate licenses to redistribute all content in this Modpack?
 					<NuxtLink
-						to="https://support.modrinth.com/en/articles/8797527-obtaining-modpack-permissions"
+						to="https://modsynth.app/support"
 						external
 						target="_blank"
 						class="font-medium text-blue underline"

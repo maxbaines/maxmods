@@ -4,7 +4,7 @@ import { PagewideBanner } from '@modrinth/ui'
 const flags = useFeatureFlags()
 const route = useRoute()
 
-const url = computed(() => `https://modrinth.com${route.fullPath}`)
+const url = computed(() => `https://modsynth.app${route.fullPath}`)
 
 const bannerRoot = ref<HTMLElement | null>(null)
 

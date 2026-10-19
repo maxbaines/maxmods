@@ -60,7 +60,7 @@ const article = computed(() => ({
 const authorCount = computed(() => authors?.value?.length ?? 0)
 
 const articleTitle = computed(() => article.value.title)
-const articleUrl = computed(() => `https://modrinth.com/news/article/${route.params.slug}`)
+const articleUrl = computed(() => `https://modsynth.app/news/article/${route.params.slug}`)
 
 const thumbnailPath = computed(() =>
 	article.value.thumbnail
@@ -71,7 +71,7 @@ const thumbnailPath = computed(() =>
 const dayjsDate = computed(() => dayjs(article.value.date))
 
 useSeoMeta({
-	title: () => `${articleTitle.value} - MaxMods News`,
+	title: () => `${articleTitle.value} - Modsynth News`,
 	ogTitle: () => articleTitle.value,
 	description: () => article.value.summary,
 	ogDescription: () => article.value.summary,
@@ -161,7 +161,7 @@ onMounted(() => {
 						class="inline-flex items-center gap-1 font-semibold hover:underline hover:brightness-[--hover-brightness]"
 					>
 						<Avatar src="https://cdn.modrinth.com/modrinth-icon-96.webp" size="24px" />
-						Modrinth Team
+						Modsynth Team
 					</nuxt-link>
 				</template>
 				<span class="hidden md:block">•</span>

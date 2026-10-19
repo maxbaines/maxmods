@@ -18,7 +18,7 @@ const keybinds = useModerationKeybinds()
 
 const projectId = String(useRouteId('project'))
 
-useHead({ title: () => `Tech review - ${projectId} - MaxMods` })
+useHead({ title: () => `Tech review - ${projectId} - Modsynth` })
 
 const {
 	data: projectReportData,

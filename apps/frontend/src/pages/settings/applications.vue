@@ -374,7 +374,7 @@ const messages = defineMessages({
 	descriptionIntro: {
 		id: 'settings.applications.description.intro',
 		defaultMessage:
-			"Applications can be used to authenticate Modrinth's users with your products. For more information, see <docs-link>Modrinth's API documentation</docs-link>.",
+			"Applications can be used to authenticate Modsynth's users with your products. For more information, see <docs-link>Modsynth's API documentation</docs-link>.",
 	},
 	aboutLabel: {
 		id: 'settings.applications.about',
@@ -411,7 +411,7 @@ const messages = defineMessages({
 })
 
 useHead({
-	title: () => `${formatMessage(messages.headTitle)} - MaxMods`,
+	title: () => `${formatMessage(messages.headTitle)} - Modsynth`,
 })
 
 const { scopesToLabels } = useScopes()

@@ -185,7 +185,7 @@ function createRender(args: Record<string, unknown>) {
 export const ShareInstance: Story = {
 	args: {
 		header: 'Share instance',
-		link: 'https://modrinth.com/instance/abc123',
+		link: 'https://modsynth.app/instance/abc123',
 		linkExpiresAt: new Date(Date.now() + 7 * 86_400_000).toISOString(),
 		linkMaxUses: 10,
 	},

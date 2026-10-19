@@ -388,8 +388,8 @@ watch(
 	(org) => {
 		if (org) {
 			const title = `${org.name} - Organization`
-			const description = `${org.description} - View the organization ${org.name} on Modrinth`
-			const canonicalUrl = org ? `https://modrinth.com/organization/${org.id}` : undefined
+			const description = `${org.description} - View the organization ${org.name} on Modsynth`
+			const canonicalUrl = org ? `https://modsynth.app/organization/${org.id}` : undefined
 
 			useSeoMeta({
 				title,

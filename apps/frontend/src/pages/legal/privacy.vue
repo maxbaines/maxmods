@@ -5,13 +5,13 @@
 
 		<h2>Introduction</h2>
 		<p>
-			<a href="https://modrinth.com">Modrinth</a> is part of Rinth, Inc. ("Company", "us", "we",
+			<a href="https://modsynth.app">Modsynth</a> is independently operated ("Company", "us", "we",
 			"our"). This privacy policy explains how we collect data, process it, and your rights relative
 			to your data.
 		</p>
 		<p>
 			This policy describes the types of information we may collect from you or that you may provide
-			when you use www.modrinth.com, api.modrinth.com, or the Modrinth App ("Service" or "Website"),
+			when you use modsynth.app, api.modsynth.app, or the Modsynth App ("Service" or "Website"),
 			and our practices for collecting, using, maintaining, protecting, and disclosing that
 			information.
 		</p>
@@ -31,8 +31,7 @@
 		<p>It does not apply to information collected by:</p>
 		<ul>
 			<li>
-				Us offline or through any other means, including on any other website operated by Rinth,
-				Inc. or any third party (including our affiliates and subsidiaries); or
+				Us offline or through any other means, including on any other website operated by the Modsynth operator or any third party (including our affiliates and subsidiaries); or
 			</li>
 			<li>
 				Any third party (including our affiliates and subsidiaries), including through any
@@ -66,7 +65,7 @@
 			</li>
 		</ul>
 
-		<p>Rinth, Inc. is the data controller for data collected through Modrinth.</p>
+		<p>The Modsynth operator is the data controller for data collected through Modsynth.</p>
 
 		<h2>What data do we collect?</h2>
 
@@ -85,7 +84,7 @@
 		</p>
 
 		<h3>View data and download data</h3>
-		<p>When you view a project page or download a file from Modrinth, we collect:</p>
+		<p>When you view a project page or download a file from Modsynth, we collect:</p>
 		<ul>
 			<li>Your IP address</li>
 			<li>Your user ID (if applicable)</li>
@@ -96,7 +95,7 @@
 		<p>This data is used to monitor automated access to our service and deliver statistics.</p>
 
 		<h3>Playtime data</h3>
-		<p>When you use the Modrinth App to play Modrinth projects, we collect:</p>
+		<p>When you use the Modsynth App to play Modsynth projects, we collect:</p>
 		<ul>
 			<li>Your IP address</li>
 			<li>Your user ID</li>
@@ -109,7 +108,7 @@
 		<p>This data is used to deliver statistics.</p>
 
 		<h3>Usage data</h3>
-		<p>When you interact with the Modrinth App or the Website, we collect through PostHog:</p>
+		<p>When you interact with the Modsynth App or the Website, we collect through PostHog:</p>
 		<ul>
 			<li>Your IP address</li>
 			<li>Your anonymized user ID</li>
@@ -142,7 +141,7 @@
 
 		<h2>Third-party services</h2>
 		<p>
-			We use some third-party services to make Modrinth run. Please refer to each of their privacy
+			We use some third-party services to make Modsynth run. Please refer to each of their privacy
 			policies for more information:
 		</p>
 		<ul>
@@ -162,7 +161,7 @@
 
 		<h2>Data Governance</h2>
 		<p>
-			Database access is limited to the minimum amount of Rinth, Inc. employees required to run the
+			Database access is limited to the minimum number of Modsynth staff required to run the
 			service.<br />
 			Data is stored in a jurisdiction that is part of the European Economic Area (EEA), encrypted
 			both in storage and in transit.
@@ -219,7 +218,7 @@
 		</ul>
 		<p>
 			If you would like to exercise those rights, contact us at
-			<a href="mailto:gdpr@modrinth.com">gdpr@modrinth.com</a>. We may ask you to verify your
+			<a href="https://modsynth.app/support">Modsynth support</a>. We may ask you to verify your
 			identity before proceeding and will respond to your request within 30 days as required by law,
 			or notify you of an extended reply time.
 		</p>
@@ -231,7 +230,7 @@
 			online activity.
 		</p>
 		<p>
-			Modrinth does not knowingly collect any Personal Identifiable Information from children under
+			Modsynth does not knowingly collect any Personal Identifiable Information from children under
 			the age of 13. If you think that your child provided this kind of information on our website,
 			we strongly encourage you to contact us immediately and we will do our best efforts to
 			promptly remove such information from our records.
@@ -240,7 +239,7 @@
 		<h2>Online Privacy Policy Only</h2>
 		<p>
 			This Privacy Policy applies only to our online activities and is valid for visitors to our
-			website with regards to the information that they shared and/or collect in Modrinth. This
+			website with regards to the information that they shared and/or collect in Modsynth. This
 			policy is not applicable to any information collected offline or via channels other than this
 			website.
 		</p>
@@ -261,8 +260,8 @@
 			California's "Shine the Light" law (Civil Code Section § 1798.83) permits users of our App
 			that are California residents to request certain information regarding our disclosure of
 			personal information to third parties for their direct marketing purposes. To make such a
-			request, please send an email to
-			<a href="mailto:support@modrinth.com">support@modrinth.com</a>.
+			request, please contact
+			<a href="https://modsynth.app/support">Modsynth support</a>.
 		</p>
 
 		<h2>Changes to the Privacy Policy</h2>
@@ -277,13 +276,11 @@
 		<h2>Contact</h2>
 		<p>
 			If you have any questions about this privacy policy or how we process your data, contact us at
-			<a href="mailto:gdpr@modrinth.com">gdpr@modrinth.com</a> or write us at:
+			<a href="https://modsynth.app/support">Modsynth support</a>.
 		</p>
 		<p>
-			Rinth, Inc.<br />
-			410 North Scottsdale Road<br />
-			Suite 1000<br />
-			Tempe, AZ 85281
+			Operator contact details will be published on the
+			<nuxt-link to="/support">Modsynth support page</nuxt-link>.
 		</p>
 
 		<h3>How to contact the appropriate authority</h3>
@@ -311,10 +308,10 @@
 
 <script setup>
 const description =
-	'The Privacy Policy of Modrinth, an open source modding platform focused on Minecraft.'
+	'The Privacy Policy of Modsynth, an open source modding platform focused on Minecraft.'
 
 useSeoMeta({
-	title: 'Privacy Policy - MaxMods',
+	title: 'Privacy Policy - Modsynth',
 	description,
 	ogTitle: 'Privacy Policy',
 	ogDescription: description,

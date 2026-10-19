@@ -133,7 +133,7 @@ const isSavingEdit = ref(false)
 const client = injectModrinthClient()
 const editModal = useTemplateRef<InstanceType<typeof NewModal>>('editModal')
 
-useHead({ title: 'External projects - MaxMods' })
+useHead({ title: 'External projects - Modsynth' })
 
 type ExternalProject = {
 	id: number

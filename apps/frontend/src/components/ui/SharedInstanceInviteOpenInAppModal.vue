@@ -115,7 +115,7 @@
 						type="colored"
 						color="brand"
 						class="flex-1"
-						href="https://modrinth.com/app"
+						href="https://modsynth.app/app"
 						target="_blank"
 						rel="noopener noreferrer"
 					>
@@ -138,7 +138,7 @@ const { formatMessage } = useVIntl()
 const messages = defineMessages({
 	openingApp: {
 		id: 'modal.shared-instance.open-in-app.title',
-		defaultMessage: 'Opening Modrinth App',
+		defaultMessage: 'Opening Modsynth App',
 	},
 	managedBy: {
 		id: 'modal.shared-instance.open-in-app.managed-by',
@@ -146,7 +146,7 @@ const messages = defineMessages({
 	},
 	whyUseApp: {
 		id: 'modal.shared-instance.open-in-app.why-use',
-		defaultMessage: 'Why use the Modrinth App',
+		defaultMessage: 'Why use the Modsynth App',
 	},
 	benefitJoin: {
 		id: 'modal.shared-instance.open-in-app.benefit.join',
@@ -162,11 +162,11 @@ const messages = defineMessages({
 	},
 	openingAutomatically: {
 		id: 'modal.shared-instance.open-in-app.opening-automatically',
-		defaultMessage: 'The Modrinth App will open automatically...',
+		defaultMessage: 'The Modsynth App will open automatically...',
 	},
 	getApp: {
 		id: 'modal.shared-instance.open-in-app.get-app',
-		defaultMessage: 'Get Modrinth App',
+		defaultMessage: 'Get Modsynth App',
 	},
 })
 

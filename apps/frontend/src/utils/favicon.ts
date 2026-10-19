@@ -18,7 +18,7 @@ const FAVICON_MEDIA = [
 	'(prefers-color-scheme:dark)',
 ] as const
 
-const STAGING_API_PREFIX = 'https://staging-api.modrinth.com'
+const STAGING_API_PREFIX = 'https://staging-api.modsynth.app'
 
 export function resolveFaviconEnvironment(
 	config: {

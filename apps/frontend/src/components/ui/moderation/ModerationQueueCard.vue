@@ -105,7 +105,7 @@
 					<CopyCode v-tooltip="'Copy project ID'" :text="queueEntry.project.id" />
 					<CopyLinkButton
 						v-tooltip="'Copy project link'"
-						:url="`https://modrinth.com/project/${queueEntry.project.id}`"
+						:url="`https://modsynth.app/project/${queueEntry.project.id}`"
 					/>
 					<ButtonLink
 						v-tooltip="'Open moderation thread'"

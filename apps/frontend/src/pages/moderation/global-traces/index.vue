@@ -5,5 +5,5 @@
 <script setup lang="ts">
 import GlobalDetailTracesList from '~/components/ui/moderation/GlobalDetailTracesList.vue'
 
-useHead({ title: 'Global detail traces - MaxMods' })
+useHead({ title: 'Global detail traces - Modsynth' })
 </script>

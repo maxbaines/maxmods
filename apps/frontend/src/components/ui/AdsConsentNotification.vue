@@ -38,12 +38,12 @@ const { formatMessage } = useVIntl()
 const messages = defineMessages({
 	title: {
 		id: 'ads-consent.title',
-		defaultMessage: 'Your privacy and how ads support Modrinth',
+		defaultMessage: 'Your privacy and how ads support Modsynth',
 	},
 	body: {
 		id: 'ads-consent.body',
 		defaultMessage:
-			'Ads make Modrinth possible and fund creator payouts. Our partners may store or access cookies on the website to personalize ads and measure performance.',
+			'Ads make Modsynth possible and fund creator payouts. Our partners may store or access cookies on the website to personalize ads and measure performance.',
 	},
 	manage: {
 		id: 'ads-consent.manage',

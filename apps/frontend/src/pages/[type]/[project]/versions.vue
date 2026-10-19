@@ -137,7 +137,7 @@
 								label: 'Copy link',
 								action: () =>
 									copyToClipboard(
-										`https://modrinth.com/${project.project_type}/${
+										`https://modsynth.app/${project.project_type}/${
 											project.slug ? project.slug : project.id
 										}/version/${encodeURI(version.displayUrlEnding ? version.displayUrlEnding : version.id)}`,
 									),

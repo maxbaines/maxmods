@@ -30,11 +30,11 @@ const config = useRuntimeConfig()
 const messages = defineMessages({
 	modrinthInformation: {
 		id: 'layout.footer.modrinth-information',
-		defaultMessage: 'Modrinth information',
+		defaultMessage: 'Modsynth information',
 	},
 	openSource: {
 		id: 'layout.footer.open-source',
-		defaultMessage: 'Modrinth is <github-link>open source</github-link>.',
+		defaultMessage: 'Modsynth is <github-link>open source</github-link>.',
 	},
 	legalDisclaimer: {
 		id: 'layout.footer.legal-disclaimer',
@@ -146,17 +146,17 @@ const footerLinks: {
 		links: [
 			{
 				href: '/plus',
-				label: defineMessage({ id: 'layout.footer.products.plus', defaultMessage: 'Modrinth+' }),
+				label: defineMessage({ id: 'layout.footer.products.plus', defaultMessage: 'Modsynth+' }),
 			},
 			{
 				href: '/app',
-				label: defineMessage({ id: 'layout.footer.products.app', defaultMessage: 'Modrinth App' }),
+				label: defineMessage({ id: 'layout.footer.products.app', defaultMessage: 'Modsynth App' }),
 			},
 			{
 				href: '/hosting',
 				label: defineMessage({
 					id: 'layout.footer.products.servers',
-					defaultMessage: 'Modrinth Hosting',
+					defaultMessage: 'Modsynth Hosting',
 				}),
 			},
 		],
@@ -165,7 +165,7 @@ const footerLinks: {
 		label: defineMessage({ id: 'layout.footer.resources', defaultMessage: 'Resources' }),
 		links: [
 			{
-				href: 'https://support.modrinth.com',
+				href: 'https://modsynth.app/support',
 				label: defineMessage({
 					id: 'layout.footer.resources.help-center',
 					defaultMessage: 'Help Center',
@@ -261,7 +261,7 @@ function developerModeIncrement() {
 </script>
 
 <template>
-	<div class="mx-auto max-w-[1280px] px-6 py-4 text-secondary">MaxMods is an independent Modrinth fork. <a href="https://github.com/maxbaines/maxmods/tree/selfhost">Source code</a></div>
+	<div class="mx-auto max-w-[1280px] px-6 py-4 text-secondary">Modsynth is an independent modding platform. <a href="https://github.com/maxbaines/maxmods/tree/selfhost">Source code</a></div>
 	<footer class="footer-brand-background border-0 border-t-[1px] border-solid">
 		<div class="mx-auto flex max-w-screen-xl flex-col gap-6 p-6 pb-20 sm:px-12 md:py-12">
 			<div
@@ -276,7 +276,7 @@ function developerModeIncrement() {
 						<Button
 							type="quiet"
 							interaction="none"
-							aria-label="Modrinth"
+							aria-label="Modsynth"
 							class="!h-auto !p-0"
 							@click="developerModeIncrement()"
 						>

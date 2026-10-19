@@ -25,7 +25,7 @@ const socialLinks = Object.freeze<readonly SocialLink[]>([])
 				<Row>
 					<Column>
 						<Img
-							src="https://mods.maxbain.es/favicon-32x32.png"
+							src="https://modsynth.app/favicon-32x32.png"
 							width="29"
 							alt=""
 							class="block h-auto"
@@ -45,11 +45,11 @@ const socialLinks = Object.freeze<readonly SocialLink[]>([])
 			<Container class="max-w-[600px]">
 				<Row>
 					<Column class="align-middle">
-						<VLink href="https://mods.maxbain.es" aria-label="MaxMods">
+						<VLink href="https://modsynth.app" aria-label="Modsynth">
 							<Img
-								src="https://mods.maxbain.es/favicon-32x32.png"
+								src="https://modsynth.app/favicon-32x32.png"
 								width="175"
-								alt="MaxMods"
+								alt="Modsynth"
 								class="block h-auto"
 							/>
 						</VLink>
@@ -67,7 +67,7 @@ const socialLinks = Object.freeze<readonly SocialLink[]>([])
 							</Section>
 						</Row>
 
-						<Text class="mb-0 mt-2 text-xs" :style="{ color: '#4d4d4d' }"> MaxMods — independent Modrinth fork </Text>
+						<Text class="mb-0 mt-2 text-xs" :style="{ color: '#4d4d4d' }"> Modsynth — independent modding platform </Text>
 
 					</Column>
 				</Row>
@@ -77,9 +77,9 @@ const socialLinks = Object.freeze<readonly SocialLink[]>([])
 		<!-- <Text
 			class="text-footerText text-2xs mb-4 mt-0 pb-0 pl-4 pr-4 pt-0 text-center font-sans"
 		>
-			This email was sent to you as a registered user of Modrinth. You can customize the
+			This email was sent to you as a registered user of Modsynth. You can customize the
 			emails you recieve in your
-			<VLink href="https://mods.maxbain.es/settings/notifications" class="text-green underline"
+			<VLink href="https://modsynth.app/settings/notifications" class="text-green underline"
 				>notification settings</VLink
 			>. Some emails are required to keep your account secure and cannot be disabled.
 		</Text> -->
@@ -113,7 +113,7 @@ const socialLinks = Object.freeze<readonly SocialLink[]>([])
 				</span>
 				<!-- <span class="block break-words">
 					<span> <b>Notification settings:</b><br /> </span>
-					https://mods.maxbain.es/settings/notifications
+					https://modsynth.app/settings/notifications
 				</span> -->
 			</Text>
 		</Section>

@@ -36,15 +36,10 @@
 				copyright owner.
 			</li>
 		</ul>
-		<p>Our designated copyright agent to receive DMCA Notices is:</p>
+		<p>Copyright contact:</p>
 		<p>
-			&emsp;DMCA Designated Agent<br />
-			&emsp;Rinth, Inc.<br />
-			&emsp;800 N King St<br />
-			&emsp;Suite 304 #3133<br />
-			&emsp;Wilmington, DE 19801<br />
-			&emsp;Phone: +1 (201) 431-5015<br />
-			&emsp;<a href="mailto:dmca@modrinth.com">dmca@modrinth.com</a><br />
+			Operator contact details will be published on the
+			<nuxt-link to="/support">Modsynth support page</nuxt-link>.
 		</p>
 		<p>
 			If you fail to comply with all of the requirements of Section 512(c)(3) of the DMCA, your DMCA
@@ -106,10 +101,10 @@
 
 <script setup>
 const description =
-	'The Copyright Policy of Modrinth, an open source modding platform focused on Minecraft.'
+	'The Copyright Policy of Modsynth, an open source modding platform focused on Minecraft.'
 
 useSeoMeta({
-	title: 'Copyright Policy - MaxMods',
+	title: 'Copyright Policy - Modsynth',
 	description,
 	ogTitle: 'Copyright Policy',
 	ogDescription: description,

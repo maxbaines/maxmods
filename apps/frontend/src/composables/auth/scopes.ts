@@ -319,7 +319,7 @@ export const scopeMessages = defineMessages({
 	},
 	sessionAccessDescription: {
 		id: 'scopes.sessionAccess.description',
-		defaultMessage: 'Access Modrinth-issued sessions',
+		defaultMessage: 'Access Modsynth-issued sessions',
 	},
 })
 

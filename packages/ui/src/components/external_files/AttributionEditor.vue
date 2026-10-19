@@ -96,7 +96,7 @@ const messages = defineMessages({
 	},
 	proofWarningTitle: {
 		id: 'external-files.permissions-card.editor.proof-warning.title',
-		defaultMessage: 'Modrinth staff may verify submitted proof',
+		defaultMessage: 'Modsynth staff may verify submitted proof',
 	},
 	proofWarningBody: {
 		id: 'external-files.permissions-card.editor.proof-warning.body',
@@ -149,7 +149,7 @@ const messages = defineMessages({
 	},
 	modrinthLinkToWork: {
 		id: 'external-files.permissions-card.editor.modrinth-link-to-work',
-		defaultMessage: `This appears to be a Modrinth link. If this content is available on Modrinth, your pack was likely exported incorrectly. If you downloaded it from another site, try downloading the Modrinth version instead; sometimes they are not identical files.`,
+		defaultMessage: `This appears to be a Modsynth link. If this content is available on Modsynth, your pack was likely exported incorrectly. If you downloaded it from another site, try downloading the Modsynth version instead; sometimes they are not identical files.`,
 	},
 	arrLabel: {
 		id: 'external-files.permissions-card.editor.all-rights-reserved',
@@ -508,8 +508,8 @@ function cancelEditing() {
 			/>
 			<span
 				v-if="
-					linkInput.startsWith('https://modrinth.com/') ||
-					linkInput.startsWith('https://www.modrinth.com/')
+					linkInput.startsWith('https://modsynth.app/') ||
+					linkInput.startsWith('https://modsynth.app/')
 				"
 				class="flex text-orange gap-2 font-medium mt-2"
 			>

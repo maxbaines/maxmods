@@ -81,7 +81,7 @@ const messages = defineMessages({
 	},
 	description: {
 		id: 'project.settings.disclosures.description',
-		defaultMessage: `You must add any applicable content disclosures to your project in compliance with <rules>Modrinth's Content Rules</rules>.`,
+		defaultMessage: `You must add any applicable content disclosures to your project in compliance with <rules>Modsynth's Content Rules</rules>.`,
 	},
 	description2: {
 		id: 'project.settings.disclosures.description.2',
@@ -318,7 +318,7 @@ const { confirmLeaveModal } = usePageLeaveSafety(hasChanges)
 			<IntlFormatted :message-id="messages.description2">
 				<template #faq-link="{ children }">
 					<a
-						href="https://support.modrinth.com/en/articles/16567675#h_29503820b1"
+						href="https://modsynth.app/support"
 						target="_blank"
 						class="underline hover:text-contrast"
 					>

@@ -65,11 +65,11 @@ const getModrinthAppAccordion = ref<InstanceType<typeof Accordion> | null>(null)
 const messages = defineMessages({
 	installWithModrinthApp: {
 		id: 'project.download.install-with-app',
-		defaultMessage: 'Install with Modrinth App',
+		defaultMessage: 'Install with Modsynth App',
 	},
 	dontHaveModrinthApp: {
 		id: 'project.download.no-app',
-		defaultMessage: "Don't have Modrinth App?",
+		defaultMessage: "Don't have Modsynth App?",
 	},
 	downloadManually: {
 		id: 'project.download.manually',

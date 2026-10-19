@@ -34,11 +34,11 @@ const messages = defineMessages({
 	},
 	description2: {
 		id: 'project.settings.disclosures.advertising.description.2',
-		defaultMessage: `This does not pertain to unobtrusive promotion of relevant content with no direct monetary value (such as a link to a Modrinth profile in your own configuration menu), and does not pertain to advertisements in the project page such as sponsored banners in the description.`,
+		defaultMessage: `This does not pertain to unobtrusive promotion of relevant content with no direct monetary value (such as a link to a Modsynth profile in your own configuration menu), and does not pertain to advertisements in the project page such as sponsored banners in the description.`,
 	},
 	notePlaceholder: {
 		id: 'project.settings.disclosures.advertising.note-placeholder',
-		defaultMessage: 'e.g. Adds the Modrinth SMP server to your server list automatically.',
+		defaultMessage: 'e.g. Adds the Modsynth SMP server to your server list automatically.',
 	},
 })
 </script>
@@ -49,7 +49,7 @@ const messages = defineMessages({
 		v-model="model.enabled"
 		:icon="MegaphoneIcon"
 		:title="formatMessage(messages.title)"
-		info-link="https://support.modrinth.com/en/articles/16567675#h_d486036510"
+		info-link="https://modsynth.app/support"
 		@set-lock-status="emit('setLockStatus', $event)"
 	>
 		<p>{{ formatMessage(messages.description1) }}</p>

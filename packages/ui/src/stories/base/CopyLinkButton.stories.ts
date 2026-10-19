@@ -12,13 +12,13 @@ type Story = StoryObj<typeof meta>
 
 export const Default: Story = {
 	args: {
-		url: 'https://modrinth.com',
+		url: 'https://modsynth.app',
 	},
 }
 
 export const CustomLabels: Story = {
 	args: {
-		url: 'https://modrinth.com',
+		url: 'https://modsynth.app',
 		copyLabel: 'Copy project link',
 		copiedLabel: 'Project link copied',
 	},

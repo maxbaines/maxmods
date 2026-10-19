@@ -263,7 +263,7 @@
 									label: formatMessage(commonMessages.copyPermalinkButton),
 									action: () =>
 										copyToClipboard(
-											`https://modrinth.com/project/${project.id}/version/${version!.id}`,
+											`https://modsynth.app/project/${project.id}/version/${version!.id}`,
 										),
 									shown: flags.developerMode,
 								},
@@ -427,7 +427,7 @@
 									</template>
 									<template #article-link="{ children }">
 										<a
-											href="https://support.modrinth.com/en/articles/8801191-modrinth-maven"
+											href="https://modsynth.app/support"
 											class="text-link"
 											target="_blank"
 											rel="noopener"
@@ -784,7 +784,7 @@ const description = computed(() => {
 
 	return `Download ${project.value.title} ${
 		version.value.version_number
-	} on Modrinth. Supports ${(data as any).$formatVersion(version.value.game_versions)} ${(
+	} on Modsynth. Supports ${(data as any).$formatVersion(version.value.game_versions)} ${(
 		version.value.loaders ?? []
 	)
 		.map((x: string) => x.charAt(0).toUpperCase() + x.slice(1))
@@ -1078,11 +1078,11 @@ const messages = defineMessages({
 	mavenDescription: {
 		id: 'version.section.content.dev-info.maven-description',
 		defaultMessage:
-			'Projects on Modrinth are automatically available through a Maven repository for use with JVM build tools such as <gradle-link>Gradle</gradle-link>. To learn more about the Modrinth Maven API, <article-link>click here</article-link>.',
+			'Projects on Modsynth are automatically available through a Maven repository for use with JVM build tools such as <gradle-link>Gradle</gradle-link>. To learn more about the Modsynth Maven API, <article-link>click here</article-link>.',
 	},
 	mavenNote: {
 		id: 'version.section.content.dev-info.maven-note',
-		defaultMessage: `Note: When available, you should use the creator's maven repo instead as it will have transitive dependency information that the Modrinth Maven API does not. You may also end up with duplicate dependencies if you use a mix of Modrinth and non-Modrinth Maven repositories for your dependencies, because the group identifier will be different when served through the Modrinth Maven API.`,
+		defaultMessage: `Note: When available, you should use the creator's maven repo instead as it will have transitive dependency information that the Modsynth Maven API does not. You may also end up with duplicate dependencies if you use a mix of Modsynth and non-Modsynth Maven repositories for your dependencies, because the group identifier will be different when served through the Modsynth Maven API.`,
 	},
 	mavenCoordinates: {
 		id: 'version.section.content.dev-info.maven-coordinates',
@@ -1204,8 +1204,8 @@ const gradleSnippet = computed(
     exclusiveContent {
         forRepository {
             maven {
-                name = "Modrinth"
-                url = "https://api.modrinth.com/maven"
+                name = "Modsynth"
+                url = "https://api.modsynth.app/maven"
             }
         }
         // forRepositories(fg.repository) // Uncomment when using ForgeGradle

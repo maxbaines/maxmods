@@ -448,7 +448,7 @@ async function fetchFollowedProjects(userId) {
 const messages = defineMessages({
 	collectionDescription: {
 		id: 'collection.description',
-		defaultMessage: '{description} - View the collection {name} by {username} on Modrinth',
+		defaultMessage: '{description} - View the collection {name} by {username} on Modsynth',
 	},
 	collectionTitle: {
 		id: 'collection.title',
@@ -726,7 +726,7 @@ watch(
 	[collection, creator, creatorHasPublicProjects],
 	([col, cre, hasPublicProjects]) => {
 		if (col && cre) {
-			const canonicalUrl = col ? `https://modrinth.com/collection/${col.id}` : undefined
+			const canonicalUrl = col ? `https://modsynth.app/collection/${col.id}` : undefined
 			useSeoMeta({
 				title: formatMessage(messages.collectionTitle, { name: col.name }),
 				description: formatMessage(messages.collectionDescription, {

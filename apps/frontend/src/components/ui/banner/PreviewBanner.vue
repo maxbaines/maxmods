@@ -17,11 +17,11 @@ const route = useRoute()
 const messages = defineMessages({
 	title: {
 		id: 'layout.banner.preview.title',
-		defaultMessage: `This is a preview deploy of the Modrinth website.`,
+		defaultMessage: `This is a preview deploy of the Modsynth website.`,
 	},
 	description: {
 		id: 'layout.banner.preview.description',
-		defaultMessage: `If you meant to access the official Modrinth website, visit {url}. This preview deploy is used by Modrinth staff for testing purposes. It was built using {ref}.`,
+		defaultMessage: `If you meant to access the official Modsynth website, visit {url}. This preview deploy is used by Modsynth staff for testing purposes. It was built using {ref}.`,
 	},
 })
 
@@ -30,7 +30,7 @@ function hidePreviewBanner() {
 	saveFeatureFlags()
 }
 
-const url = computed(() => `https://modrinth.com${route.fullPath}`)
+const url = computed(() => `https://modsynth.app${route.fullPath}`)
 </script>
 
 <template>

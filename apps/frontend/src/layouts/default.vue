@@ -65,7 +65,7 @@
 		<StagingBanner
 			v-if="
 				flags.showAllBanners ||
-				config.public.apiBaseUrl.startsWith('https://staging-api.modrinth.com')
+				config.public.apiBaseUrl.startsWith('https://staging-api.modsynth.app')
 			"
 		/>
 		<GeneratedStateErrorsBanner
@@ -1040,11 +1040,11 @@ const navMenuMessages = defineMessages({
 	},
 	getModrinthApp: {
 		id: 'layout.nav.get-modrinth-app',
-		defaultMessage: 'Get Modrinth App',
+		defaultMessage: 'Get Modsynth App',
 	},
 	modrinthApp: {
 		id: 'layout.nav.modrinth-app',
-		defaultMessage: 'Modrinth App',
+		defaultMessage: 'Modsynth App',
 	},
 })
 
@@ -1063,7 +1063,7 @@ const messages = defineMessages({
 	},
 	modrinthHomePage: {
 		id: 'layout.nav.modrinth-home-page',
-		defaultMessage: 'MaxMods home page',
+		defaultMessage: 'Modsynth home page',
 	},
 	createNew: {
 		id: 'layout.action.create-new',
@@ -1079,7 +1079,7 @@ const messages = defineMessages({
 	},
 	verifyEmailBeforePublishing: {
 		id: 'layout.publish.email-verification-required.description',
-		defaultMessage: 'You must verify your email before publishing on Modrinth.',
+		defaultMessage: 'You must verify your email before publishing on Modsynth.',
 	},
 	reviewProjects: {
 		id: 'layout.action.review-projects',
@@ -1143,7 +1143,7 @@ const messages = defineMessages({
 	},
 	upgradeToModrinthPlus: {
 		id: 'layout.nav.upgrade-to-modrinth-plus',
-		defaultMessage: 'Upgrade to Modrinth+',
+		defaultMessage: 'Upgrade to Modsynth+',
 	},
 	projects: {
 		id: 'layout.nav.projects',
@@ -1201,28 +1201,28 @@ useHead({
 	],
 })
 useSeoMeta({
-	title: 'MaxMods',
+	title: 'Modsynth',
 	description: () =>
 		formatMessage({
 			id: 'layout.meta.description',
 			defaultMessage:
-				'Download Minecraft mods, plugins, datapacks, shaders, resourcepacks, and modpacks on MaxMods. ' +
-				'Discover and publish projects on MaxMods with a modern, easy to use interface and API.',
+				'Download Minecraft mods, plugins, datapacks, shaders, resourcepacks, and modpacks on Modsynth. ' +
+				'Discover and publish projects on Modsynth with a modern, easy to use interface and API.',
 		}),
-	publisher: 'MaxMods',
+	publisher: 'Modsynth',
 	themeColor: '#1bd96a',
 	colorScheme: 'dark light',
 
 	// OpenGraph
-	ogTitle: 'MaxMods',
-	ogSiteName: 'MaxMods',
+	ogTitle: 'Modsynth',
+	ogSiteName: 'Modsynth',
 	ogDescription: () =>
 		formatMessage({
 			id: 'layout.meta.og-description',
 			defaultMessage: 'Discover and publish Minecraft content!',
 		}),
 	ogType: 'website',
-	ogImage: 'https://mods.maxbain.es/favicon.ico',
+	ogImage: 'https://modsynth.app/favicon.ico',
 	ogUrl: link,
 
 	// Twitter

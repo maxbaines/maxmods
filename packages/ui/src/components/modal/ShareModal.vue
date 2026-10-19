@@ -27,7 +27,7 @@ const props = defineProps({
 	},
 	shareTitle: {
 		type: String,
-		default: 'Modrinth',
+		default: 'Modsynth',
 	},
 	shareText: {
 		type: String,

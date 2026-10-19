@@ -63,13 +63,13 @@ const AD_PRESETS = {
 	medal: {
 		light: 'https://cdn.modrinth.com/modrinth-hosting-medal-light.webp',
 		dark: 'https://cdn.modrinth.com/modrinth-hosting-medal-dark.webp',
-		description: 'Host your next server with Modrinth Hosting',
+		description: 'Host your next server with Modsynth Hosting',
 		link: '/hosting?plan&ref=medal',
 	},
 	'modrinth-hosting': {
 		light: 'https://cdn.modrinth.com/modrinth-hosting-light.webp',
 		dark: 'https://cdn.modrinth.com/modrinth-hosting-dark.webp',
-		description: 'Host your next server with Modrinth Hosting',
+		description: 'Host your next server with Modsynth Hosting',
 		link: '/hosting',
 	},
 }

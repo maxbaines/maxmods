@@ -189,7 +189,7 @@ const failedVerificationMessages = defineMessages({
 })
 
 useHead({
-	title: () => `${formatMessage(messages.title)} - MaxMods`,
+	title: () => `${formatMessage(messages.title)} - Modsynth`,
 })
 
 const auth = await useAuth()

@@ -54,7 +54,7 @@ await Promise.allSettled([
 ])
 
 useHead({
-	title: computed(() => `Access - ${server.value?.name ?? 'Server'} - MaxMods`),
+	title: computed(() => `Access - ${server.value?.name ?? 'Server'} - Modsynth`),
 })
 
 function defaultActionLogDateFilter() {

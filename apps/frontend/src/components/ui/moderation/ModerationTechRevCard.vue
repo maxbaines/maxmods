@@ -280,7 +280,7 @@ watch(
 							</ButtonLink>
 							<CopyLinkButton
 								copy-label="Copy tech review link"
-								:url="`https://modrinth.com/moderation/technical-review/${props.item.project.id}`"
+								:url="`https://modsynth.app/moderation/technical-review/${props.item.project.id}`"
 							/>
 							<ButtonLink
 								v-tooltip="'Open tech review in new tab'"

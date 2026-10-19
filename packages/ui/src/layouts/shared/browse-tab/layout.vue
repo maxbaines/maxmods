@@ -61,7 +61,7 @@ const messages = defineMessages({
 	},
 	offline: {
 		id: 'browse.offline',
-		defaultMessage: 'You are currently offline. Connect to the internet to browse Modrinth!',
+		defaultMessage: 'You are currently offline. Connect to the internet to browse Modsynth!',
 	},
 	noResults: {
 		id: 'browse.no-results',
@@ -350,7 +350,7 @@ function getProjectCardTags(result: Labrinth.Search.v3.ResultSearchProject, disp
 								? `/user/${encodeURIComponent(result.author_id ?? result.author)}`
 								: ctx.variant === 'web'
 									? `/organization/${result.organization_id}`
-									: `https://modrinth.com/organization/${result.organization_id}`,
+									: `https://modsynth.app/organization/${result.organization_id}`,
 					}"
 					:date-updated="result.date_modified"
 					:date-published="result.date_created"

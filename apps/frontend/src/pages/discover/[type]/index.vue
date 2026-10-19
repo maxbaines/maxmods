@@ -428,7 +428,7 @@ const messages = defineMessages({
 	seoDescription: {
 		id: 'discover.seo.description',
 		defaultMessage:
-			'Search and browse thousands of Minecraft {projectType} on Modrinth with instant, accurate search results. Our filters help you quickly find the best Minecraft {projectType}.',
+			'Search and browse thousands of Minecraft {projectType} on Modsynth with instant, accurate search results. Our filters help you quickly find the best Minecraft {projectType}.',
 	},
 	gameVersionShaderMessage: {
 		id: 'search.filter.game-version-shader-message',

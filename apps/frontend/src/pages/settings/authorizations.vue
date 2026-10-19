@@ -84,7 +84,7 @@ const messages = defineMessages({
 	description: {
 		id: 'settings.authorizations.description',
 		defaultMessage:
-			'When you authorize an application with your Modrinth account, you grant it access to your account. You can manage and review access to your account here at any time.',
+			'When you authorize an application with your Modsynth account, you grant it access to your account. You can manage and review access to your account here at any time.',
 	},
 	emptyStateHeading: {
 		id: 'settings.authorizations.empty-state.heading',
@@ -117,7 +117,7 @@ definePageMeta({
 })
 
 useHead({
-	title: () => `${formatMessage(messages.headTitle)} - MaxMods`,
+	title: () => `${formatMessage(messages.headTitle)} - Modsynth`,
 })
 
 const { data: usersApps, refetch: refresh } = useQuery({

@@ -310,7 +310,7 @@ const messages = defineMessages({
 	},
 	infoBannerDescription: {
 		id: 'project.settings.permissions.info-banner.description',
-		defaultMessage: `If you include content that isn’t hosted on Modrinth, you need to let us know where it’s from and verify that you have permission to distribute the files. Check out <link>our announcement of this new system</link> to learn more!`,
+		defaultMessage: `If you include content that isn’t hosted on Modsynth, you need to let us know where it’s from and verify that you have permission to distribute the files. Check out <link>our announcement of this new system</link> to learn more!`,
 	},
 	learnMore: {
 		id: 'project.settings.permissions.learn-more',
@@ -339,11 +339,11 @@ const messages = defineMessages({
 	},
 	failDescription: {
 		id: 'project.settings.permissions.fail.description',
-		defaultMessage: `You may not have permission to redistribute some of the external content in your project. In order to publish on Modrinth, please remove this content or provide proof that you do have permission to use it.`,
+		defaultMessage: `You may not have permission to redistribute some of the external content in your project. In order to publish on Modsynth, please remove this content or provide proof that you do have permission to use it.`,
 	},
 	notAllowedDescription: {
 		id: 'project.settings.permissions.not-allowed.description',
-		defaultMessage: `Some of the external content included cannot be distributed on Modrinth because it violates our Content Rules and must be removed.`,
+		defaultMessage: `Some of the external content included cannot be distributed on Modsynth because it violates our Content Rules and must be removed.`,
 	},
 	badProofTitle: {
 		id: 'project.settings.permissions.bad-proof.title',
@@ -351,7 +351,7 @@ const messages = defineMessages({
 	},
 	badProofDescription: {
 		id: 'project.settings.permissions.bad-proof.description',
-		defaultMessage: `Modrinth's moderation team has rejected the permission information you provided for some external content. Please review the rejected items below and provide acceptable proof or remove the content.`,
+		defaultMessage: `Modsynth's moderation team has rejected the permission information you provided for some external content. Please review the rejected items below and provide acceptable proof or remove the content.`,
 	},
 	attentionNeededTitle: {
 		id: 'project.settings.permissions.attention-needed.title',

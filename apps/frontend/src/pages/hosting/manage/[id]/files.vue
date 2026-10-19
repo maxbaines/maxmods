@@ -22,7 +22,7 @@ try {
 }
 
 useHead({
-	title: computed(() => `Files - ${server.value?.name ?? 'Server'} - MaxMods`),
+	title: computed(() => `Files - ${server.value?.name ?? 'Server'} - Modsynth`),
 })
 </script>
 

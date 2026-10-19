@@ -32,7 +32,7 @@
 						<CopyCode v-tooltip="'Copy report ID'" :text="report.id" />
 						<CopyLinkButton
 							copy-label="Copy report link"
-							:url="`https://modrinth.com/moderation/reports/${props.report.id}`"
+							:url="`https://modsynth.app/moderation/reports/${props.report.id}`"
 						/>
 						<ButtonLink
 							v-tooltip="'Open in new tab'"

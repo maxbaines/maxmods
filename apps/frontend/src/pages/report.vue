@@ -576,7 +576,7 @@ const messages = defineMessages({
 	violation: {
 		id: 'report.for.violation',
 		defaultMessage:
-			'Violation of Modrinth <rules-link>Rules</rules-link> or <terms-link>Terms of Use</terms-link>',
+			'Violation of Modsynth <rules-link>Rules</rules-link> or <terms-link>Terms of Use</terms-link>',
 	},
 	violationDescription: {
 		id: 'report.for.violation.description',
@@ -609,7 +609,7 @@ const messages = defineMessages({
 	},
 	whatReportReason: {
 		id: 'report.question.report-reason',
-		defaultMessage: "Which of Modrinth's rules is this {item} violating?",
+		defaultMessage: "Which of Modsynth's rules is this {item} violating?",
 	},
 	checking: {
 		id: 'report.checking',

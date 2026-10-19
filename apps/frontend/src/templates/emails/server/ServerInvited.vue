@@ -8,8 +8,8 @@ import StyledEmail from '../shared/StyledEmail.vue'
 	<StyledEmail
 		title="You've been invited to a server"
 		:manual-links="[
-			{ link: 'https://modrinth.com/dashboard/notifications', label: 'Notification dashboard' },
-			{ link: 'https://support.modrinth.com', label: 'Support Portal' },
+			{ link: 'https://modsynth.app/dashboard/notifications', label: 'Notification dashboard' },
+			{ link: 'https://modsynth.app/support', label: 'Support Portal' },
 		]"
 	>
 		<Heading as="h1" class="mb-2 text-2xl font-bold">You've been invited to a server</Heading>
@@ -17,15 +17,15 @@ import StyledEmail from '../shared/StyledEmail.vue'
 		<Text class="text-base">Hi <span class="no-auto-link">{user.name}</span>,</Text>
 
 		<Text class="text-base">
-			Modrinth user
+			Modsynth user
 			<b
-				><VLink href="https://modrinth.com/user/{inviter.name}" class="text-green underline">
+				><VLink href="https://modsynth.app/user/{inviter.name}" class="text-green underline">
 					{inviter.name}
 				</VLink></b
 			>
 			has invited you to help manage
 			<b>{server.name}</b>
-			on Modrinth Hosting.
+			on Modsynth Hosting.
 		</Text>
 
 		<Section class="bg-bg-super mb-4 mt-4 rounded-lg border border-divider pb-4 pl-4 pr-4 pt-4">
@@ -35,24 +35,24 @@ import StyledEmail from '../shared/StyledEmail.vue'
 		</Section>
 
 		<Button
-			href="https://modrinth.com/dashboard/notifications"
+			href="https://modsynth.app/dashboard/notifications"
 			target="_blank"
 			class="text-accentContrast inline-block rounded-[12px] bg-brand pb-3 pl-4 pr-4 pt-3 text-[14px] font-bold"
 		>
 			Review invitation
 		</Button>
 
-		<VLink href="https://modrinth.com/dashboard/notifications">
+		<VLink href="https://modsynth.app/dashboard/notifications">
 			<Text class="text-muted mt-2 break-words text-xs font-bold"
-				>https://modrinth.com/dashboard/notifications</Text
+				>https://modsynth.app/dashboard/notifications</Text
 			>
 		</VLink>
 
 		<Text class="text-base">
-			To accept or reject this invitation, open your Modrinth notifications and review the invite.
-			If you were not expecting this invitation, contact the server owner or reach out to Modrinth
+			To accept or reject this invitation, open your Modsynth notifications and review the invite.
+			If you were not expecting this invitation, contact the server owner or reach out to Modsynth
 			Support
-			<VLink href="https://support.modrinth.com" class="text-green underline">
+			<VLink href="https://modsynth.app/support" class="text-green underline">
 				through the Support Portal</VLink
 			>.
 		</Text>

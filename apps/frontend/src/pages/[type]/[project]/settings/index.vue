@@ -52,7 +52,7 @@
 					>
 						<template #prefix>
 							<span class="whitespace-nowrap">
-								<span class="hidden sm:inline">https://modrinth.com</span>/{{ projectTypeForUrl }}/
+								<span class="hidden sm:inline">https://modsynth.app</span>/{{ projectTypeForUrl }}/
 							</span>
 						</template>
 					</Input>
@@ -253,7 +253,7 @@
 							<template #contact-support-link="{ children }">
 								<a
 									class="smart-clickable:allow-pointer-events text-orange underline hover:brightness-110"
-									href="https://support.modrinth.com"
+									href="https://modsynth.app/support"
 									target="_blank"
 									rel="noopener noreferrer"
 								>
@@ -744,7 +744,7 @@ const messages = defineMessages({
 	},
 	monetizationDescription: {
 		id: 'project.settings.monetization.description',
-		defaultMessage: `Projects on Modrinth are automatically enrolled in the <rewards-program-link>Rewards Program</rewards-program-link>. If you don't want to (or can't for legal reasons) earn revenue from this project, you can turn it off here.`,
+		defaultMessage: `Projects on Modsynth are automatically enrolled in the <rewards-program-link>Rewards Program</rewards-program-link>. If you don't want to (or can't for legal reasons) earn revenue from this project, you can turn it off here.`,
 	},
 	monetizationDisabledDescription: {
 		id: 'project.settings.monetization.disabled-description',
@@ -761,12 +761,12 @@ const messages = defineMessages({
 	deleteProjectDescription1: {
 		id: 'project.settings.delete-project.description.1',
 		defaultMessage:
-			'Permanently deletes this project from Modrinth. Deleted projects <emphasis>cannot be recovered</emphasis> by Modrinth staff or support.',
+			'Permanently deletes this project from Modsynth. Deleted projects <emphasis>cannot be recovered</emphasis> by Modsynth staff or support.',
 	},
 	deleteProjectDescription2: {
 		id: 'project.settings.delete-project.description.2',
 		defaultMessage:
-			'Files uploaded to this project that are actively used in Modpacks hosted on Modrinth may continue to exist.',
+			'Files uploaded to this project that are actively used in Modpacks hosted on Modsynth may continue to exist.',
 	},
 	deleteConfirmationTitle: {
 		id: 'project.settings.delete-project.confirmation.title',

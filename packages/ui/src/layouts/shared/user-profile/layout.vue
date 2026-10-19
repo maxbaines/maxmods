@@ -259,22 +259,22 @@
 						<IntlFormatted :message-id="messages.officialAccountBio">
 							<template #support-link>
 								<a
-									href="https://support.modrinth.com"
+									href="https://modsynth.app/support"
 									class="text-link"
 									target="_blank"
 									rel="noopener noreferrer"
 								>
-									https://support.modrinth.com
+									https://modsynth.app/support
 								</a>
 							</template>
 							<template #email>
 								<a
-									href="mailto:support@modrinth.com"
+									href="https://modsynth.app/support"
 									class="text-link"
 									target="_blank"
 									rel="noopener noreferrer"
 								>
-									support@modrinth.com
+									Modsynth support
 								</a>
 							</template>
 						</IntlFormatted>
@@ -543,7 +543,7 @@ const props = withDefaults(
 		displayMode: 'list',
 		sidebarPosition: 'right',
 		variant: 'web',
-		siteUrl: 'https://modrinth.com',
+		siteUrl: 'https://modsynth.app',
 		externalNavigation: false,
 		projectLinkMode: 'website',
 		editProfileLink: undefined,
@@ -610,7 +610,7 @@ const messages = defineMessages({
 	},
 	githubPopupBlockedMessage: {
 		id: 'profile.details.error.github-popup-blocked',
-		defaultMessage: 'Allow pop-ups for Modrinth, then try again.',
+		defaultMessage: 'Allow pop-ups for Modsynth, then try again.',
 	},
 	paymentMethodsLabel: {
 		id: 'profile.details.label.payment-methods',
@@ -626,11 +626,11 @@ const messages = defineMessages({
 	},
 	bioFallbackUser: {
 		id: 'profile.bio.fallback.user',
-		defaultMessage: 'A Modrinth user.',
+		defaultMessage: 'A Modsynth user.',
 	},
 	bioFallbackCreator: {
 		id: 'profile.bio.fallback.creator',
-		defaultMessage: 'A Modrinth creator.',
+		defaultMessage: 'A Modsynth creator.',
 	},
 	collectionLabel: {
 		id: 'profile.label.collection',
@@ -679,7 +679,7 @@ const messages = defineMessages({
 	officialAccountBio: {
 		id: 'profile.official-account.bio',
 		defaultMessage:
-			'The official user account of Modrinth. Get support at <support-link></support-link> or via email at <email></email>',
+			'The official user account of Modsynth. Get support at <support-link></support-link> or via email at <email></email>',
 	},
 	blockButton: {
 		id: 'profile.button.block',
@@ -712,7 +712,7 @@ const messages = defineMessages({
 	blockUserAdmonitionBody: {
 		id: 'profile.block-user.admonition-body',
 		defaultMessage:
-			'{username} will not be able to send you friend requests, invite you to shared instances or invite you to Modrinth Hosting servers.',
+			'{username} will not be able to send you friend requests, invite you to shared instances or invite you to Modsynth Hosting servers.',
 	},
 	blockUserSuccessTitle: {
 		id: 'profile.block-user.success-title',

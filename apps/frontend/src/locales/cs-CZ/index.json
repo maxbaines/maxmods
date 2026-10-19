@@ -15,7 +15,7 @@
     "message": "Odmítnout vše"
   },
   "ads-consent.title": {
-    "message": "Vaše soukromí a způsob, jakým reklamy podporují Modrinth"
+    "message": "Vaše soukromí a způsob, jakým reklamy podporují Modsynth"
   },
   "analytics.action.add": {
     "message": "Přidat"
@@ -189,10 +189,10 @@
     "message": "Aktualizace"
   },
   "analytics.download-source.app": {
-    "message": "Modrinth App"
+    "message": "Modsynth App"
   },
   "analytics.download-source.website": {
-    "message": "Modrinth Stránka"
+    "message": "Modsynth Stránka"
   },
   "analytics.downloads.suffix": {
     "message": "stažení"
@@ -489,7 +489,7 @@
     "message": "Linux"
   },
   "app-marketing.download.linux-disclaimer": {
-    "message": "U linuxových verzí Modrinth App jsou <issues-link>známé problémy</issues-link> na určitých systémech a konfiguracích. Pokud je aplikace Modrinth App ve vašem systému nestabilní, doporučujeme vám vyzkoušet jiné aplikace, například <prism-link>Prism Launcher</prism-link>, které vám umožní snadnou instalaci obsahu Modrinth."
+    "message": "U linuxových verzí Modsynth App jsou <issues-link>známé problémy</issues-link> na určitých systémech a konfiguracích. Pokud je aplikace Modsynth App ve vašem systému nestabilní, doporučujeme vám vyzkoušet jiné aplikace, například <prism-link>Prism Launcher</prism-link>, které vám umožní snadnou instalaci obsahu Modsynth."
   },
   "app-marketing.download.mac": {
     "message": "Mac"
@@ -498,10 +498,10 @@
     "message": "Možnosti stažení"
   },
   "app-marketing.download.terms": {
-    "message": "Stažením Modrinth App vyjadřujete souhlas s našimi <terms-link>Podmínkami</terms-link> a <privacy-link>Zásadami ochrany osobních údajů</privacy-link>."
+    "message": "Stažením Modsynth App vyjadřujete souhlas s našimi <terms-link>Podmínkami</terms-link> a <privacy-link>Zásadami ochrany osobních údajů</privacy-link>."
   },
   "app-marketing.download.title": {
-    "message": "Stáhnout Modrinth App (Beta)"
+    "message": "Stáhnout Modsynth App (Beta)"
   },
   "app-marketing.download.windows": {
     "message": "Windows"
@@ -519,7 +519,7 @@
     "message": "od {author}"
   },
   "app-marketing.features.mod-management.description": {
-    "message": "Modrinth usnadňuje správu všech vašich modů na jednom místě. Módy můžete instalovat, odinstalovat a aktualizovat jediným kliknutím."
+    "message": "Modsynth usnadňuje správu všech vašich modů na jednom místě. Módy můžete instalovat, odinstalovat a aktualizovat jediným kliknutím."
   },
   "app-marketing.features.mod-management.installed-mods": {
     "message": "Nainstalované módy"
@@ -555,7 +555,7 @@
     "message": "Google Chrome"
   },
   "app-marketing.features.performance.modrinth-app": {
-    "message": "Modrinth App"
+    "message": "Modsynth App"
   },
   "app-marketing.features.performance.one-billion-percent": {
     "message": "1 miliarda %"
@@ -573,7 +573,7 @@
     "message": "Výkonný"
   },
   "app-marketing.features.play.description": {
-    "message": "Pomocí Modrinth App můžete stahovat a hrát své oblíbené módy a modpacky."
+    "message": "Pomocí Modsynth App můžete stahovat a hrát své oblíbené módy a modpacky."
   },
   "app-marketing.features.play.title": {
     "message": "Hrajte se svými oblíbenými módy"
@@ -594,7 +594,7 @@
     "message": "Jako žádný jiný launcher"
   },
   "app-marketing.features.website.description": {
-    "message": "Modrinth App je plně integrovaný s webovými stránkami, takže máte přístup ke všem svým oblíbeným projektům z aplikace!"
+    "message": "Modsynth App je plně integrovaný s webovými stránkami, takže máte přístup ke všem svým oblíbeným projektům z aplikace!"
   },
   "app-marketing.features.website.title": {
     "message": "Integrace s webovou stránkou"
@@ -603,19 +603,19 @@
     "message": "který jste kdy používali"
   },
   "app-marketing.hero.app-screenshot-alt": {
-    "message": "Snímek obrazovky z Modrinth App se spuštěnou instancí Cobblemon na stránce \"Obsah\"."
+    "message": "Snímek obrazovky z Modsynth App se spuštěnou instancí Cobblemon na stránce \"Obsah\"."
   },
   "app-marketing.hero.description": {
-    "message": "Modrinth App je jedinečný open source launcher, který vám umožní přehrávat vaše oblíbené mody a udržovat je aktuální, a to vše v jednom malém úhledném balíčku."
+    "message": "Modsynth App je jedinečný open source launcher, který vám umožní přehrávat vaše oblíbené mody a udržovat je aktuální, a to vše v jednom malém úhledném balíčku."
   },
   "app-marketing.hero.download-button": {
-    "message": "Stáhnout Modrinth App"
+    "message": "Stáhnout Modsynth App"
   },
   "app-marketing.hero.download-modrinth-app": {
-    "message": "Stáhnout Modrinth App"
+    "message": "Stáhnout Modsynth App"
   },
   "app-marketing.hero.download-modrinth-app-for-os": {
-    "message": "Stáhnout Modrinth App pro {os}"
+    "message": "Stáhnout Modsynth App pro {os}"
   },
   "app-marketing.hero.minecraft-screenshot-alt": {
     "message": "Snímek obrazovky hlavní nabídky instance Cobblemon."
@@ -693,7 +693,7 @@
     "message": "Bezpečnostní ověření"
   },
   "auth.create-account.subscribe.label": {
-    "message": "Chci e-mailem dostávat novinky o zajímavých věcech, na kterých Modrinth pracuje"
+    "message": "Chci e-mailem dostávat novinky o zajímavých věcech, na kterých Modsynth pracuje"
   },
   "auth.create-account.title": {
     "message": "Vytvořit Účet"
@@ -771,7 +771,7 @@
     "message": "Naposledy použitý"
   },
   "auth.sign-in.launcher.complete.return-button": {
-    "message": "Otevřít Modrinth App"
+    "message": "Otevřít Modsynth App"
   },
   "auth.sign-in.no-account": {
     "message": "Nemáte účet?"
@@ -1371,7 +1371,7 @@
     "message": "Vyčerpali jste svůj limit pro výběr <b>{withdrawLimit}</b>. Pro vyšší výběr musíte vyplnit daňový formulář."
   },
   "dashboard.discord-roles.banner.body": {
-    "message": "Máte nárok na {roles}. Propojte svůj účet Discord přes Modrinth a my je automaticky synchronizujeme."
+    "message": "Máte nárok na {roles}. Propojte svůj účet Discord přes Modsynth a my je automaticky synchronizujeme."
   },
   "dashboard.discord-roles.banner.cta": {
     "message": "Propojit Discord"
@@ -1674,7 +1674,7 @@
     "message": "Tato kolekce je možná soukromá."
   },
   "error.collection.404.list_item.3": {
-    "message": "Kolekce mohla být odstraněna moderátorským týmem Modrinth z důvodu porušení našich <tou-link>Podmínek použití</tou-link>."
+    "message": "Kolekce mohla být odstraněna moderátorským týmem Modsynth z důvodu porušení našich <tou-link>Podmínek použití</tou-link>."
   },
   "error.collection.404.list_title": {
     "message": "Proč?"
@@ -1689,10 +1689,10 @@
     "message": "Stránka nenalezena"
   },
   "error.generic.default.list_item.1": {
-    "message": "Zkontrolujte, zda je Modrinth offline, na naší <status-link>Stránce statusu</status-link>."
+    "message": "Zkontrolujte, zda je Modsynth offline, na naší <status-link>Stránce statusu</status-link>."
   },
   "error.generic.default.list_item.2": {
-    "message": "Pokud se to bude dít i nadále, můžete dát vědět týmu Modrinth připojením se k našemu <discord-link>Discord serveru</discord-link>."
+    "message": "Pokud se to bude dít i nadále, můžete dát vědět týmu Modsynth připojením se k našemu <discord-link>Discord serveru</discord-link>."
   },
   "error.generic.default.list_title": {
     "message": "Prosím zkuste znovu za pár minut."
@@ -1710,7 +1710,7 @@
     "message": "Majitel organizace možná změnil URL adresu, nebo ji smazal."
   },
   "error.organization.404.list_item.3": {
-    "message": "Organizace mohla být smazána moderátorským týmem Modrinth z důvodu porušení našich <tou-link>Podmínek použití</tou-link>."
+    "message": "Organizace mohla být smazána moderátorským týmem Modsynth z důvodu porušení našich <tou-link>Podmínek použití</tou-link>."
   },
   "error.organization.404.list_title": {
     "message": "Proč?"
@@ -1725,7 +1725,7 @@
     "message": "Majitel projektu možná změnil URL adresu, nastavil projekt jako soukromý, nebo jej smazal."
   },
   "error.project.404.list_item.3": {
-    "message": "Projekt mohl být odstraněn moderátorským týmem Modrinth z důvodu porušení našich <tou-link>Podmínek použití</tou-link>."
+    "message": "Projekt mohl být odstraněn moderátorským týmem Modsynth z důvodu porušení našich <tou-link>Podmínek použití</tou-link>."
   },
   "error.project.404.list_title": {
     "message": "Proč?"
@@ -1758,28 +1758,28 @@
     "message": "Žába"
   },
   "hosting-marketing.faq.ddos-protection": {
-    "message": "Mají Modrinth Hosting servery ochranu proti DDoS útokům?"
+    "message": "Mají Modsynth Hosting servery ochranu proti DDoS útokům?"
   },
   "hosting-marketing.faq.ddos-protection.answer": {
-    "message": "Ano. Všechny Modrinth Hosting servery jsou vybaveny ochranou proti DDoS útokům, v některých lokalitách s kapacitou až 17 Tbps."
+    "message": "Ano. Všechny Modsynth Hosting servery jsou vybaveny ochranou proti DDoS útokům, v některých lokalitách s kapacitou až 17 Tbps."
   },
   "hosting-marketing.faq.heading": {
     "message": "Časté dotazy"
   },
   "hosting-marketing.faq.how-fast": {
-    "message": "Jak rychlé jsou Modrinth Hosting servery?"
+    "message": "Jak rychlé jsou Modsynth Hosting servery?"
   },
   "hosting-marketing.faq.increase-storage": {
     "message": "Mohu zvýšit úložiště na mém serveru?"
   },
   "hosting-marketing.faq.location": {
-    "message": "Kde se nachází Modrinth Hosting servery? Mohu si vybrat oblast?"
+    "message": "Kde se nachází Modsynth Hosting servery? Mohu si vybrat oblast?"
   },
   "hosting-marketing.faq.versions-loaders": {
     "message": "Jaké verze Minecraftu a loadery lze použít?"
   },
   "hosting-marketing.faq.versions-loaders.answer.one": {
-    "message": "Servery Modrinth Hosting mohou spustit jakoukoli verzi Minecraft: Java Edition až zpět k verzi 1.2.5, včetně snapshotů."
+    "message": "Servery Modsynth Hosting mohou spustit jakoukoli verzi Minecraft: Java Edition až zpět k verzi 1.2.5, včetně snapshotů."
   },
   "hosting-marketing.get-started": {
     "message": "Začít"
@@ -1788,7 +1788,7 @@
     "message": "Začít nový server"
   },
   "hosting-marketing.hero.host-with-modrinth": {
-    "message": "Hostuj tvůj další server s Modrinth Hosting"
+    "message": "Hostuj tvůj další server s Modsynth Hosting"
   },
   "hosting-marketing.included.custom-url": {
     "message": "Vlastní URL"
@@ -1800,7 +1800,7 @@
     "message": "Dozvědět se více"
   },
   "hosting-marketing.why.why-modrinth-hosting": {
-    "message": "Proč Modrinth Hosting?"
+    "message": "Proč Modsynth Hosting?"
   },
   "hosting.plan.select-plan": {
     "message": "Vybrat plán"
@@ -1839,7 +1839,7 @@
     "message": "ATLauncher"
   },
   "landing.launcher.modrinth-app-label": {
-    "message": "Modrinth App"
+    "message": "Modsynth App"
   },
   "landing.launcher.prism-launcher-label": {
     "message": "Prism Launcher"
@@ -1884,7 +1884,7 @@
     "message": "Navštívit nastavení účtu"
   },
   "layout.banner.add-email.description": {
-    "message": "Z bezpečnostních důvodu, Modrinth potřebuje aby jste si zaregistrovaly e-mail adresu k vašemu účtu."
+    "message": "Z bezpečnostních důvodu, Modsynth potřebuje aby jste si zaregistrovaly e-mail adresu k vašemu účtu."
   },
   "layout.banner.build-fail.always-ignore": {
     "message": "Vždy ignorovat"
@@ -1920,7 +1920,7 @@
     "message": "Znovu poslat ověřovací e-mail"
   },
   "layout.banner.verify-email.description": {
-    "message": "Z bezpečnostních důvodů potřebuje Modrinth ověření e-mailové adresy spojené s vaším účtem."
+    "message": "Z bezpečnostních důvodů potřebuje Modsynth ověření e-mailové adresy spojené s vaším účtem."
   },
   "layout.footer.about": {
     "message": "O"
@@ -1962,22 +1962,22 @@
     "message": "Podmínky Užívání"
   },
   "layout.footer.modrinth-information": {
-    "message": "Modrinth informace"
+    "message": "Modsynth informace"
   },
   "layout.footer.open-source": {
-    "message": "Modrinth je <github-link>open source</github-link>."
+    "message": "Modsynth je <github-link>open source</github-link>."
   },
   "layout.footer.products": {
     "message": "Produkty"
   },
   "layout.footer.products.app": {
-    "message": "Modrinth App"
+    "message": "Modsynth App"
   },
   "layout.footer.products.plus": {
-    "message": "Modrinth+"
+    "message": "Modsynth+"
   },
   "layout.footer.products.servers": {
-    "message": "Modrinth Hosting"
+    "message": "Modsynth Hosting"
   },
   "layout.footer.resources": {
     "message": "Zdroje"
@@ -2028,7 +2028,7 @@
     "message": "Objevit"
   },
   "layout.nav.get-modrinth-app": {
-    "message": "Získat Modrinth App"
+    "message": "Získat Modsynth App"
   },
   "layout.nav.home": {
     "message": "Domů"
@@ -2037,7 +2037,7 @@
     "message": "Hostovat server"
   },
   "layout.nav.modrinth-app": {
-    "message": "Modrinth App"
+    "message": "Modsynth App"
   },
   "layout.nav.modrinth-home-page": {
     "message": "Domovská stránka Modrinthu"
@@ -2064,7 +2064,7 @@
     "message": "Hledat"
   },
   "layout.nav.upgrade-to-modrinth-plus": {
-    "message": "Upgradovat na Modrinth+"
+    "message": "Upgradovat na Modsynth+"
   },
   "moderation.moderate": {
     "message": "Moderace"
@@ -2304,7 +2304,7 @@
     "message": "Zkontrolovat projekt"
   },
   "project.actions.servers-promo.description": {
-    "message": "Modrinth Hosting je nejjednodušší způsob, jak hrát s přáteli bez starostí!"
+    "message": "Modsynth Hosting je nejjednodušší způsob, jak hrát s přáteli bez starostí!"
   },
   "project.actions.servers-promo.title": {
     "message": "Vytvořit server"
@@ -2343,7 +2343,7 @@
     "message": "{title} nepodporuje {gameVersion} pro {platform}"
   },
   "project.download.no-app": {
-    "message": "Nemáte Modrinth App?"
+    "message": "Nemáte Modsynth App?"
   },
   "project.download.platform-unsupported-tooltip": {
     "message": "{title} nepodporuje {platform} pro {gameVersion}"
@@ -2724,7 +2724,7 @@
     "message": "Synchronizovat se serverem"
   },
   "servers.manage.content.title": {
-    "message": "Obsah - {serverName} - Modrinth"
+    "message": "Obsah - {serverName} - Modsynth"
   },
   "servers.notice.actions": {
     "message": "Akce"
@@ -2934,10 +2934,10 @@
     "message": "Opravdu si přejete odvolat tuto aplikaci?"
   },
   "settings.billing.charges.product.midas": {
-    "message": "Modrinth Plus"
+    "message": "Modsynth Plus"
   },
   "settings.billing.charges.product.pyro": {
-    "message": "Modrinth Hosting"
+    "message": "Modsynth Hosting"
   },
   "settings.billing.payment_method.primary": {
     "message": "Hlavní"
@@ -2946,7 +2946,7 @@
     "message": "Předplatit"
   },
   "settings.billing.subscription.description": {
-    "message": "Spravujte svá Modrinth předplatná."
+    "message": "Spravujte svá Modsynth předplatná."
   },
   "settings.billing.subscription.title": {
     "message": "Předplatné"
@@ -2961,7 +2961,7 @@
     "message": "Deaktivovat vývojářský režim"
   },
   "settings.display.banner.developer-mode.description": {
-    "message": "<strong>Vývojářský režim</strong> je aktivní. Toto vám umožní zobrazit interní ID různých věcí v Modrinthu, které mohou být užitečné, pokud používáte Modrinth API. Klikněte na logo Modrinthu ve spodní části stránky 5krát pro přepnutí vývojářského režimu."
+    "message": "<strong>Vývojářský režim</strong> je aktivní. Toto vám umožní zobrazit interní ID různých věcí v Modrinthu, které mohou být užitečné, pokud používáte Modsynth API. Klikněte na logo Modrinthu ve spodní části stránky 5krát pro přepnutí vývojářského režimu."
   },
   "settings.display.notification.developer-mode-deactivated.text": {
     "message": "Vývojářský režim byl vypnut"

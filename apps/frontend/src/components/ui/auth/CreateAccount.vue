@@ -245,7 +245,7 @@ const messages = defineMessages({
 	},
 	under13HelperText: {
 		id: 'auth.create-account.date-of-birth.not-meet-age-requirement',
-		defaultMessage: 'You do not meet the age requirement to create an account at Modrinth.',
+		defaultMessage: 'You do not meet the age requirement to create an account at Modsynth.',
 	},
 	ageRequirementWarningTitle: {
 		id: 'auth.create-account.age-requirement.warning-title',
@@ -274,7 +274,7 @@ const messages = defineMessages({
 	},
 	subscribeLabel: {
 		id: 'auth.create-account.subscribe.label',
-		defaultMessage: 'Keep me updated on the cool things Modrinth is working on via email',
+		defaultMessage: 'Keep me updated on the cool things Modsynth is working on via email',
 	},
 	completeSignUpButton: {
 		id: 'auth.create-account.complete-sign-up',

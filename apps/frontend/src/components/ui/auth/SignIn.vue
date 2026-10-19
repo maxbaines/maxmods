@@ -426,11 +426,11 @@ const messages = defineMessages({
 	},
 	signInWithLabel: {
 		id: 'auth.sign-in.sign-in-with',
-		defaultMessage: 'Sign into Modrinth',
+		defaultMessage: 'Sign into Modsynth',
 	},
 	launcherReauthTitle: {
 		id: 'auth.sign-in.launcher.reauthenticate.title',
-		defaultMessage: 'Sign into Modrinth App',
+		defaultMessage: 'Sign into Modsynth App',
 	},
 	useDifferentAccount: {
 		id: 'auth.sign-in.reauthenticate.use-different-account',
@@ -438,7 +438,7 @@ const messages = defineMessages({
 	},
 	chooseAccountLabel: {
 		id: 'auth.sign-in.choose-account',
-		defaultMessage: 'Choose an account to use in Modrinth App',
+		defaultMessage: 'Choose an account to use in Modsynth App',
 	},
 	addAccountLabel: {
 		id: 'auth.sign-in.add-account',

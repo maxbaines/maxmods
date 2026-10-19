@@ -60,7 +60,7 @@
 					:disabled="hasHitLimit"
 					@update:model-value="manualSlug = true"
 				>
-					<template #prefix>https://modrinth.com/project/</template>
+					<template #prefix>https://modsynth.app/project/</template>
 				</Input>
 				<SlugSuggestions
 					:selected="slug"

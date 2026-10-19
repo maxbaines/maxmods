@@ -793,7 +793,7 @@ const messages = defineMessages({
 	},
 	subscriptionDescription: {
 		id: 'settings.billing.subscription.description',
-		defaultMessage: 'Manage your Modrinth subscriptions.',
+		defaultMessage: 'Manage your Modsynth subscriptions.',
 	},
 	paymentMethodTitle: {
 		id: 'settings.billing.payment_method.title',
@@ -825,11 +825,11 @@ const messages = defineMessages({
 	},
 	pyroSubscriptionTitle: {
 		id: 'settings.billing.pyro_subscription.title',
-		defaultMessage: 'Modrinth Server Subscriptions',
+		defaultMessage: 'Modsynth Server Subscriptions',
 	},
 	pyroSubscriptionDescription: {
 		id: 'settings.billing.pyro_subscription.description',
-		defaultMessage: 'Manage your Modrinth Server subscriptions.',
+		defaultMessage: 'Manage your Modsynth Server subscriptions.',
 	},
 	intervalMonth: {
 		id: 'settings.billing.interval.month',
@@ -878,7 +878,7 @@ const messages = defineMessages({
 	},
 	midasUpsell: {
 		id: 'settings.billing.midas.upsell',
-		defaultMessage: 'Become a subscriber to Modrinth Plus!',
+		defaultMessage: 'Become a subscriber to Modsynth Plus!',
 	},
 	midasBenefitsTitle: {
 		id: 'settings.billing.midas.benefits.title',
@@ -886,15 +886,15 @@ const messages = defineMessages({
 	},
 	midasBenefitAdFree: {
 		id: 'settings.billing.midas.benefits.ad-free',
-		defaultMessage: 'Ad-free browsing on modrinth.com and Modrinth App',
+		defaultMessage: 'Ad-free browsing on modrinth.com and Modsynth App',
 	},
 	midasBenefitBadge: {
 		id: 'settings.billing.midas.benefits.badge',
-		defaultMessage: 'Modrinth+ badge on your profile',
+		defaultMessage: 'Modsynth+ badge on your profile',
 	},
 	midasBenefitSupport: {
 		id: 'settings.billing.midas.benefits.support',
-		defaultMessage: 'Support Modrinth and creators directly',
+		defaultMessage: 'Support Modsynth and creators directly',
 	},
 	savePerYearBySwitchingToYearly: {
 		id: 'settings.billing.midas.save-per-year',
@@ -954,7 +954,7 @@ const messages = defineMessages({
 	pyroLinkedServerNotFound: {
 		id: 'settings.billing.pyro.linked-server.not-found',
 		defaultMessage:
-			"A linked server couldn't be found for this subscription. There are a few possible explanations for this. If you just purchased your server, this is normal. It could take up to an hour for your server to be provisioned. Otherwise, if you purchased this server a while ago, it has likely since been suspended. If this is not what you were expecting, please contact Modrinth Support with the following information:",
+			"A linked server couldn't be found for this subscription. There are a few possible explanations for this. If you just purchased your server, this is normal. It could take up to an hour for your server to be provisioned. Otherwise, if you purchased this server a while ago, it has likely since been suspended. If this is not what you were expecting, please contact Modsynth Support with the following information:",
 	},
 	pyroServerIdLabel: {
 		id: 'settings.billing.pyro.linked-server.server-id',
@@ -1013,7 +1013,7 @@ const messages = defineMessages({
 	},
 	pyroResubscribeErrorText: {
 		id: 'settings.billing.pyro.resubscribe.error.text',
-		defaultMessage: 'An error occurred while resubscribing to your Modrinth server.',
+		defaultMessage: 'An error occurred while resubscribing to your Modsynth server.',
 	},
 })
 
@@ -1160,7 +1160,7 @@ async function switchMidasInterval(interval) {
 		})
 		await refresh()
 	} catch (error) {
-		console.error('Error switching Modrinth+ payment interval:', error)
+		console.error('Error switching Modsynth+ payment interval:', error)
 	}
 	stopLoading()
 	changingInterval.value = false

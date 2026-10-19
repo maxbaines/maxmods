@@ -1,14 +1,14 @@
-# MaxMods
+# Modsynth
 
 An independent, self-hosted fork of [Modrinth](https://github.com/modrinth/code).
 
-The web frontend runs at https://mods.maxbain.es, with its own Labrinth API at https://api.mods.maxbain.es and S3-compatible storage at https://files.mods.maxbain.es. It does not share Modrinth accounts or project data.
+The web frontend is configured for https://modsynth.app, with its own Labrinth API at https://api.modsynth.app and S3-compatible storage at https://files.modsynth.app. It does not share Modrinth accounts or project data. The original https://mods.maxbain.es hostname is retained as a compatibility alias.
 
 ## Deployment
 
 `compose.coolify.yaml` defines the backend services and persistent volumes. Supply its password variables through Coolify; never commit deployment secrets. `Dockerfile.coolify` builds the frontend from source, using `nginx.frontend.conf` to block external advertising scripts without changing advertising or payment application code. Payment providers and paid hosting are unconfigured.
 
-Apply `email-bootstrap.sql` after migrations to point notification templates at this instance (including renamed upstream templates). Email uses Resend SMTP (`smtp.resend.com:465`, TLS, username `resend`) and `noreply@hungrycampers.com`. The sender domain must pass Resend DNS verification before signup verification and password reset emails can be delivered. The Coolify scheduled task “MaxMods email queue” is installed disabled; enable it after sender DNS verification. Social login providers require separate OAuth applications and credentials. Automated Delphi malware scanning requires a separately operated Delphi service and is not configured; project approval is manual.
+Apply `email-bootstrap.sql` after migrations to point notification templates at this instance (including renamed upstream templates). Email uses Resend SMTP (`smtp.resend.com:465`, TLS, username `resend`) and `noreply@hungrycampers.com`. The sender domain must pass Resend DNS verification before signup verification and password reset emails can be delivered. The Coolify scheduled task “Modsynth email queue” is installed disabled; enable it after sender DNS verification. Social login providers require separate OAuth applications and credentials. Automated Delphi malware scanning requires a separately operated Delphi service and is not configured; project approval is manual.
 
 After the API has applied its migrations, load `catalog-bootstrap.sql` into PostgreSQL before building the frontend. It installs loaders, categories, and their mappings without the upstream fixture’s test users or destructive truncation; game versions are synchronized by Labrinth. Clear the tag cache after seeding an already-running instance.
 
@@ -18,4 +18,12 @@ Persistent data lives in the PostgreSQL, Redis, Typesense, ClickHouse, Redpanda 
 
 ## Licensing and attribution
 
-Original source retains its package licenses and copyright notices. See `COPYING.md` and package-specific license files. Restricted Modrinth logos and blog material have been replaced or removed. MaxMods is not affiliated with Rinth, Inc., Mojang or Microsoft.
+Original source retains its package licenses and copyright notices. See `COPYING.md` and package-specific license files. Restricted Modrinth logos and blog material have been replaced or removed. Modsynth is not affiliated with Rinth, Inc., Mojang or Microsoft.
+
+## Modsynth domain cutover
+
+Recovered from the October 9, 2026 deployment conversation (`01a12108-a72c-77b2-8794-0025afe8cf31`). Coolify runs at https://maxbain.es on `162.55.27.173`. The website application is `ksg6gvtrbac7rw3ng7l6pni1`; the backend service is `1vcxdavfafv19behfcs4takj`. Source is https://github.com/maxbaines/maxmods on the `selfhost` branch. Administrator credentials remain in the private workspace credential file, never in this repository.
+
+Create A records for `modsynth.app`, `api.modsynth.app`, and `files.modsynth.app`, all pointing to `162.55.27.173`. The new domains are registered alongside the existing domains in Coolify. After DNS resolves, deploy this frontend, apply the new site/CDN/callback settings from `compose.coolify.yaml` to the existing backend, and apply `email-bootstrap.sql`. Verify HTTPS, sign-in, project search, and downloads before redirecting the old website.
+
+Keep the old API and file hosts working: existing release URLs and embedded modpack manifests use them. Database users, database names, storage access IDs, package names, and file formats retain their existing identifiers to preserve data and compatibility. Preserve all upstream license and copyright notices. The support page directs project reports to the existing report flow. A direct support/legal contact address still needs to be supplied by the operator; upstream support addresses and mailing addresses are not used for Modsynth.

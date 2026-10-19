@@ -6,13 +6,6 @@ import {
 	useModerationSettings,
 } from '~/composables/moderation.ts'
 
-function getOfficialOrigin(apiBaseUrl: string): string {
-	if (apiBaseUrl.startsWith('https://staging-api.modrinth.com')) {
-		return 'https://staging.modrinth.com'
-	}
-	return 'https://modrinth.com'
-}
-
 function getAlternativeOrigin(hostname: string | null | undefined): string | null {
 	const trimmed = hostname?.trim()
 	if (!trimmed) {
@@ -47,7 +40,7 @@ export default defineNuxtPlugin(() => {
 
 		keybinds.value.handle(event, {
 			scope: 'global',
-			officialUrl: `${getOfficialOrigin(String(config.public.apiBaseUrl))}${pathAndSearch}`,
+			officialUrl: `${config.public.siteUrl}${pathAndSearch}`,
 			alternativeUrl: alternativeOrigin ? `${alternativeOrigin}${pathAndSearch}` : '',
 			notifyCopied,
 		})

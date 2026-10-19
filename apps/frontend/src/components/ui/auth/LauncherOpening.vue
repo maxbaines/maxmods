@@ -69,11 +69,11 @@ const { formatMessage } = useVIntl()
 const messages = defineMessages({
 	launcherCallbackTitle: {
 		id: 'auth.sign-in.launcher.callback.title',
-		defaultMessage: 'Modrinth App sign-in callback',
+		defaultMessage: 'Modsynth App sign-in callback',
 	},
 	openingLauncherTitle: {
 		id: 'auth.sign-in.launcher.opening.title',
-		defaultMessage: 'Opening Modrinth App...',
+		defaultMessage: 'Opening Modsynth App...',
 	},
 	openingLauncherDescription: {
 		id: 'auth.sign-in.launcher.opening.description',
@@ -81,11 +81,11 @@ const messages = defineMessages({
 	},
 	returnToLauncherButton: {
 		id: 'auth.sign-in.launcher.complete.return-button',
-		defaultMessage: 'Open Modrinth App',
+		defaultMessage: 'Open Modsynth App',
 	},
 	goToWebsiteButton: {
 		id: 'auth.sign-in.launcher.complete.go-to-website',
-		defaultMessage: 'Go to Modrinth.com',
+		defaultMessage: 'Go to Modsynth.com',
 	},
 })
 </script>

@@ -160,7 +160,7 @@ const messages = defineMessages({
 	discordRoleBannerBody: {
 		id: 'dashboard.discord-roles.banner.body',
 		defaultMessage:
-			"You're eligible for {roles}. Link your Discord account through Modrinth and we'll sync them automatically.",
+			"You're eligible for {roles}. Link your Discord account through Modsynth and we'll sync them automatically.",
 	},
 	discordRoleBannerCta: {
 		id: 'dashboard.discord-roles.banner.cta',

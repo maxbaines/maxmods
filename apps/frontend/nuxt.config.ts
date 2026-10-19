@@ -6,7 +6,7 @@ import svgLoader from 'vite-svg-loader'
 
 import { GenericModrinthClient, type Labrinth } from '../../packages/api-client/src/index.ts'
 
-const STAGING_API_URL = 'https://staging-api.modrinth.com/v2/'
+const DEFAULT_API_URL = 'https://api.modsynth.app/v2/'
 const STAGING_SHARED_INSTANCES_API_URL = 'https://staging-shared-instances.modrinth.com'
 const API_CLIENT_SOURCE = fileURLToPath(
 	new URL('../../packages/api-client/src/index.ts', import.meta.url),
@@ -19,8 +19,7 @@ const preloadedFonts = [
 	'inter/Inter-Bold.woff2',
 ]
 
-const PROD_MODRINTH_URL = 'https://modrinth.com'
-const STAGING_MODRINTH_URL = 'https://staging.modrinth.com'
+const PROD_SITE_URL = 'https://modsynth.app'
 
 export default defineNuxtConfig({
 	srcDir: 'src/',
@@ -33,7 +32,7 @@ export default defineNuxtConfig({
 			htmlAttrs: {
 				lang: 'en',
 			},
-			title: 'MaxMods',
+			title: 'Modsynth',
 			link: [
 				// The type is necessary because the linter can't always compare this very nested/complex type on itself
 				...preloadedFonts.map((font): object => {
@@ -49,7 +48,7 @@ export default defineNuxtConfig({
 					rel: 'search',
 					type: 'application/opensearchdescription+xml',
 					href: '/opensearch.xml',
-					title: 'Modrinth mods',
+					title: 'Modsynth mods',
 				},
 			],
 		},
@@ -166,7 +165,7 @@ export default defineNuxtConfig({
 			console.log('Tags generated!')
 
 			const robotsContent =
-				getDomain() === PROD_MODRINTH_URL && process.env.PREVIEW !== 'true'
+				getDomain() === PROD_SITE_URL && process.env.PREVIEW !== 'true'
 					? 'User-agent: *\nDisallow: /_internal/'
 					: 'User-agent: *\nDisallow: /'
 
@@ -200,8 +199,8 @@ export default defineNuxtConfig({
 			preview: process.env.PREVIEW === 'true',
 			featureFlagOverrides: getFeatureFlagOverrides(),
 
-			owner: process.env.VERCEL_GIT_REPO_OWNER || 'modrinth',
-			slug: process.env.VERCEL_GIT_REPO_SLUG || 'code',
+			owner: process.env.VERCEL_GIT_REPO_OWNER || 'maxbaines',
+			slug: process.env.VERCEL_GIT_REPO_SLUG || 'maxmods',
 			branch:
 				process.env.VERCEL_GIT_COMMIT_REF ||
 				process.env.CF_PAGES_BRANCH ||
@@ -307,7 +306,7 @@ export default defineNuxtConfig({
 
 function getApiUrl() {
 	// @ts-ignore
-	return process.env.BROWSER_BASE_URL ?? globalThis.BROWSER_BASE_URL ?? STAGING_API_URL
+	return process.env.BROWSER_BASE_URL ?? globalThis.BROWSER_BASE_URL ?? DEFAULT_API_URL
 }
 
 function getSharedInstancesApiUrl() {
@@ -342,10 +341,8 @@ function getDomain() {
 			return `https://${process.env.HEROKU_APP_NAME}.herokuapp.com`
 		} else if (process.env.VERCEL_URL) {
 			return `https://${process.env.VERCEL_URL}`
-		} else if (getApiUrl() === STAGING_API_URL) {
-			return STAGING_MODRINTH_URL
 		} else {
-			return PROD_MODRINTH_URL
+			return PROD_SITE_URL
 		}
 	} else {
 		const port = process.env.PORT || 3000

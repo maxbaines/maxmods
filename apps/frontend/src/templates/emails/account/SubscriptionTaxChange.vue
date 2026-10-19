@@ -7,7 +7,7 @@ import StyledEmail from '../shared/StyledEmail.vue'
 <template>
 	<StyledEmail
 		title="Price change for {taxnotification.service}"
-		:manual-links="[{ link: 'https://support.modrinth.com', label: 'Support Portal' }]"
+		:manual-links="[{ link: 'https://modsynth.app/support', label: 'Support Portal' }]"
 		:support-info="['{subscription.id}']"
 	>
 		<Heading as="h1" class="mb-2 text-2xl font-bold">
@@ -31,15 +31,15 @@ import StyledEmail from '../shared/StyledEmail.vue'
 		</Text>
 
 		<Text class="text-muted text-base">
-			Thank you for choosing Modrinth! If you have any questions or need help with your
+			Thank you for choosing Modsynth! If you have any questions or need help with your
 			subscription, visit our
-			<VLink href="https://support.modrinth.com" class="text-green underline">Support Portal</VLink
+			<VLink href="https://modsynth.app/support" class="text-green underline">Support Portal</VLink
 			>.
 		</Text>
 
 		<Text class="text-muted text-base">
 			Best,<br />
-			The Modrinth Team
+			The Modsynth Team
 		</Text>
 	</StyledEmail>
 </template>

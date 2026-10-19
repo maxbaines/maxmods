@@ -112,7 +112,7 @@ function setOptionalField(
 		:icon="GitForkIcon"
 		:title="formatMessage(messages.title)"
 		:description="formatMessage(messages.description)"
-		info-link="https://support.modrinth.com/en/articles/16567675#h_6422cc821e"
+		info-link="https://modsynth.app/support"
 		@set-lock-status="emit('setLockStatus', $event)"
 	>
 		<template #expanded>

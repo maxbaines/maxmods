@@ -1197,7 +1197,7 @@
     "defaultMessage": "Munkára mutató hivatkozás"
   },
   "external-files.permissions-card.editor.modrinth-link-to-work": {
-    "defaultMessage": "Ez egy Modrinth-hivatkozásnak tűnik. Ha ez a tartalom elérhető a Modrinthon, akkor valószínűleg helytelenül lett exportálva a csomagod. Ha egy másik webhelyről töltötted le, próbáld inkább a Modrinth-verziót letölteni; előfordulhat, hogy a fájlok nem teljesen azonosak."
+    "defaultMessage": "Ez egy Modsynth-hivatkozásnak tűnik. Ha ez a tartalom elérhető a Modrinthon, akkor valószínűleg helytelenül lett exportálva a csomagod. Ha egy másik webhelyről töltötted le, próbáld inkább a Modsynth-verziót letölteni; előfordulhat, hogy a fájlok nem teljesen azonosak."
   },
   "external-files.permissions-card.editor.notes-label": {
     "defaultMessage": "Jegyzetek"
@@ -1221,7 +1221,7 @@
     "defaultMessage": "Ha kiderül, hogy hazudtál vagy manipuláltad a feltöltött képeket, a projektedet és a fiókodat megszüntethetjük."
   },
   "external-files.permissions-card.editor.proof-warning.title": {
-    "defaultMessage": "A Modrinth munkatársai ellenőrizhetik a beküldött bizonyítékokat"
+    "defaultMessage": "A Modsynth munkatársai ellenőrizhetik a beküldött bizonyítékokat"
   },
   "external-files.permissions-card.editor.save": {
     "defaultMessage": "Hossárendelés mentése"
@@ -1311,7 +1311,7 @@
     "defaultMessage": "Automatikusan hozzárendelve"
   },
   "external-files.permissions-card.reason.globally-allowed.description": {
-    "defaultMessage": "Ezt a fájlt már láttuk korábban, és elkészítettük hozzá a hozzárendelést. Ha valami nem tűnik helyesnek, vedd fel a kapcsolatot a Modrinth ügyfélszolgálatával a Súgóközponton keresztül"
+    "defaultMessage": "Ezt a fájlt már láttuk korábban, és elkészítettük hozzá a hozzárendelést. Ha valami nem tűnik helyesnek, vedd fel a kapcsolatot a Modsynth ügyfélszolgálatával a Súgóközponton keresztül"
   },
   "external-files.permissions-card.reason.license": {
     "defaultMessage": "Licenc"
@@ -3033,16 +3033,16 @@
     "defaultMessage": "Tartsd naprakészen a fájlokat, amikor a szerver változik"
   },
   "modal.open-in-app.get-app": {
-    "defaultMessage": "Szerezd meg a Modrinth Appot"
+    "defaultMessage": "Szerezd meg a Modsynth Appot"
   },
   "modal.open-in-app.opening-automatically": {
-    "defaultMessage": "A Modrinth App automatikusan megnyílik..."
+    "defaultMessage": "A Modsynth App automatikusan megnyílik..."
   },
   "modal.open-in-app.title": {
-    "defaultMessage": "A Modrinth App megnyitása"
+    "defaultMessage": "A Modsynth App megnyitása"
   },
   "modal.open-in-app.why-use": {
-    "defaultMessage": "Miért használd a Modrinth Appot?"
+    "defaultMessage": "Miért használd a Modsynth Appot?"
   },
   "notification.error.title": {
     "defaultMessage": "Hiba történt"
@@ -3108,7 +3108,7 @@
     "defaultMessage": "Moderátor"
   },
   "omorphia.component.badge.label.modrinth-team": {
-    "defaultMessage": "Modrinth Csapat"
+    "defaultMessage": "Modsynth Csapat"
   },
   "omorphia.component.badge.label.pending": {
     "defaultMessage": "Függőben"
@@ -3228,13 +3228,13 @@
     "defaultMessage": "Visa"
   },
   "profile.bio.fallback.creator": {
-    "defaultMessage": "Egy Modrinth fejlesztő."
+    "defaultMessage": "Egy Modsynth fejlesztő."
   },
   "profile.bio.fallback.user": {
-    "defaultMessage": "Egy Modrinth felhasználó."
+    "defaultMessage": "Egy Modsynth felhasználó."
   },
   "profile.block-user.admonition-body": {
-    "defaultMessage": "{username} nem fog tudni neked barátkérelmet küldeni, meghívni téged megosztott példányokba, illetve meghívni téged a Modrinth Hosting szervereire."
+    "defaultMessage": "{username} nem fog tudni neked barátkérelmet küldeni, meghívni téged megosztott példányokba, illetve meghívni téged a Modsynth Hosting szervereire."
   },
   "profile.block-user.admonition-title": {
     "defaultMessage": "Biztosan le szeretnéd tiltani ezt a felhasználót?"
@@ -3306,7 +3306,7 @@
     "defaultMessage": "{count} projekt"
   },
   "profile.details.error.github-popup-blocked": {
-    "defaultMessage": "Engedélyezd a felugró ablakokat a Modrinth számára, majd próbáld újra."
+    "defaultMessage": "Engedélyezd a felugró ablakokat a Modsynth számára, majd próbáld újra."
   },
   "profile.details.error.github-profile-message": {
     "defaultMessage": "Nem sikerült lekérni a GitHub-profilt. Próbáld újra."
@@ -3417,10 +3417,10 @@
     "defaultMessage": "projekt"
   },
   "profile.official-account": {
-    "defaultMessage": "Hivatalos Modrinth-fiók"
+    "defaultMessage": "Hivatalos Modsynth-fiók"
   },
   "profile.official-account.bio": {
-    "defaultMessage": "A Modrinth hivatalos felhasználói fiókja. Támogatás a <support-link></support-link> oldalon kaphatsz vagy e-mailben a <email></email> címen."
+    "defaultMessage": "A Modsynth hivatalos felhasználói fiókja. Támogatás a <support-link></support-link> oldalon kaphatsz vagy e-mailben a <email></email> címen."
   },
   "profile.reset-2fa.admonition-body": {
     "defaultMessage": "{username} hitelesítője és biztonsági kódjai eltávolításra kerülnek, és értesítést is kap róla. Ezt csak a személyazonosságának ellenőrzése után hajtsd végre."
@@ -4188,7 +4188,7 @@
     "defaultMessage": "A projektednek több környezete van"
   },
   "project.settings.environment.notice.review-options.description": {
-    "defaultMessage": "Nemrégiben átalakítottuk a Modrinth környezetrendszerét, és mostantól új beállítási lehetőségek állnak rendelkezésre. Kérjük, győződj meg arról, hogy az alábbiak közül a megfelelő opciót választottad ki, majd ha kész vagy, kattints az „Ellenőrzés” gombra!"
+    "defaultMessage": "Nemrégiben átalakítottuk a Modsynth környezetrendszerét, és mostantól új beállítási lehetőségek állnak rendelkezésre. Kérjük, győződj meg arról, hogy az alábbiak közül a megfelelő opciót választottad ki, majd ha kész vagy, kattints az „Ellenőrzés” gombra!"
   },
   "project.settings.environment.notice.review-options.title": {
     "defaultMessage": "Kérjük, tekintsd át az alábbi lehetőségeket"
@@ -4560,7 +4560,7 @@
     "defaultMessage": "Betöltő"
   },
   "search.photosensitivity-warning-modal.body.1": {
-    "defaultMessage": "Nem tudjuk garantálni, hogy a Modrinth összes tartalma megfelelően van címkézve."
+    "defaultMessage": "Nem tudjuk garantálni, hogy a Modsynth összes tartalma megfelelően van címkézve."
   },
   "search.photosensitivity-warning-modal.body.2": {
     "defaultMessage": "A fényérzékenységet kiváltó tartalmakra vonatkozó címkéket a Modrinthra feltöltő készítők saját maguk adják meg. Ezeket a projekteket nem vetették alá biztonsági tesztelésnek."
@@ -5349,13 +5349,13 @@
     "defaultMessage": "Ne használd a Minecraft felhasználó nevűket."
   },
   "servers.grant-access-modal.target.label": {
-    "defaultMessage": "Modrinth felhasználónév"
+    "defaultMessage": "Modsynth felhasználónév"
   },
   "servers.grant-access-modal.target.no-suggestions": {
     "defaultMessage": "Nem található a keresésnek megfelelő felhasználó."
   },
   "servers.grant-access-modal.target.placeholder": {
-    "defaultMessage": "Modrinth felhasználónév megadása"
+    "defaultMessage": "Modsynth felhasználónév megadása"
   },
   "servers.grant-access-modal.target.searching": {
     "defaultMessage": "Keresés..."
@@ -5418,13 +5418,13 @@
     "defaultMessage": "További információk"
   },
   "servers.list-empty.modrinth-hosting-label": {
-    "defaultMessage": "Modrinth Hosting"
+    "defaultMessage": "Modsynth Hosting"
   },
   "servers.list-empty.new-server-button": {
     "defaultMessage": "Új szerver"
   },
   "servers.list-empty.no-servers-description": {
-    "defaultMessage": "Telepíts modokat, hívd meg a barátaidat, és játsszatok együtt, mindezt a Modrinth Appban."
+    "defaultMessage": "Telepíts modokat, hívd meg a barátaidat, és játsszatok együtt, mindezt a Modsynth Appban."
   },
   "servers.list-empty.one-click-mod-installs-description": {
     "defaultMessage": "Válaszd ki a kedvenc modjaidat, a többit bízd ránk!"
@@ -5433,7 +5433,7 @@
     "defaultMessage": "Modok telepítése egy kattintással"
   },
   "servers.list-empty.play-with-friends-description": {
-    "defaultMessage": "Hívd meg barátaidat játszani a szerveredre a Modrinth Appból, egyetlen kattintással."
+    "defaultMessage": "Hívd meg barátaidat játszani a szerveredre a Modsynth Appból, egyetlen kattintással."
   },
   "servers.list-empty.play-with-friends-title": {
     "defaultMessage": "Játssz a barátaiddal"
@@ -5496,7 +5496,7 @@
     "defaultMessage": "Az előfizetésed lemondása erre a dátumra van beállítva: <date>{formattedDate}</date>. "
   },
   "servers.listing.notice.suspended": {
-    "defaultMessage": "A szerveredet felfüggesztettük. További információért vedd fel a kapcsolatot a Modrinth ügyfélszolgálatával."
+    "defaultMessage": "A szerveredet felfüggesztettük. További információért vedd fel a kapcsolatot a Modsynth ügyfélszolgálatával."
   },
   "servers.listing.notice.upgrading": {
     "defaultMessage": "A szervered hardverét jelenleg fejlesztjük, és hamarosan újra elérhető lesz."
@@ -5529,7 +5529,7 @@
     "defaultMessage": "Feltöltés folyamatban"
   },
   "servers.manage.contact-support-button": {
-    "defaultMessage": "Kapcsolatfelvétel a Modrinth ügyfélszolgálatával"
+    "defaultMessage": "Kapcsolatfelvétel a Modsynth ügyfélszolgálatával"
   },
   "servers.manage.error.alert-notice": {
     "defaultMessage": "Rendszereink automatikusan értesítik a csapatunkat, ha probléma merül fel. Már dolgozunk a szerverek helyreállításán."
@@ -5541,10 +5541,10 @@
     "defaultMessage": "A hiba részletei:"
   },
   "servers.manage.error.queue-notice": {
-    "defaultMessage": "Ha nemrég vásároltál Modrinth Hosting szervert, az jelenleg a várólistán van, és amint készen áll, itt fog megjelenni. <warning>Ne próbálj új szervert vásárolni.</warning>"
+    "defaultMessage": "Ha nemrég vásároltál Modsynth Hosting szervert, az jelenleg a várólistán van, és amint készen áll, itt fog megjelenni. <warning>Ne próbálj új szervert vásárolni.</warning>"
   },
   "servers.manage.error.support-notice": {
-    "defaultMessage": "Ha személyre szabott segítségre van szükséged a szervered állapotával kapcsolatban, kérlek, vedd fel a kapcsolatot a Modrinth ügyfélszolgálatával."
+    "defaultMessage": "Ha személyre szabott segítségre van szükséged a szervered állapotával kapcsolatban, kérlek, vedd fel a kapcsolatot a Modsynth ügyfélszolgálatával."
   },
   "servers.manage.error.title": {
     "defaultMessage": "A szerverek betöltése nem sikerült"
@@ -5577,7 +5577,7 @@
     "defaultMessage": "Újra"
   },
   "servers.manage.resubscribe-error.text": {
-    "defaultMessage": "Hiba történt a Modrinth-szerveredre való újbóli feliratkozás közben."
+    "defaultMessage": "Hiba történt a Modsynth-szerveredre való újbóli feliratkozás közben."
   },
   "servers.manage.resubscribe-error.title": {
     "defaultMessage": "Hiba az újboli előfizetéskor"
@@ -5598,7 +5598,7 @@
     "defaultMessage": "Keresés {count} szerver között..."
   },
   "servers.manage.servers-title": {
-    "defaultMessage": "Modrinth Hosting"
+    "defaultMessage": "Modsynth Hosting"
   },
   "servers.manage.settings-hint.description": {
     "defaultMessage": "Mostantól itt található!"
@@ -5625,10 +5625,10 @@
     "defaultMessage": "A Medal szerver próbaidőszaka lejárt, és a szerveredet felfüggesztettük. Kérlek, frissítsd a szolgáltatást, ha továbbra is használni szeretnéd a szervert."
   },
   "servers.medal-listing.notice.suspended": {
-    "defaultMessage": "A szerveredet felfüggesztettük. Kérlek, frissítsd a számlázási adataidat, vagy további információkért vedd fel a kapcsolatot a Modrinth ügyfélszolgálatával."
+    "defaultMessage": "A szerveredet felfüggesztettük. Kérlek, frissítsd a számlázási adataidat, vagy további információkért vedd fel a kapcsolatot a Modsynth ügyfélszolgálatával."
   },
   "servers.medal-listing.notice.suspended-with-reason": {
-    "defaultMessage": "A szerveredet felfüggesztettük: {reason}. Kérlek, frissítsd a számlázási adataidat, vagy további információkért vedd fel a kapcsolatot a Modrinth ügyfélszolgálatával."
+    "defaultMessage": "A szerveredet felfüggesztettük: {reason}. Kérlek, frissítsd a számlázási adataidat, vagy további információkért vedd fel a kapcsolatot a Modsynth ügyfélszolgálatával."
   },
   "servers.medal-listing.notice.upgrading": {
     "defaultMessage": "A szervered hardverét jelenleg fejlesztjük, és hamarosan újra elérhető lesz."
@@ -5676,7 +5676,7 @@
     "defaultMessage": "Elutasíthatatlan"
   },
   "servers.purchase.notification.success.text": {
-    "defaultMessage": "A Modrinth Hosting szolgáltatás megvásárlása sikeresen lezárult."
+    "defaultMessage": "A Modsynth Hosting szolgáltatás megvásárlása sikeresen lezárult."
   },
   "servers.purchase.notification.success.title": {
     "defaultMessage": "A vásárlás sikeresen lezárult"
@@ -5766,7 +5766,7 @@
     "defaultMessage": "Hol szeretnéd elhelyezni a szerveredet?"
   },
   "servers.region.region-unsupported": {
-    "defaultMessage": "Nincs a listán a régiód? <link>Jelezd nekünk, hogy hol szeretnéd látni legközelebb a Modrinth Hostingot!</link>"
+    "defaultMessage": "Nincs a listán a régiód? <link>Jelezd nekünk, hogy hol szeretnéd látni legközelebb a Modsynth Hostingot!</link>"
   },
   "servers.region.southeast-asia": {
     "defaultMessage": "Délkelet-Ázsia"
@@ -5886,7 +5886,7 @@
     "defaultMessage": "A szervered készen áll. Íme, mit kell tenned a játék elkezdéséhez!"
   },
   "servers.setup.onboarding.welcome.title": {
-    "defaultMessage": "Üdvözlünk a Modrinth Hostingnál"
+    "defaultMessage": "Üdvözlünk a Modsynth Hostingnál"
   },
   "servers.setup.rate-limit.text": {
     "defaultMessage": "A rendszer korlátozza a lekérdezések számát. Kérlek próbáld újra később."
@@ -5985,7 +5985,7 @@
     "defaultMessage": "Sötét"
   },
   "settings.display.theme.description": {
-    "defaultMessage": "Válaszd ki a Modrinth kívánt színtémáját."
+    "defaultMessage": "Válaszd ki a Modsynth kívánt színtémáját."
   },
   "settings.display.theme.light": {
     "defaultMessage": "Világos"
@@ -6030,7 +6030,7 @@
     "defaultMessage": "Keresési eredmények"
   },
   "settings.language.coverage.app-tooltip": {
-    "defaultMessage": "A Modrinth App körülbelül {percentage}%-a érhető el ezen a nyelven."
+    "defaultMessage": "A Modsynth App körülbelül {percentage}%-a érhető el ezen a nyelven."
   },
   "settings.language.coverage.label": {
     "defaultMessage": "{percentage}% támogatott"
@@ -6066,7 +6066,7 @@
     "defaultMessage": "Személyes hozzáférési tokenek"
   },
   "settings.preferences.update-failed.description": {
-    "defaultMessage": "A beállításaidat nem sikerült menteni a Modrinth-fiókodba. Próbáld újra."
+    "defaultMessage": "A beállításaidat nem sikerült menteni a Modsynth-fiókodba. Próbáld újra."
   },
   "settings.preferences.update-failed.title": {
     "defaultMessage": "A beállítások szinkronizálása sikertelen"
@@ -6084,7 +6084,7 @@
     "defaultMessage": "Profilkép"
   },
   "settings.profile.public-information.description": {
-    "defaultMessage": "A profiladataid nyilvánosan <profile-link>megtekinthetők a Modrinthon</profile-link> és a <docs-link>Modrinth API</docs-link>-n keresztül."
+    "defaultMessage": "A profiladataid nyilvánosan <profile-link>megtekinthetők a Modrinthon</profile-link> és a <docs-link>Modsynth API</docs-link>-n keresztül."
   },
   "settings.profile.save-error": {
     "defaultMessage": "A profil frissítése nem sikerült"
@@ -6093,10 +6093,10 @@
     "defaultMessage": "Hiba történt a profilod frissítése közben. Kérlek, próbáld meg újra."
   },
   "settings.profile.sign-in-required.description": {
-    "defaultMessage": "Jelentkezz be egy Modrinth-fiókkal, hogy személyre szabhasd a nyilvános profilodat."
+    "defaultMessage": "Jelentkezz be egy Modsynth-fiókkal, hogy személyre szabhasd a nyilvános profilodat."
   },
   "settings.profile.sign-in-required.title": {
-    "defaultMessage": "Modrinth-fiók szükséges"
+    "defaultMessage": "Modsynth-fiók szükséges"
   },
   "settings.profile.username.description": {
     "defaultMessage": "Egyedi, kis- és nagybetűktől független név a profilod azonosításához."
@@ -6126,7 +6126,7 @@
     "defaultMessage": "Barátkérelmeket küldeni neked"
   },
   "settings.social.blocked-users.restriction.hosting": {
-    "defaultMessage": "Meghívni téged, hogy kezelj egy Modrinth Hosting szervert."
+    "defaultMessage": "Meghívni téged, hogy kezelj egy Modsynth Hosting szervert."
   },
   "settings.social.blocked-users.restriction.shared-instances": {
     "defaultMessage": "Meghívni téged megosztott példányokba"
@@ -6156,7 +6156,7 @@
     "defaultMessage": "Barátkérelmek"
   },
   "settings.social.hosting-access.description": {
-    "defaultMessage": "Szabályozd, hogy ki hívhat meg egy Modrinth Hosting-szerver kezelésére."
+    "defaultMessage": "Szabályozd, hogy ki hívhat meg egy Modsynth Hosting-szerver kezelésére."
   },
   "settings.social.hosting-access.title": {
     "defaultMessage": "Hosting-hozzáférési meghívók"
@@ -6189,10 +6189,10 @@
     "defaultMessage": "Megosztott példányok meghívói"
   },
   "settings.social.sign-in-required.description": {
-    "defaultMessage": "A Modrinth-fiókod segítségével beállíthatod, hogy kik léphetnek veled kapcsolatba, és kezelheted a letiltott felhasználókat"
+    "defaultMessage": "A Modsynth-fiókod segítségével beállíthatod, hogy kik léphetnek veled kapcsolatba, és kezelheted a letiltott felhasználókat"
   },
   "settings.social.sign-in-required.title": {
-    "defaultMessage": "Modrinth-fiók szükséges"
+    "defaultMessage": "Modsynth-fiók szükséges"
   },
   "settings.social.title": {
     "defaultMessage": "Közösségi"
@@ -6291,7 +6291,7 @@
     "defaultMessage": "Mentés"
   },
   "sharing.invite-players-modal.search-placeholder": {
-    "defaultMessage": "Modrinth felhasználónév megadása"
+    "defaultMessage": "Modsynth felhasználónév megadása"
   },
   "sharing.invite-players-modal.searching": {
     "defaultMessage": "Keresés..."
@@ -6966,16 +6966,16 @@
     "defaultMessage": "Nem tudjuk garantálni hogy a frissítések épségben tartják a szerveredet. Tekintsd át a változásnaplókat és fontolj meg egy biztonsági mentést is."
   },
   "user.profile.badge.alpha.about.1": {
-    "defaultMessage": "Ez a felhasználó már a Modrinth Alpha óta aktív, amely 2020 novemberében ért véget."
+    "defaultMessage": "Ez a felhasználó már a Modsynth Alpha óta aktív, amely 2020 novemberében ért véget."
   },
   "user.profile.badge.alpha.name": {
     "defaultMessage": "Alfa-tesztelő"
   },
   "user.profile.badge.beta.about.1": {
-    "defaultMessage": "Ez a felhasználó már a Modrinth Beta óta aktív, amely 2022 februárjában ért véget."
+    "defaultMessage": "Ez a felhasználó már a Modsynth Beta óta aktív, amely 2022 februárjában ért véget."
   },
   "user.profile.badge.beta.link": {
-    "defaultMessage": "Kattints ide, hogy elolvasd a Modrinth Beta elindításáról szóló hírt."
+    "defaultMessage": "Kattints ide, hogy elolvasd a Modsynth Beta elindításáról szóló hírt."
   },
   "user.profile.badge.beta.name": {
     "defaultMessage": "Béta-tesztelő"
@@ -7023,16 +7023,16 @@
     "defaultMessage": "A shaderek korai tesztelője"
   },
   "user.profile.badge.hosting-alpha.about.1": {
-    "defaultMessage": "Ez a felhasználó részt vett a Modrinth Hosting zárt alfa-tesztjén, mielőtt 2024 novemberében elindítottuk a Modrinth Hosting bétaverzióját."
+    "defaultMessage": "Ez a felhasználó részt vett a Modsynth Hosting zárt alfa-tesztjén, mielőtt 2024 novemberében elindítottuk a Modsynth Hosting bétaverzióját."
   },
   "user.profile.badge.hosting-alpha.name": {
-    "defaultMessage": "Modrinth Hosting alfa-tesztelő"
+    "defaultMessage": "Modsynth Hosting alfa-tesztelő"
   },
   "user.profile.badge.moderator.about.1": {
     "defaultMessage": "Ez a felhasználó a Modrinthnál tartalommoderátorként dolgozik."
   },
   "user.profile.badge.moderator.about.2": {
-    "defaultMessage": "A Modrinth tartalommoderátorai áttekintik a projekteket, feldolgozzák a bejelentéseket, és hozzájárulnak a Modrinth biztonságának fenntartásához."
+    "defaultMessage": "A Modsynth tartalommoderátorai áttekintik a projekteket, feldolgozzák a bejelentéseket, és hozzájárulnak a Modsynth biztonságának fenntartásához."
   },
   "user.profile.badge.moderator.name": {
     "defaultMessage": "Tartalommoderátor"
@@ -7044,10 +7044,10 @@
     "defaultMessage": "Kattints ide, ha többet szeretnél megtudni arról, hogy hogyan válhatsz taggá."
   },
   "user.profile.badge.plus.name": {
-    "defaultMessage": "Modrinth+ tag"
+    "defaultMessage": "Modsynth+ tag"
   },
   "user.profile.badge.pride.about.1": {
-    "defaultMessage": "Ez a felhasználó részt vett a Modrinth’s Pride legalább egy, az LGBTQ+ közösség javára szervezett adománygyűjtő akciójában."
+    "defaultMessage": "Ez a felhasználó részt vett a Modsynth’s Pride legalább egy, az LGBTQ+ közösség javára szervezett adománygyűjtő akciójában."
   },
   "user.profile.badge.pride.link": {
     "defaultMessage": "Kattints ide, hogy megtekintsd legújabb Pride-jótékonysági akciónkat."
@@ -7059,13 +7059,13 @@
     "defaultMessage": "Ez a felhasználó a Modrinthnál dolgozik."
   },
   "user.profile.badge.staff.name": {
-    "defaultMessage": "A Modrinth-csapat"
+    "defaultMessage": "A Modsynth-csapat"
   },
   "user.role.moderator": {
     "defaultMessage": "Tartalommoderátor"
   },
   "user.role.modrinth-team": {
-    "defaultMessage": "Modrinth Csapattag"
+    "defaultMessage": "Modsynth Csapattag"
   },
   "version.content.name": {
     "defaultMessage": "Név"

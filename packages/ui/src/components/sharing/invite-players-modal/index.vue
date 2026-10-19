@@ -228,7 +228,7 @@ const messages = defineMessages({
 	},
 	searchPlaceholder: {
 		id: 'sharing.invite-players-modal.search-placeholder',
-		defaultMessage: 'Enter Modrinth username',
+		defaultMessage: 'Enter Modsynth username',
 	},
 	addButton: {
 		id: 'sharing.invite-players-modal.add',

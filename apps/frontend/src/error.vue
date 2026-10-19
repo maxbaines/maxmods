@@ -13,13 +13,13 @@
 				<img
 					v-if="is401"
 					:src="AnnoyedRinthbot"
-					alt="Annoyed Modrinth bot"
+					alt="Annoyed Modsynth bot"
 					class="error-box__sad-bot"
 				/>
 				<img
 					v-else-if="!is404"
 					:src="SadRinthbot"
-					alt="Sad Modrinth bot"
+					alt="Sad Modsynth bot"
 					class="error-box__sad-bot"
 				/>
 				<div v-if="!is404" class="error-box__top-glow" />
@@ -247,12 +247,12 @@ const messages = {
 		list_items: [
 			defineMessage({
 				id: 'error.generic.default.list_item.1',
-				defaultMessage: 'Check if Modrinth is down on our <status-link>Status page</status-link>.',
+				defaultMessage: 'Check if Modsynth is down on our <status-link>Status page</status-link>.',
 			}),
 			defineMessage({
 				id: 'error.generic.default.list_item.2',
 				defaultMessage:
-					'If this keeps happening, you may want to let the Modrinth Team know by joining our <discord-link>Discord server</discord-link>.',
+					'If this keeps happening, you may want to let the Modsynth Team know by joining our <discord-link>Discord server</discord-link>.',
 			}),
 		],
 	},
@@ -294,7 +294,7 @@ const routeMessages = [
 					defineMessage({
 						id: 'error.project.404.list_item.3',
 						defaultMessage:
-							"The project may have been taken down by Modrinth's moderation team for violating our <tou-link>Terms of Use</tou-link>.",
+							"The project may have been taken down by Modsynth's moderation team for violating our <tou-link>Terms of Use</tou-link>.",
 					}),
 				],
 			},
@@ -324,7 +324,7 @@ const routeMessages = [
 					defineMessage({
 						id: 'error.user.404.list_item.3',
 						defaultMessage:
-							"The user's account may have been terminated for violating Modrinth's <tou-link>Terms of Use</tou-link>.",
+							"The user's account may have been terminated for violating Modsynth's <tou-link>Terms of Use</tou-link>.",
 					}),
 				],
 			},
@@ -354,7 +354,7 @@ const routeMessages = [
 					defineMessage({
 						id: 'error.organization.404.list_item.3',
 						defaultMessage:
-							"The organization may have been removed by Modrinth's moderation team for violating our <tou-link>Terms of Use</tou-link>.",
+							"The organization may have been removed by Modsynth's moderation team for violating our <tou-link>Terms of Use</tou-link>.",
 					}),
 				],
 			},
@@ -384,7 +384,7 @@ const routeMessages = [
 					defineMessage({
 						id: 'error.collection.404.list_item.3',
 						defaultMessage:
-							"The collection may have been taken down by Modrinth's moderation team for violating our <tou-link>Terms of Use</tou-link>.",
+							"The collection may have been taken down by Modsynth's moderation team for violating our <tou-link>Terms of Use</tou-link>.",
 					}),
 				],
 			},

@@ -72,6 +72,6 @@ function saveProfileSettings(): void {
 }
 
 useHead({
-	title: () => `${formatMessage(commonSettingsMessages.profile)} - MaxMods`,
+	title: () => `${formatMessage(commonSettingsMessages.profile)} - Modsynth`,
 })
 </script>

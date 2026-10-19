@@ -92,7 +92,7 @@
 					<span>Hi {user.name},</span>
 					<Textarea id="message-batch" v-model="message" :rows="3" input-class="!bg-surface-3" />
 					<span>
-						To make up for it, we've added {{ days }} day{{ pluralize(days) }} to your Modrinth
+						To make up for it, we've added {{ days }} day{{ pluralize(days) }} to your Modsynth
 						Servers subscription.
 					</span>
 					<span>

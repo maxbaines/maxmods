@@ -34,7 +34,7 @@ const messages = defineMessages({
 				<ButtonLink
 					type="colored"
 					color="red"
-					to="https://support.modrinth.com"
+					to="https://modsynth.app/support"
 					target="_blank"
 					rel="noopener"
 				>

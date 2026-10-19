@@ -49,7 +49,7 @@ const props = withDefaults(
 		ownerAvatarUrlBase?: string
 	}>(),
 	{
-		ownerAvatarUrlBase: 'https://modrinth.com',
+		ownerAvatarUrlBase: 'https://modsynth.app',
 	},
 )
 
@@ -1191,7 +1191,7 @@ function getOverflowOptions(item: ContentItem) {
 			icon: ClipboardCopyIcon,
 			action: async () => {
 				await navigator.clipboard.writeText(
-					`https://modrinth.com/${item.project_type}/${item.project?.slug}`,
+					`https://modsynth.app/${item.project_type}/${item.project?.slug}`,
 				)
 			},
 		})

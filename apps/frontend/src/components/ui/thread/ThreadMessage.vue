@@ -30,7 +30,7 @@
 				<ScaleIcon v-if="members[message.author_id].role === 'moderator'" v-tooltip="'Moderator'" />
 				<ModrinthIcon
 					v-else-if="members[message.author_id].role === 'admin'"
-					v-tooltip="'Modrinth Team'"
+					v-tooltip="'Modsynth Team'"
 				/>
 				<EyeOffIcon
 					v-if="isPrivateMessage"
@@ -88,7 +88,7 @@
 		/>
 		<div v-else class="message__body status-message">
 			<span v-if="message.body.type === 'legacy_project_message'">
-				This project was published on Modrinth before moderation threads existed and may be missing
+				This project was published on Modsynth before moderation threads existed and may be missing
 				moderation history.
 			</span>
 			<span v-if="message.body.type === 'deleted'"> posted a message that has been deleted. </span>

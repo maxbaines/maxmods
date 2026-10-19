@@ -9,7 +9,7 @@ import StyledEmail from '../shared/StyledEmail.vue'
 		title="You've been invited to a server"
 		:manual-links="[
 			{ link: '{serverinvite.url}', label: 'Create account and review invitation' },
-			{ link: 'https://support.modrinth.com', label: 'Support Portal' },
+			{ link: 'https://modsynth.app/support', label: 'Support Portal' },
 		]"
 	>
 		<Heading as="h1" class="mb-2 text-2xl font-bold">You've been invited to a server</Heading>
@@ -17,15 +17,15 @@ import StyledEmail from '../shared/StyledEmail.vue'
 		<Text class="text-base">Hi,</Text>
 
 		<Text class="text-base">
-			Modrinth user
+			Modsynth user
 			<b
-				><VLink href="https://modrinth.com/user/{inviter.name}" class="text-green underline">
+				><VLink href="https://modsynth.app/user/{inviter.name}" class="text-green underline">
 					{inviter.name}
 				</VLink></b
 			>
 			has invited you to help manage
 			<b>{server.name}</b>
-			on Modrinth Hosting.
+			on Modsynth Hosting.
 		</Text>
 
 		<Section class="bg-bg-super mb-4 mt-4 rounded-lg border border-divider pb-4 pl-4 pr-4 pt-4">
@@ -47,10 +47,10 @@ import StyledEmail from '../shared/StyledEmail.vue'
 		</VLink>
 
 		<Text class="text-base">
-			To accept or reject this invitation, create a Modrinth account and review the invite from your
+			To accept or reject this invitation, create a Modsynth account and review the invite from your
 			notifications dashboard. If you were not expecting this invitation, contact the server owner
-			or reach out to Modrinth Support
-			<VLink href="https://support.modrinth.com" class="text-green underline">
+			or reach out to Modsynth Support
+			<VLink href="https://modsynth.app/support" class="text-green underline">
 				through the Support Portal</VLink
 			>.
 		</Text>

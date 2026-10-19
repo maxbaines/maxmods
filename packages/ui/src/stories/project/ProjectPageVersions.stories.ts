@@ -145,7 +145,7 @@ const meta = {
 		baseId: 'project-page-versions-story',
 		showFiles: false,
 		showEnvironmentColumn: false,
-		versionLink: (version: Version) => `https://modrinth.com/mod/sodium/version/${version.id}`,
+		versionLink: (version: Version) => `https://modsynth.app/mod/sodium/version/${version.id}`,
 	},
 	render: (args) => ({
 		components: { DownloadIcon, MoreVerticalIcon, ProjectPageVersions, ButtonLink, IconButton },

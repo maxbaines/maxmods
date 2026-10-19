@@ -45,7 +45,7 @@ export const WithTextPrefix: Story = {
 		template: `
 			<Input v-model="value">
 				<template #prefix>
-					<span style="white-space: nowrap">https://modrinth.com/mod/</span>
+					<span style="white-space: nowrap">https://modsynth.app/mod/</span>
 				</template>
 			</Input>
 		`,

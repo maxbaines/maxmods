@@ -243,7 +243,7 @@ import ModerationQueueToolbar from '~/components/ui/moderation/ModerationQueueTo
 import ReportCard from '~/components/ui/moderation/ModerationReportCard.vue'
 import { enrichReportBatch } from '~/helpers/moderation.ts'
 
-useHead({ title: 'Reports queue - MaxMods' })
+useHead({ title: 'Reports queue - Modsynth' })
 
 const { formatMessage } = useVIntl()
 const formatNumber = useFormatNumber()

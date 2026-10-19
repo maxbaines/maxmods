@@ -9,7 +9,7 @@ definePageMeta({
 })
 
 useHead({
-	title: 'Hosting - MaxMods',
+	title: 'Hosting - Modsynth',
 })
 
 const config = useRuntimeConfig()

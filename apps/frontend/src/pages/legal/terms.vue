@@ -4,12 +4,12 @@
 		<p><em>Last modified: August 13, 2026</em></p>
 		<h2>Acceptance of the Terms of Use</h2>
 		<p>
-			These terms of use are entered into by and between You and Rinth, Inc.
+			These terms of use are entered into by and between You and the Modsynth operator
 			(<strong>"Company"</strong>, <strong>"we"</strong> or <strong>"us"</strong>). The following
 			terms and conditions, together with any documents they expressly incorporate by reference
-			(collectively, these "Terms of Use"), govern your access to and use of www.modrinth.com,
-			api.modrinth.com, or the Modrinth App, including any content, functionality and services
-			offered on or through www.modrinth.com, api.modrinth.com, or the Modrinth App (the "Service"),
+			(collectively, these "Terms of Use"), govern your access to and use of modsynth.app,
+			api.modsynth.app, or the Modsynth App, including any content, functionality and services
+			offered on or through modsynth.app, api.modsynth.app, or the Modsynth App (the "Service"),
 			whether as a guest or a registered user.
 		</p>
 		<p>
@@ -106,28 +106,28 @@
 		<h2>API Usage</h2>
 		<p>
 			As part of our Services, we provide a tool known as Application Programming Interfaces
-			(Modrinth API). The Modrinth API enables users to perform actions on the Service via their own
+			(Modsynth API). The Modsynth API enables users to perform actions on the Service via their own
 			services, such as their websites and/or applications.
 		</p>
 		<p>
-			We grant the User of the Modrinth API a limited, non-exclusive, non-sublicensable and
+			We grant the User of the Modsynth API a limited, non-exclusive, non-sublicensable and
 			revocable license to download, display, query, create, edit, and delete the User Generated
 			Content on the Service via their own services, such as their websites and/or applications (the
 			API License), provided the User complies with the following conditions:
 		</p>
 		<ul>
 			<li>
-				The User uses the Modrinth API in accordance with these Terms, the Community Standards and
+				The User uses the Modsynth API in accordance with these Terms, the Community Standards and
 				all applicable laws and regulations that apply to such use.
 			</li>
 			<li>the User does not infringe any rights of third parties.</li>
 			<li>
-				the User provides Modrinth all assistance requested in complying with, and concluding all
+				the User provides Modsynth all assistance requested in complying with, and concluding all
 				agreements required by the applicable laws and regulations.
 			</li>
 		</ul>
 		<p>
-			Each User using the Modrinth API shall indemnify Modrinth and keep Modrinth indemnified for
+			Each User using the Modsynth API shall indemnify Modsynth and keep Modsynth indemnified for
 			all claims, proceedings or actions brought by another User or any other third party, including
 			governmental authorities.
 		</p>
@@ -167,7 +167,7 @@
 		</p>
 		<h2>Trademarks</h2>
 		<p>
-			The Company name, the terms Modrinth, the Company logo and all related names, logos, product
+			The Company name, the terms Modsynth, the Company logo and all related names, logos, product
 			and service names, designs and slogans are trademarks of the Company or its affiliates or
 			licensors. You must not use such marks without the prior written permission of the Company.
 			All other names, logos, product and service names, designs and slogans contained in the
@@ -536,10 +536,8 @@
 		<h2>Your Comments and Concerns</h2>
 		<p>This website is operated by:</p>
 		<p>
-			Rinth, Inc.<br />
-			410 North Scottsdale Road<br />
-			Suite 1000<br />
-			Tempe, AZ 85281
+			Operator contact details will be published on the
+			<nuxt-link to="/support">Modsynth support page</nuxt-link>.
 		</p>
 		<p>
 			All notices of copyright infringement claims should be sent to the copyright agent designated
@@ -548,17 +546,17 @@
 		<p>
 			All other feedback, comments, requests for technical support and other communications relating
 			to the Service should be directed to:
-			<a href="mailto:support@modrinth.com">support@modrinth.com</a>.
+			<a href="https://modsynth.app/support">Modsynth support</a>.
 		</p>
 	</div>
 </template>
 
 <script setup>
 const description =
-	'The Terms of Use of Modrinth, an open source modding platform focused on Minecraft.'
+	'The Terms of Use of Modsynth, an open source modding platform focused on Minecraft.'
 
 useSeoMeta({
-	title: 'Terms of Use - MaxMods',
+	title: 'Terms of Use - Modsynth',
 	description,
 	ogTitle: 'Terms of Use',
 	ogDescription: description,

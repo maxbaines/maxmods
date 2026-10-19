@@ -712,12 +712,12 @@ const messages = defineMessages({
 	},
 	hostWithModrinth: {
 		id: 'hosting-marketing.hero.host-with-modrinth',
-		defaultMessage: 'Host your next server with Modrinth Hosting',
+		defaultMessage: 'Host your next server with Modsynth Hosting',
 	},
 	hostingDescription: {
 		id: 'hosting-marketing.hero.hosting-description',
 		defaultMessage:
-			'Modrinth Hosting is the easiest way to host your own Minecraft: Java Edition server. Seamlessly install and play your favorite mods and modpacks, all within the Modrinth platform.',
+			'Modsynth Hosting is the easiest way to host your own Minecraft: Java Edition server. Seamlessly install and play your favorite mods and modpacks, all within the Modsynth platform.',
 	},
 	startANewServer: {
 		id: 'hosting-marketing.hero.button.start-a-new-server',
@@ -733,7 +733,7 @@ const messages = defineMessages({
 	},
 	whyModrinthHosting: {
 		id: 'hosting-marketing.why.why-modrinth-hosting',
-		defaultMessage: 'Why Modrinth Hosting?',
+		defaultMessage: 'Why Modsynth Hosting?',
 	},
 	whyHeading: {
 		id: 'hosting-marketing.why.heading',
@@ -742,7 +742,7 @@ const messages = defineMessages({
 	whyDescription: {
 		id: 'hosting-marketing.why.description',
 		defaultMessage:
-			"Choose from the thousands of modpacks on Modrinth or create your own. Invite your friends when you're ready to play.",
+			"Choose from the thousands of modpacks on Modsynth or create your own. Invite your friends when you're ready to play.",
 	},
 	whereModsAre: {
 		id: 'hosting-marketing.why.where-mods-are',
@@ -751,7 +751,7 @@ const messages = defineMessages({
 	whereModsAreDescription: {
 		id: 'hosting-marketing.why.where-mods-are.description',
 		defaultMessage:
-			'Modrinth Hosting seamlessly integrates the mod and modpack installation process into your server.',
+			'Modsynth Hosting seamlessly integrates the mod and modpack installation process into your server.',
 	},
 	yourFavoriteMods: {
 		id: 'hosting-marketing.why.your-favorite-mods',
@@ -760,16 +760,16 @@ const messages = defineMessages({
 	yourFavoriteModsDescription: {
 		id: 'hosting-marketing.why.your-favorite-mods.description',
 		defaultMessage:
-			"Choose between Vanilla, Fabric, Forge, Quilt and NeoForge. If it's on Modrinth, it can run on your server.",
+			"Choose between Vanilla, Fabric, Forge, Quilt and NeoForge. If it's on Modsynth, it can run on your server.",
 	},
 	allOnModrinth: {
 		id: 'hosting-marketing.why.all-on-modrinth',
-		defaultMessage: 'Manage it all on Modrinth',
+		defaultMessage: 'Manage it all on Modsynth',
 	},
 	allOnModrinthDescription: {
 		id: 'hosting-marketing.why.all-on-modrinth.description',
 		defaultMessage:
-			'Your server, mods, players, and more are all on Modrinth. No need to switch between platforms.',
+			'Your server, mods, players, and more are all on Modsynth. No need to switch between platforms.',
 	},
 	modernReliableHosting: {
 		id: 'hosting-marketing.why.modern-reliable-hosting',
@@ -778,7 +778,7 @@ const messages = defineMessages({
 	modernReliableHostingDescription: {
 		id: 'hosting-marketing.why.modern-reliable-hosting.description',
 		defaultMessage:
-			'Modrinth Hosting servers are hosted on <contrast>high-performance AMD CPUs with DDR5 RAM</contrast>, running on custom-built software to ensure your server performs smoothly.',
+			'Modsynth Hosting servers are hosted on <contrast>high-performance AMD CPUs with DDR5 RAM</contrast>, running on custom-built software to ensure your server performs smoothly.',
 	},
 	consistentlyFast: {
 		id: 'hosting-marketing.why.consistently-fast',
@@ -787,7 +787,7 @@ const messages = defineMessages({
 	consistentlyFastDescription: {
 		id: 'hosting-marketing.why.consistently-fast.description',
 		defaultMessage:
-			'Our infrastructure is never overloaded, meaning each server hosted with Modrinth always runs at its full performance.',
+			'Our infrastructure is never overloaded, meaning each server hosted with Modsynth always runs at its full performance.',
 	},
 	includedWithYourServer: {
 		id: 'hosting-marketing.included.with-your-server',
@@ -800,7 +800,7 @@ const messages = defineMessages({
 	includedDescription: {
 		id: 'hosting-marketing.included.description',
 		defaultMessage:
-			'Included with every server is a suite of features designed to provide a hosting experience that only Modrinth can offer.',
+			'Included with every server is a suite of features designed to provide a hosting experience that only Modsynth can offer.',
 	},
 	customUrl: {
 		id: 'hosting-marketing.included.custom-url',
@@ -832,7 +832,7 @@ const messages = defineMessages({
 	},
 	powerfulConsoleDescription: {
 		id: 'hosting-marketing.included.powerful-console.description',
-		defaultMessage: 'Modrinth Hosting comes with powerful tools to manage your server.',
+		defaultMessage: 'Modsynth Hosting comes with powerful tools to manage your server.',
 	},
 	help: {
 		id: 'hosting-marketing.included.help',
@@ -840,7 +840,7 @@ const messages = defineMessages({
 	},
 	helpDescription: {
 		id: 'hosting-marketing.included.help.description',
-		defaultMessage: 'Reach out to the Modrinth team for help with your server at any time.',
+		defaultMessage: 'Reach out to the Modsynth team for help with your server at any time.',
 	},
 	sftpAccess: {
 		id: 'hosting-marketing.included.sftp-access',
@@ -848,7 +848,7 @@ const messages = defineMessages({
 	},
 	sftpAccessDescription: {
 		id: 'hosting-marketing.included.sftp-access.description',
-		defaultMessage: "Access your server's files directly with SFTP built into Modrinth Hosting.",
+		defaultMessage: "Access your server's files directly with SFTP built into Modsynth Hosting.",
 	},
 	advancedNetworking: {
 		id: 'hosting-marketing.included.advanced-networking',
@@ -865,12 +865,12 @@ const messages = defineMessages({
 	},
 	faqCpuKind: {
 		id: 'hosting-marketing.faq.cpu-kind',
-		defaultMessage: 'What kind of CPUs do Modrinth Hosting servers run on?',
+		defaultMessage: 'What kind of CPUs do Modsynth Hosting servers run on?',
 	},
 	faqCpuKindAnswer: {
 		id: 'hosting-marketing.faq.cpu-kind.answer',
 		defaultMessage:
-			'Modrinth Hosting servers are powered by AMD Ryzen 7950X or 9950X equivalent, paired with DDR5 memory.',
+			'Modsynth Hosting servers are powered by AMD Ryzen 7950X or 9950X equivalent, paired with DDR5 memory.',
 	},
 	faqBurstThreads: {
 		id: 'hosting-marketing.faq.burst-threads',
@@ -883,16 +883,16 @@ const messages = defineMessages({
 	},
 	faqDDOSProtection: {
 		id: 'hosting-marketing.faq.ddos-protection',
-		defaultMessage: 'Do Modrinth Hosting servers have DDoS protection?',
+		defaultMessage: 'Do Modsynth Hosting servers have DDoS protection?',
 	},
 	faqDDOSProtectionAnswer: {
 		id: 'hosting-marketing.faq.ddos-protection.answer',
 		defaultMessage:
-			'Yes. All Modrinth Hosting servers come with DDoS protection, with up to 17 Tbps capacity in some locations.',
+			'Yes. All Modsynth Hosting servers come with DDoS protection, with up to 17 Tbps capacity in some locations.',
 	},
 	faqLocation: {
 		id: 'hosting-marketing.faq.location',
-		defaultMessage: 'Where are Modrinth Hosting servers located? Can I choose a region?',
+		defaultMessage: 'Where are Modsynth Hosting servers located? Can I choose a region?',
 	},
 	faqLocationAnswer: {
 		id: 'hosting-marketing.faq.location.answer',
@@ -906,16 +906,16 @@ const messages = defineMessages({
 	faqIncreaseStorageAnswer: {
 		id: 'hosting-marketing.faq.increase-storage.answer',
 		defaultMessage:
-			'Yes, storage can be increased on your server at no additional cost. If you need more storage, reach out to Modrinth Support.',
+			'Yes, storage can be increased on your server at no additional cost. If you need more storage, reach out to Modsynth Support.',
 	},
 	faqHowFast: {
 		id: 'hosting-marketing.faq.how-fast',
-		defaultMessage: 'How fast are Modrinth Hosting servers?',
+		defaultMessage: 'How fast are Modsynth Hosting servers?',
 	},
 	faqHowFastAnswer: {
 		id: 'hosting-marketing.faq.how-fast.answer.one',
 		defaultMessage:
-			"Modrinth Hosting servers are hosted on very modern high-performance hardware, but it's tough to say how exactly that will translate into how fast your server will run because there are so many factors that affect it, such as the mods, data packs, or plugins you're running on your server, and even user behavior.",
+			"Modsynth Hosting servers are hosted on very modern high-performance hardware, but it's tough to say how exactly that will translate into how fast your server will run because there are so many factors that affect it, such as the mods, data packs, or plugins you're running on your server, and even user behavior.",
 	},
 	faqHowFastAnswerTwo: {
 		id: 'hosting-marketing.faq.how-fast.answer.two',
@@ -937,7 +937,7 @@ const messages = defineMessages({
 	faqVersionsLoadersAnswer: {
 		id: 'hosting-marketing.faq.versions-loaders.answer.one',
 		defaultMessage:
-			'Modrinth Hosting servers can run any version of Minecraft: Java Edition going all the way back to version 1.2.5, including snapshot versions.',
+			'Modsynth Hosting servers can run any version of Minecraft: Java Edition going all the way back to version 1.2.5, including snapshot versions.',
 	},
 	faqVersionsLoadersAnswerTwo: {
 		id: 'hosting-marketing.faq.versions-loaders.answer.two',
@@ -1004,9 +1004,9 @@ const lowestPrice = computed(() => {
 	return amount ? amount / monthsInInterval[billingPeriod.value] : undefined
 })
 
-const title = 'Modrinth Hosting'
+const title = 'Modsynth Hosting'
 const description =
-	'Start your own Minecraft server directly on Modrinth. Play your favorite mods, plugins, and datapacks — without the hassle of setup.'
+	'Start your own Minecraft server directly on Modsynth. Play your favorite mods, plugins, and datapacks — without the hassle of setup.'
 
 useSeoMeta({
 	title,

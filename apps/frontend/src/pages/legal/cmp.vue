@@ -3,12 +3,12 @@
 		<h1>Rewards Program Terms</h1>
 		<p>
 			These REWARDS PROGRAM TERMS ("Terms") constitute a legally binding agreement between you (or
-			the entity you represent) ("you") and Rinth, Inc. ("Rinth") concerning your participation in
-			the Modrinth Rewards Program (the "Rewards Program").
+			the entity you represent) ("you") and the Modsynth operator ("Modsynth") concerning your participation in
+			the Modsynth Rewards Program (the "Rewards Program").
 		</p>
 		<p>
 			The Rewards Program provides developers and content creators an opportunity to monetize the
-			projects ("Projects") that they upload to the Modrinth website.
+			projects ("Projects") that they upload to the Modsynth website.
 		</p>
 		<p>
 			These Terms are in addition to and do not in any manner limit the applicability of the
@@ -19,21 +19,21 @@
 
 		<h2>Economics</h2>
 		<p>
-			Rinth shall pay to you the percentage set forth
-			<nuxt-link to="/legal/cmp-info">here</nuxt-link> of net revenue collected by Rinth
-			attributable to ad impressions displayed on modrinth.com and the Modrinth App excluding
-			transaction fees ("Revenue Share"). Rinth shall make Revenue Share payments to you when you
-			withdraw funds from Rinth's dashboard. Rinth shall include with each such payment either
+			Modsynth shall pay to you the percentage set forth
+			<nuxt-link to="/legal/cmp-info">here</nuxt-link> of net revenue collected by Modsynth
+			attributable to ad impressions displayed on modsynth.app and the Modsynth App excluding
+			transaction fees ("Revenue Share"). Modsynth shall make Revenue Share payments to you when you
+			withdraw funds from Modsynth's dashboard. Modsynth shall include with each such payment either
 			access to a dashboard or other reasonable reporting detailing the calculation thereof.
 		</p>
 
 		<h2>Relationship</h2>
 		<p>
-			Your relationship with Rinth relating to the Rewards Program is that of an independent
+			Your relationship with Modsynth relating to the Rewards Program is that of an independent
 			contractor. In participating in the Rewards Program, you will not be deemed an employee of
-			Rinth, you are not eligible for any Rinth employee benefits, and you are solely responsible
-			for determining and paying any taxes applicable to amounts paid to you by Rinth hereunder. You
-			agree to indemnify and hold harmless Rinth from and against any claim that Rinth is
+			Modsynth, you are not eligible for any Modsynth employee benefits, and you are solely responsible
+			for determining and paying any taxes applicable to amounts paid to you by Modsynth hereunder. You
+			agree to indemnify and hold harmless Modsynth from and against any claim that Modsynth is
 			responsible for payment of any such taxes.
 		</p>
 
@@ -66,7 +66,7 @@
 
 		<h2>Termination</h2>
 		<p>
-			Rinth reserves the right, in our sole discretion and without notice or liability, to terminate
+			Modsynth reserves the right, in our sole discretion and without notice or liability, to terminate
 			these Terms or modify or cease to offer the Rewards Program at any time, to any person, for
 			any reason or no reason.
 		</p>
@@ -75,10 +75,10 @@
 
 <script setup>
 const description =
-	'The Rewards Program Terms of Modrinth, an open source modding platform focused on Minecraft.'
+	'The Rewards Program Terms of Modsynth, an open source modding platform focused on Minecraft.'
 
 useSeoMeta({
-	title: 'Rewards Program Terms - MaxMods',
+	title: 'Rewards Program Terms - Modsynth',
 	description,
 	ogTitle: 'Rewards Program Terms',
 	ogDescription: description,

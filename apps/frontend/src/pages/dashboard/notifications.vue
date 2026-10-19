@@ -128,7 +128,7 @@ const history = computed(() => route.name === 'dashboard-notifications-history')
 
 useHead({
 	title: () =>
-		`${formatMessage(history.value ? messages.notificationHistoryTitle : commonMessages.notificationsLabel)} - MaxMods`,
+		`${formatMessage(history.value ? messages.notificationHistoryTitle : commonMessages.notificationsLabel)} - Modsynth`,
 })
 
 const selectedType = ref('all')

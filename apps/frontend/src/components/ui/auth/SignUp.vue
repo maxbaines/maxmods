@@ -200,7 +200,7 @@ const messages = defineMessages({
 	legalDisclaimer: {
 		id: 'auth.sign-up.legal-dislaimer',
 		defaultMessage:
-			"By creating an account, you agree to Modrinth's <terms-link>Terms</terms-link> and <privacy-policy-link>Privacy Policy</privacy-policy-link>.",
+			"By creating an account, you agree to Modsynth's <terms-link>Terms</terms-link> and <privacy-policy-link>Privacy Policy</privacy-policy-link>.",
 	},
 	alreadyHaveAccountLabel: {
 		id: 'auth.sign-up.sign-in-option.title',

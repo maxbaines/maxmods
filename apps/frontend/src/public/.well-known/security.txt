@@ -1,6 +1,5 @@
-Contact: mailto:support@modrinth.com
+Contact: https://modsynth.app/support
 Expires: 2026-12-31T00:00:00.000Z
 Preferred-Languages: en
-Canonical: https://modrinth.com/.well-known/security.txt
-Policy: https://modrinth.com/legal/security
-Hiring: https://careers.modrinth.com/
+Canonical: https://modsynth.app/.well-known/security.txt
+Policy: https://modsynth.app/legal/security

@@ -72,7 +72,7 @@ const developerModeBanner = defineMessages({
 	description: {
 		id: 'settings.display.banner.developer-mode.description',
 		defaultMessage:
-			"<strong>Developer mode</strong> is active. This will allow you to view the internal IDs of various things throughout Modrinth that may be helpful if you're a developer using the Modrinth API. Click on the Modrinth logo at the bottom of the page 5 times to toggle developer mode.",
+			"<strong>Developer mode</strong> is active. This will allow you to view the internal IDs of various things throughout Modsynth that may be helpful if you're a developer using the Modsynth API. Click on the Modsynth logo at the bottom of the page 5 times to toggle developer mode.",
 	},
 	deactivate: {
 		id: 'settings.display.banner.developer-mode.button',
@@ -81,7 +81,7 @@ const developerModeBanner = defineMessages({
 })
 
 useHead({
-	title: () => `${formatMessage(messages.headTitle)} - MaxMods`,
+	title: () => `${formatMessage(messages.headTitle)} - Modsynth`,
 })
 
 const notifications = defineMessages({

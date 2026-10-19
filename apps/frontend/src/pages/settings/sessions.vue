@@ -86,7 +86,7 @@ const messages = defineMessages({
 	sessionsDescription: {
 		id: 'settings.sessions.description',
 		defaultMessage:
-			"Here are all the devices that are currently logged in with your Modrinth account. You can log out of each one individually.\n\nIf you see an entry you don't recognize, log out of that device and change your Modrinth account password immediately.",
+			"Here are all the devices that are currently logged in with your Modsynth account. You can log out of each one individually.\n\nIf you see an entry you don't recognize, log out of that device and change your Modsynth account password immediately.",
 	},
 	lastAccessedAgoLabel: {
 		id: 'settings.sessions.last-accessed-ago',
@@ -103,7 +103,7 @@ const messages = defineMessages({
 })
 
 useHead({
-	title: () => `${formatMessage(commonSettingsMessages.sessions)} - MaxMods`,
+	title: () => `${formatMessage(commonSettingsMessages.sessions)} - Modsynth`,
 })
 
 const { data: sessions } = useQuery({

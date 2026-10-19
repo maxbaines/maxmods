@@ -772,7 +772,7 @@ function createTestTraceForm(): TestTraceForm {
 	}
 }
 
-useHead({ title: 'Delphi rules - MaxMods' })
+useHead({ title: 'Delphi rules - Modsynth' })
 
 const client = injectModrinthClient()
 const { addNotification } = injectNotificationManager()
