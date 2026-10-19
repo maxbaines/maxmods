@@ -224,7 +224,7 @@
 			<p class="ml-2">
 				No images in gallery. Visit
 				<NuxtLink to="settings/gallery">
-					<span class="font-medium text-green hover:underline">project settings</span> to
+					<span class="font-medium text-brand hover:underline">project settings</span> to
 				</NuxtLink>
 				upload images.
 			</p>

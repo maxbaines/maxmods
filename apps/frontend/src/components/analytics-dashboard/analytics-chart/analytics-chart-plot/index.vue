@@ -49,7 +49,7 @@
 				<div
 					v-if="showPinnedGuide"
 					aria-hidden="true"
-					class="pointer-events-none absolute bottom-0 left-0 top-0 z-10 mb-[1.8rem] mt-2.5 border-0 border-l border-dashed border-green opacity-75"
+					class="pointer-events-none absolute bottom-0 left-0 top-0 z-10 mb-[1.8rem] mt-2.5 border-0 border-l border-dashed border-brand opacity-75"
 					:style="{ transform: `translate(${hoverState.x}px, 0)` }"
 				/>
 				<AnalyticsChartTooltip

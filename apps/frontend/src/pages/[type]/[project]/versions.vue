@@ -49,7 +49,7 @@
 						type="quiet"
 						:href="createDownloadUrl(version)"
 						:download="getPrimaryFile(version)?.filename"
-						class="!w-9 !rounded-full !px-0 hover:!bg-button-bg [&>svg]:!text-green"
+						class="!w-9 !rounded-full !px-0 hover:!bg-button-bg [&>svg]:!text-brand"
 						aria-label="Download"
 						@click="emit('onDownload')"
 					>
@@ -271,7 +271,7 @@
 				<p class="ml-2">
 					No versions in project. Visit
 					<NuxtLink to="settings/versions">
-						<span class="font-medium text-green hover:underline">project settings</span> to
+						<span class="font-medium text-brand hover:underline">project settings</span> to
 					</NuxtLink>
 					upload your first version.
 				</p>

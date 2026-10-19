@@ -6,7 +6,7 @@
 		<p v-else class="ml-2">
 			No description provided. Visit
 			<NuxtLink :to="`${route.fullPath}/settings/description`">
-				<span class="font-medium text-green hover:underline">project settings</span> to
+				<span class="font-medium text-brand hover:underline">project settings</span> to
 			</NuxtLink>
 			add your description.
 		</p>

@@ -320,7 +320,7 @@ defineExpose({ show, hide, open })
 }
 
 .countdown-progress {
-	stroke: var(--color-green);
+	stroke: var(--color-brand);
 	transition: stroke-dashoffset 0.05s linear;
 }
 

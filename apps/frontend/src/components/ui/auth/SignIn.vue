@@ -140,7 +140,7 @@
 							:key="provider.id"
 							class="relative w-full !justify-center overflow-visible"
 							:class="{
-								'!border !border-[var(--color-green)]': lastSignInOAuthProvider === provider.id,
+								'!border !border-[var(--color-brand)]': lastSignInOAuthProvider === provider.id,
 							}"
 							:href="getAuthUrl(provider.id, redirectTarget, requestsAppSession)"
 							:aria-label="
@@ -160,7 +160,7 @@
 						<Button
 							class="relative !w-full !justify-center overflow-visible sm:col-span-2"
 							:class="{
-								'!border !border-[var(--color-green)]': lastSignInOAuthProvider === 'passkey',
+								'!border !border-[var(--color-brand)]': lastSignInOAuthProvider === 'passkey',
 							}"
 							role="button"
 							tabindex="0"
@@ -484,8 +484,8 @@ const messages = defineMessages({
 	z-index: 1;
 	border-radius: 9999px;
 	background-color: var(--surface-3);
-	color: var(--color-green);
-	border: 1px solid var(--color-green);
+	color: var(--color-brand);
+	border: 1px solid var(--color-brand);
 	padding: 0.125rem 0.375rem;
 	font-size: 0.75rem;
 	font-weight: 600;
@@ -496,7 +496,7 @@ const messages = defineMessages({
 	content: '';
 	inset: 0;
 	border-radius: inherit;
-	background-color: var(--color-green-highlight);
+	background-color: var(--color-brand-highlight);
 	position: absolute;
 	z-index: 0;
 }
