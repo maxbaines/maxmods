@@ -25,7 +25,7 @@ const socialLinks = Object.freeze<readonly SocialLink[]>([])
 				<Row>
 					<Column>
 						<Img
-							src="https://modsynth.app/favicon-32x32.png"
+							src="https://modsynth.app/modsynth-mark.png"
 							width="29"
 							alt=""
 							class="block h-auto"
@@ -47,8 +47,8 @@ const socialLinks = Object.freeze<readonly SocialLink[]>([])
 					<Column class="align-middle">
 						<VLink href="https://modsynth.app" aria-label="Modsynth">
 							<Img
-								src="https://modsynth.app/favicon-32x32.png"
-								width="175"
+								src="https://modsynth.app/modsynth-mark.png"
+								width="48"
 								alt="Modsynth"
 								class="block h-auto"
 							/>

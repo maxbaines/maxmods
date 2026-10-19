@@ -3,22 +3,9 @@
 		<div class="landing-hero">
 			<ModrinthIcon class="modrinth-icon text-brand" />
 			<h1 class="main-header">
-				<IntlFormatted :message-id="messages.thePlaceForMinecraft">
+				<IntlFormatted :message-id="messages.thePlaceForAiMods">
 					<template #~content>
-						<div class="animate-strong">
-							<span>
-								<strong
-									v-for="[key, message] in Object.entries(contentTypeMessages)"
-									:key="`landing-content-type-${key}`"
-									class="main-header-strong"
-								>
-									{{ formatMessage(message) }} <br />
-								</strong>
-								<strong class="main-header-strong">
-									{{ formatMessage(contentTypeMessages.mods) }}
-								</strong>
-							</span>
-						</div>
+						<strong class="main-header-strong">AI Mods</strong>
 					</template>
 				</IntlFormatted>
 			</h1>
@@ -520,14 +507,14 @@ if (searchProjects.value.length === 0) {
 }
 
 const messages = defineMessages({
-	thePlaceForMinecraft: {
-		id: 'landing.heading.the-place-for-minecraft',
-		defaultMessage: 'The place for Minecraft {content}',
+	thePlaceForAiMods: {
+		id: 'landing.heading.the-place-for-ai-mods',
+		defaultMessage: 'The place for {content}',
 	},
 	discoverHeading: {
-		id: 'landing.subheading',
+		id: 'landing.ai-mods.subheading',
 		defaultMessage:
-			'Discover, play, and share Minecraft content through our open-source platform built for the community.',
+			'Discover and share Minecraft mods built with AI.',
 	},
 	discoverMods: {
 		id: 'landing.button.discover-mods',
@@ -632,36 +619,7 @@ const messages = defineMessages({
 	},
 })
 
-const contentTypeMessages = defineMessages({
-	mods: {
-		id: 'landing.heading.the-place-for-minecraft.mods',
-		defaultMessage: 'mods',
-	},
-	resourcePacks: {
-		id: 'landing.heading.the-place-for-minecraft.resource-packs',
-		defaultMessage: 'resource packs',
-	},
-	dataPacks: {
-		id: 'landing.heading.the-place-for-minecraft.data-packs',
-		defaultMessage: 'data packs',
-	},
-	shaders: {
-		id: 'landing.heading.the-place-for-minecraft.shaders',
-		defaultMessage: 'shaders',
-	},
-	modpacks: {
-		id: 'landing.heading.the-place-for-minecraft.modpacks',
-		defaultMessage: 'modpacks',
-	},
-	plugins: {
-		id: 'landing.heading.the-place-for-minecraft.plugins',
-		defaultMessage: 'plugins',
-	},
-	servers: {
-		id: 'landing.heading.the-place-for-minecraft.servers',
-		defaultMessage: 'servers',
-	},
-})
+
 
 const creatorFeatureMessages = defineMessages({
 	discoveryTitle: {
@@ -1297,9 +1255,10 @@ const creatorFeatureMessages = defineMessages({
 }
 
 .main-header-strong {
+	display: block;
 	font-weight: 600;
-	background-color: #00bd3c;
-	background-image: linear-gradient(180deg, #a7d0ff 0%, var(--color-brand) 60%);
+	background-color: #6750ed;
+	background-image: linear-gradient(120deg, #6750ed, #9475ff);
 	background-size: 100%;
 	background-clip: text;
 	-webkit-text-fill-color: transparent;
@@ -1308,58 +1267,6 @@ const creatorFeatureMessages = defineMessages({
 	white-space: nowrap;
 }
 
-.animate-strong {
-	height: 1.2em;
-	line-height: 120%;
-	position: relative;
-	overflow: hidden;
-	display: flex;
-	justify-content: center;
-
-	> span {
-		position: absolute;
-		top: 0;
-		animation: slide 14s infinite;
-
-		@media (prefers-reduced-motion) {
-			animation-play-state: paused !important;
-		}
-	}
-
-	@keyframes slide {
-		0%,
-		12.5% {
-			top: 0;
-		}
-		14.3%,
-		26.8% {
-			top: -1.2em;
-		}
-		28.6%,
-		41.1% {
-			top: -2.4em;
-		}
-		42.9%,
-		55.4% {
-			top: -3.6em;
-		}
-		57.2%,
-		69.7% {
-			top: -4.8em;
-		}
-		71.5%,
-		84% {
-			top: -6em;
-		}
-		85.8%,
-		98.3% {
-			top: -7.2em;
-		}
-		100% {
-			top: -8.4em;
-		}
-	}
-}
 
 @media screen and (min-width: 560px) {
 	.landing-hero {

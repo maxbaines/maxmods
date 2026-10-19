@@ -3,12 +3,12 @@ export type FaviconEnvironment = 'local' | 'preview' | 'staging'
 
 const PRODUCTION_FAVICON_HREFS = {
 	default: {
-		light: '/favicon-light-32x32.png',
-		dark: '/favicon-32x32.png',
+		light: '/modsynth-mark.png',
+		dark: '/modsynth-mark.png',
 	},
 	settings: {
-		light: '/favicon-light-settings-32x32.png',
-		dark: '/favicon-settings-32x32.png',
+		light: '/modsynth-mark.png',
+		dark: '/modsynth-mark.png',
 	},
 } as const
 
@@ -50,7 +50,7 @@ function getFaviconHrefs(variant: FaviconVariant, environment: FaviconEnvironmen
 		return {
 			...PRODUCTION_FAVICON_HREFS[variant],
 			type: 'image/png',
-			sizes: '32x32',
+			sizes: '1280x1280',
 		}
 	}
 

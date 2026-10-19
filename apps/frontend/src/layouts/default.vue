@@ -1222,7 +1222,7 @@ useSeoMeta({
 			defaultMessage: 'Discover and publish Minecraft content!',
 		}),
 	ogType: 'website',
-	ogImage: 'https://modsynth.app/favicon.ico',
+	ogImage: 'https://modsynth.app/modsynth-mark.png',
 	ogUrl: link,
 
 	// Twitter
