@@ -230,7 +230,6 @@
 							<MarkdownEditor
 								v-model="reportBody"
 								placeholder=""
-								:disabled="disableReporting"
 								:on-image-upload="onImageUpload"
 							/>
 						</div>
@@ -239,7 +238,7 @@
 								id="submit-button"
 								type="colored"
 								color="brand"
-								:disabled="submitLoading || !canSubmit || disableReporting"
+								:disabled="submitLoading || !canSubmit"
 								@click="submitReport"
 							>
 								<SendIcon aria-hidden="true" />
@@ -414,24 +413,14 @@ async function fetchItem() {
 }
 
 const reportItems = ['project', 'version', 'user']
-const dummyProjectReportTypes = ['missing-disclosure', 'ai-images', 'fully-ai-generated'] as const
-const reportTypes = computed(() => {
-	const types = [...tags.value.reportTypes]
-	if (reportItem.value === 'project') {
-		const otherIndex = types.indexOf('other')
-		if (otherIndex === -1) {
-			types.push(...dummyProjectReportTypes)
-		} else {
-			types.splice(otherIndex, 0, ...dummyProjectReportTypes)
-		}
-	}
-	return types
-})
-const disableReporting = computed(() => dummyProjectReportTypes.includes(reportType.value))
+const reportTypes = computed(() =>
+	tags.value.reportTypes.filter(
+		(type) => !['missing-disclosure', 'ai-images', 'fully-ai-generated'].includes(type),
+	),
+)
 
 const canSubmit = computed(() => {
 	return (
-		!disableReporting.value &&
 		reportItem.value !== '' &&
 		reportItemID.value !== '' &&
 		reportType.value !== '' &&
@@ -632,11 +621,6 @@ const messages = defineMessages({
 		id: 'report.submit',
 		defaultMessage: 'Submit report',
 	},
-	checkBackLater: {
-		id: 'report.note.check-back-later',
-		defaultMessage:
-			'Check back later once the grace period has ended. Reports of this type are not being accepted at this time.',
-	},
 })
 
 const warnings: Record<string, MessageDescriptor[]> = {
@@ -664,26 +648,12 @@ const warnings: Record<string, MessageDescriptor[]> = {
 				'Summaries from Microsoft Defender, VirusTotal, or AI malware detection are not sufficient forms of evidence and will not be accepted.',
 		}),
 	],
-	'missing-disclosure': [
+	other: [
 		defineMessage({
-			id: 'report.note.missing-disclosure.1',
-			defaultMessage: `Content disclosures are a new feature we've just added. We're giving creators a grace period to get their disclosures up-to-date before we begin accepting reports for missing or incorrect disclosures.`,
+			id: 'report.note.modsynth-ai-policy',
+			defaultMessage:
+				'Modsynth requires AI-generated projects and allows AI-generated images. Use this reason to report missing AI disclosures, misleading authorship claims, or projects that do not meet the AI-generation requirement. Explain the violation and include supporting evidence.',
 		}),
-		messages.checkBackLater,
-	],
-	'ai-images': [
-		defineMessage({
-			id: 'report.note.ai-images.1',
-			defaultMessage: `We've just updated our rules to prohibit AI-generated images in icons, galleries, and descriptions. We're giving creators a grace period to remove AI images from their projects before we begin accepting reports for them.`,
-		}),
-		messages.checkBackLater,
-	],
-	'fully-ai-generated': [
-		defineMessage({
-			id: 'report.note.fully-ai-generated.1',
-			defaultMessage: `We've just updated our rules to prohibit fully AI-generated projects. We're giving creators a grace period to update or take down fully AI-generated projects before we begin accepting reports for them.`,
-		}),
-		messages.checkBackLater,
 	],
 }
 </script>

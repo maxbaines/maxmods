@@ -1,5 +1,3 @@
-Thank you for your report, we understand your concerns.
+Modsynth is exclusively for AI-generated projects. Fully AI-generated projects and AI-generated images are welcome, so AI use alone is not a rule violation.
 
-At this time, projects containing AI-generated content released before August 13th are given a 45-day grace period which ends on September 27th to ensure full compliance with [Modsynth's Content Rules](https://modsynth.app/legal/rules), after which, if the author does not comply, action may be taken.
-
-To make it easier on our moderation team working to remove this content when the time comes, we ask that you wait to create any further reports regarding AI-generated content until September 28th 2026 or later, thank you.
+If you are reporting a missing disclosure, a misleading AI authorship claim, a project that does not meet our AI-generation requirement, or another violation of [Modsynth's Content Rules](https://modsynth.app/legal/rules#generative-ai), please explain the specific issue and provide supporting evidence. AI detection results alone do not establish a violation.

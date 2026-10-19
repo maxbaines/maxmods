@@ -1,6 +1,5 @@
-## Prohibited Images
+## Misleading project images
 
-%R6.2a%, we ask that you remove any AI generated images from your project page.
+%R6.2a%, project images must accurately represent the content. AI-generated images are welcome, but concept art and illustrative renders must be labeled so they are not mistaken for in-game screenshots.
 
-Images created or significantly altered with AI are not permitted to be uploaded as a part of your project pages on Modsynth. \
-We ask that you remove any and all AI images from your project's %PROJECT_ICON_FLINK%, %PROJECT_DESCRIPTION_FLINK%, %PROJECT_GALLERY_FLINK%, etc.
+Please correct, label, or remove misleading images in your project's %PROJECT_ICON_FLINK%, %PROJECT_DESCRIPTION_FLINK%, or %PROJECT_GALLERY_FLINK%.

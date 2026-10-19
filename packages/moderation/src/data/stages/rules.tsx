@@ -78,11 +78,13 @@ export default function () {
 					.suggestedStatus('flagged')
 					.message(),
 
-				toggle('ai-generated', 'AI Generated')
+				toggle('non-ai-generated', 'Does not meet AI-generation requirement')
 					.suggestedStatus('flagged')
-					.message()
+					.message('ai-generated')
 					.priority(Priorities.alerts),
-				toggle('ai-images', 'AI Images').suggestedStatus('flagged').message(),
+				toggle('misleading-images', 'Misleading project images')
+					.suggestedStatus('flagged')
+					.message('ai-images'),
 
 				toggle('rule-breaking-other', 'Other')
 					.suggestedStatus('rejected')

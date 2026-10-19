@@ -300,8 +300,8 @@
 							</defs>
 						</svg>
 					</div>
-					<h3>{{ formatMessage(creatorFeatureMessages.monetizationTitle) }}</h3>
-					<p>{{ formatMessage(creatorFeatureMessages.monetizationDescription) }}</p>
+					<h3>{{ formatMessage(creatorFeatureMessages.supportingModrinthTitle) }}</h3>
+					<p>{{ formatMessage(creatorFeatureMessages.supportingModrinthDescription) }}</p>
 				</div>
 				<div class="feature gradient-border">
 					<div class="icon gradient-border">
@@ -582,14 +582,14 @@ const creatorFeatureMessages = defineMessages({
 		id: 'landing.creator.feature.team-management.description',
 		defaultMessage: 'Invite your teammates and manage roles and permissions with ease',
 	},
-	monetizationTitle: {
-		id: 'landing.creator.feature.monetization.title',
-		defaultMessage: 'Monetization',
+	supportingModrinthTitle: {
+		id: 'landing.creator.feature.supporting-modrinth.title',
+		defaultMessage: 'Supporting Modrinth',
 	},
-	monetizationDescription: {
-		id: 'landing.creator.feature.monetization.description',
+	supportingModrinthDescription: {
+		id: 'landing.creator.feature.supporting-modrinth.description',
 		defaultMessage:
-			'Get paid ad revenue from your project pages and withdraw your funds at any time',
+			'Any revenue Modsynth generates will be passed to Modrinth for charitable purposes.',
 	},
 	diverseEcosystemTitle: {
 		id: 'landing.creator.feature.diverse-ecosystem.title',

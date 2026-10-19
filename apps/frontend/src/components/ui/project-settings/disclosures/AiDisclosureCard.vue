@@ -33,25 +33,26 @@ const messages = defineMessages({
 		defaultMessage: 'Contains AI-generated content',
 	},
 	description: {
-		id: 'project.settings.disclosures.ai.description',
-		defaultMessage: `Must be enabled if this project contains any AI-generated assets or text, or if it contains a substantial amount of AI-generated code.`,
+		id: 'project.settings.disclosures.ai.modsynth-description',
+		defaultMessage: `Required for every published project on Modsynth. Your core code, functionality, or playable assets must be primarily or entirely AI-generated.`,
 	},
 	description2: {
-		id: 'project.settings.disclosures.ai.description.2',
-		defaultMessage: `It is important to be honest if generative AI has played a significant role in the production or publishing of this content. An easy way to think about this is if you would consider AI a co-author of the project, you should disclose it here.`,
+		id: 'project.settings.disclosures.ai.modsynth-description.2',
+		defaultMessage: `Select every applicable type of AI-generated content. In your project description, explain what AI generated, name the tools or models where known, and describe significant human contributions.`,
 	},
 	stillUnsure: {
-		id: 'project.settings.disclosures.ai.still-unsure',
+		id: 'project.settings.disclosures.ai.modsynth-rules',
 		defaultMessage:
-			"Still unsure? Refer to our guide to <faq-link>Disclosure and Usage of AI</faq-link> and section 6 of <rules>Modsynth's Content Rules</rules> for more information.",
+			"See section 6 of <rules>Modsynth's Content Rules</rules> for eligibility and disclosure requirements.",
 	},
 	typesDescription: {
 		id: 'project.settings.disclosures.ai.types-description',
 		defaultMessage: 'What types of content have been generated with AI?',
 	},
 	notePlaceholder: {
-		id: 'project.settings.disclosures.ai.note-placeholder',
-		defaultMessage: 'e.g. The Chinese and Arabic translations are AI-generated.',
+		id: 'project.settings.disclosures.ai.modsynth-note-placeholder',
+		defaultMessage:
+			'e.g. AI generated the core mod code and textures; I reviewed, tested, and fixed compatibility issues.',
 	},
 })
 
@@ -77,7 +78,7 @@ function setUse(use: AiUsage, enabled: boolean) {
 		:icon="SparklesIcon"
 		:title="formatMessage(messages.title)"
 		:description="formatMessage(messages.description)"
-		info-link="https://modsynth.app/support"
+		info-link="/legal/rules#generative-ai"
 		@set-lock-status="emit('setLockStatus', $event)"
 	>
 		<p>
@@ -85,15 +86,6 @@ function setUse(use: AiUsage, enabled: boolean) {
 		</p>
 		<p class="text-secondary">
 			<IntlFormatted :message-id="messages.stillUnsure">
-				<template #faq-link="{ children }">
-					<a
-						href="https://modsynth.app/support"
-						target="_blank"
-						class="smart-clickable:allow-pointer-events underline hover:text-primary"
-					>
-						<component :is="() => normalizeChildren(children)" />
-					</a>
-				</template>
 				<template #rules="{ children }">
 					<nuxt-link
 						to="/legal/rules#generative-ai"

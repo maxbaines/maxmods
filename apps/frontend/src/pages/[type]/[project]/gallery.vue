@@ -1,6 +1,5 @@
 <template>
 	<div>
-		<AiImageWarningModal ref="aiImageWarningModal" />
 		<Modal
 			v-if="currentMember"
 			ref="modal_edit_item"
@@ -261,10 +260,8 @@ import {
 	useFormatDateTime,
 } from '@modrinth/ui'
 
-import AiImageWarningModal from '~/components/ui/AiImageWarningModal.vue'
 import ValidationMessage from '~/components/ValidationMessage.vue'
 import { useProjectNagMessages } from '~/composables/project-nag-validation'
-import { fileDeclaresAi } from '~/helpers/c2pa'
 import { isPermission } from '~/utils/permissions.ts'
 
 const formatDate = useFormatDateTime({
@@ -282,7 +279,6 @@ const {
 } = injectProjectPageContext()
 
 // Template refs
-const aiImageWarningModal = useTemplateRef('aiImageWarningModal')
 const modalEditItem = useTemplateRef('modal_edit_item')
 const modalConfirm = useTemplateRef('modal_confirm')
 const galleryViewer = useTemplateRef('galleryViewer')
@@ -371,10 +367,6 @@ async function handleFiles(files: File[]) {
 	if (!file) {
 		return
 	}
-	if (await fileDeclaresAi(file)) {
-		aiImageWarningModal.value?.show()
-		return
-	}
 	resetEdit()
 	editFile.value = file
 
@@ -385,10 +377,6 @@ async function handleFiles(files: File[]) {
 async function replaceEditFile(files: File[]) {
 	const file = files[0]
 	if (!file) {
-		return
-	}
-	if (await fileDeclaresAi(file)) {
-		aiImageWarningModal.value?.show()
 		return
 	}
 	editFile.value = file

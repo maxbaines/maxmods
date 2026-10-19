@@ -2588,11 +2588,11 @@
   "landing.creator.feature.diverse-ecosystem.title": {
     "message": "Diverse Ecosystem"
   },
-  "landing.creator.feature.monetization.description": {
-    "message": "Get paid ad revenue from your project pages and withdraw your funds at any time"
+  "landing.creator.feature.supporting-modrinth.description": {
+    "message": "Any revenue Modsynth generates will be passed to Modrinth for charitable purposes."
   },
-  "landing.creator.feature.monetization.title": {
-    "message": "Monetization"
+  "landing.creator.feature.supporting-modrinth.title": {
+    "message": "Supporting Modrinth"
   },
   "landing.creator.feature.team-management.description": {
     "message": "Invite your teammates and manage roles and permissions with ease"
@@ -3572,15 +3572,6 @@
   "project.actions.view-project-type-dependents": {
     "message": "View {projectType} dependents"
   },
-  "project.ai-image-warning-modal.body.1": {
-    "message": "Using AI-generated images to represent your project is not allowed. Attempting to work around detection may lead to your Modsynth account being suspended."
-  },
-  "project.ai-image-warning-modal.body.2": {
-    "message": "See section 6 of <rules>Modsynth's Content Rules</rules> for more information on our generative AI policy."
-  },
-  "project.ai-image-warning-modal.title": {
-    "message": "AI-generated images not allowed"
-  },
   "project.collections.create-new": {
     "message": "Create new collection"
   },
@@ -3926,17 +3917,17 @@
   "project.settings.disclosures.ai-functionality.title": {
     "message": "Contains generative AI functionality"
   },
-  "project.settings.disclosures.ai.description": {
-    "message": "Must be enabled if this project contains any AI-generated assets or text, or if it contains a substantial amount of AI-generated code."
+  "project.settings.disclosures.ai.modsynth-description": {
+    "message": "Required for every published project on Modsynth. Your core code, functionality, or playable assets must be primarily or entirely AI-generated."
   },
-  "project.settings.disclosures.ai.description.2": {
-    "message": "It is important to be honest if generative AI has played a significant role in the production or publishing of this content. An easy way to think about this is if you would consider AI a co-author of the project, you should disclose it here."
+  "project.settings.disclosures.ai.modsynth-description.2": {
+    "message": "Select every applicable type of AI-generated content. In your project description, explain what AI generated, name the tools or models where known, and describe significant human contributions."
   },
-  "project.settings.disclosures.ai.note-placeholder": {
-    "message": "e.g. The Chinese and Arabic translations are AI-generated."
+  "project.settings.disclosures.ai.modsynth-note-placeholder": {
+    "message": "e.g. AI generated the core mod code and textures; I reviewed, tested, and fixed compatibility issues."
   },
-  "project.settings.disclosures.ai.still-unsure": {
-    "message": "Still unsure? Refer to our guide to <faq-link>Disclosure and Usage of AI</faq-link> and section 6 of <rules>Modsynth's Content Rules</rules> for more information."
+  "project.settings.disclosures.ai.modsynth-rules": {
+    "message": "See section 6 of <rules>Modsynth's Content Rules</rules> for eligibility and disclosure requirements."
   },
   "project.settings.disclosures.ai.title": {
     "message": "Contains AI-generated content"
@@ -4592,20 +4583,11 @@
   "report.not-for.dmca.description": {
     "message": "See our <policy-link>Copyright Policy</policy-link>."
   },
-  "report.note.ai-images.1": {
-    "message": "We've just updated our rules to prohibit AI-generated images in icons, galleries, and descriptions. We're giving creators a grace period to remove AI images from their projects before we begin accepting reports for them."
-  },
-  "report.note.check-back-later": {
-    "message": "Check back later once the grace period has ended. Reports of this type are not being accepted at this time."
-  },
   "report.note.copyright.1": {
     "message": "Please note that you are *not* submitting a DMCA takedown request, but rather a report of reuploaded content."
   },
   "report.note.copyright.2": {
     "message": "If you meant to file a DMCA takedown request (which is a legal action) instead, please see our <copyright-policy-link>Copyright Policy</copyright-policy-link>."
-  },
-  "report.note.fully-ai-generated.1": {
-    "message": "We've just updated our rules to prohibit fully AI-generated projects. We're giving creators a grace period to update or take down fully AI-generated projects before we begin accepting reports for them."
   },
   "report.note.malicious.1": {
     "message": "Reports for malicious or deceptive content must include substantial evidence of the behavior, such as code samples."
@@ -4613,8 +4595,8 @@
   "report.note.malicious.2": {
     "message": "Summaries from Microsoft Defender, VirusTotal, or AI malware detection are not sufficient forms of evidence and will not be accepted."
   },
-  "report.note.missing-disclosure.1": {
-    "message": "Content disclosures are a new feature we've just added. We're giving creators a grace period to get their disclosures up-to-date before we begin accepting reports for missing or incorrect disclosures."
+  "report.note.modsynth-ai-policy": {
+    "message": "Modsynth requires AI-generated projects and allows AI-generated images. Use this reason to report missing AI disclosures, misleading authorship claims, or projects that do not meet the AI-generation requirement. Explain the violation and include supporting evidence."
   },
   "report.please-report": {
     "message": "Please report:"

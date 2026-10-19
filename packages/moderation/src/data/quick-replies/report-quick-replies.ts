@@ -50,7 +50,7 @@ export default [
 		private: false,
 	},
 	{
-		label: '❌🤖 Suspected AI',
+		label: '🤖 AI Content Is Welcome',
 		message: async () =>
 			(await import('../messages/quick-replies/reports/suspected-ai.md?raw')).default,
 		private: false,
