@@ -212,15 +212,8 @@
 					<div class="blob-demonstration gradient-border">
 						<div class="launcher-view">
 							<img
-								v-if="$theme.active === 'light'"
-								src="/favicon-32x32.png"
-								:alt="formatMessage(messages.launcherGraphicAlt)"
-								class="minecraft-screen"
-							/>
-							<img
-								v-else
-								src="/favicon-32x32.png"
-								:alt="formatMessage(messages.launcherGraphicAlt)"
+								src="/modsynth-mark.png"
+								alt="Modsynth"
 								class="minecraft-screen"
 							/>
 							<div class="launcher-graphics">
@@ -461,7 +454,7 @@ const formatRelativeTime = useRelativeTime()
 const { formatMessage } = useVIntl()
 const { labrinth } = injectModrinthClient()
 
-const searchQuery = ref('leave')
+const searchQuery = ref('')
 const sortType = ref('relevance')
 const sortOptions = ['relevance', 'downloads', 'follows', 'updated', 'newest']
 
@@ -599,11 +592,6 @@ const messages = defineMessages({
 	receivedTime: {
 		id: 'landing.notifications.received-time',
 		defaultMessage: 'Received {time}',
-	},
-	launcherGraphicAlt: {
-		id: 'landing.launcher.graphic-alt',
-		defaultMessage:
-			'A simplified representation of a Minecraft window, with the Mojang Studios logo in Modsynth blue.',
 	},
 	prismLauncherLabel: {
 		id: 'landing.launcher.prism-launcher-label',
@@ -1043,6 +1031,7 @@ const creatorFeatureMessages = defineMessages({
 						width: 100%;
 						border-radius: 0.5rem;
 						aspect-ratio: 530 / 303;
+						object-fit: contain;
 					}
 
 					.launcher-graphics {

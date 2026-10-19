@@ -108,7 +108,7 @@ export class LabrinthStateModule extends AbstractModule {
 					api: 'labrinth',
 					version: 2,
 					method: 'GET',
-					params: { limit: '3', query: 'leave', index: 'relevance' },
+					params: { limit: '3', query: '', index: 'relevance' },
 				})
 				.catch((err) => handleError(err, {} as Labrinth.Search.v2.SearchResults, '/v2/search')),
 			this.client
