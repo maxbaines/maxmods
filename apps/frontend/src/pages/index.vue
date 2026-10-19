@@ -198,50 +198,19 @@
 				</div>
 				<div class="feature-blob">
 					<div class="blob-text">
-						<h3>{{ formatMessage(messages.playWithLauncherHeading) }}</h3>
-						<p>
-							<IntlFormatted :message-id="messages.playWithLauncherDescription">
-								<template #link="{ children }">
-									<nuxt-link class="underline hover:brightness-[--hover-brightness]" to="/app">
-										<component :is="() => children" />
-									</nuxt-link>
-								</template>
-							</IntlFormatted>
-						</p>
+						<h3>{{ formatMessage(messages.discoverContentHeading) }}</h3>
+						<p>{{ formatMessage(messages.discoverContentDescription) }}</p>
 					</div>
 					<div class="blob-demonstration gradient-border">
-						<div class="launcher-view">
-							<img
-								src="/modsynth-mark.png"
-								alt="Modsynth"
-								class="minecraft-screen"
-							/>
-							<div class="launcher-graphics">
-								<a
-									rel="noopener"
-									href="https://prismlauncher.org/"
-									class="graphic gradient-border"
-									:title="formatMessage(messages.prismLauncherLabel)"
-									:aria-label="formatMessage(messages.prismLauncherLabel)"
-								>
-									<PrismLauncherLogo aria-hidden="true" />
-								</a>
-								<nuxt-link
-									to="/app"
-									class="graphic gradient-border text-brand"
-									:aria-label="formatMessage(messages.modrinthAppLabel)"
-								>
-									<ModrinthIcon aria-hidden="true" />
-								</nuxt-link>
-								<a
-									rel="noopener"
-									href="https://atlauncher.com/"
-									class="graphic gradient-border"
-									:title="formatMessage(messages.atlauncherLabel)"
-									:aria-label="formatMessage(messages.atlauncherLabel)"
-								>
-									<ATLauncherLogo aria-hidden="true" />
-								</a>
+						<div class="flex flex-col items-center justify-center gap-6 p-8">
+							<ModrinthIcon class="size-24 text-brand" aria-hidden="true" />
+							<div class="flex flex-wrap justify-center gap-3">
+								<ButtonLink type="colored" color="brand" to="/discover/mods">
+									{{ formatMessage(commonProjectTypeCategoryMessages.mod) }}
+								</ButtonLink>
+								<ButtonLink to="/discover/datapacks">
+									{{ formatMessage(commonProjectTypeCategoryMessages.datapack) }}
+								</ButtonLink>
 							</div>
 						</div>
 					</div>
@@ -433,6 +402,7 @@ import {
 	Avatar,
 	ButtonLink,
 	commonMessages,
+	commonProjectTypeCategoryMessages,
 	defineMessages,
 	DropdownSelect,
 	injectModrinthClient,
@@ -444,8 +414,6 @@ import {
 } from '@modrinth/ui'
 import { ref } from 'vue'
 
-import ATLauncherLogo from '~/assets/images/external/atlauncher.svg?component'
-import PrismLauncherLogo from '~/assets/images/external/prism.svg?component'
 import LatestNewsRow from '~/components/ui/news/LatestNewsRow.vue'
 import { homePageNotifs, homePageProjects, homePageSearch } from '~/generated/state.json'
 
@@ -568,14 +536,13 @@ const messages = defineMessages({
 		id: 'landing.feature.follow.description',
 		defaultMessage: 'Get notified every time your favorite projects update and stay in the loop.',
 	},
-	playWithLauncherHeading: {
-		id: 'landing.feature.launcher.heading',
-		defaultMessage: 'Play with your favorite launcher',
+	discoverContentHeading: {
+		id: 'landing.feature.discover-content.heading',
+		defaultMessage: 'Make Minecraft your own',
 	},
-	playWithLauncherDescription: {
-		id: 'landing.feature.launcher.description',
-		defaultMessage:
-			"Modsynth's open-source API lets launchers add deep integration with Modsynth. You can use Modsynth through <link>our own app</link> and some of the most popular launchers like ATLauncher, MultiMC, and Prism Launcher.",
+	discoverContentDescription: {
+		id: 'landing.feature.discover-content.description',
+		defaultMessage: 'Explore mods and data packs to add new features, change gameplay, and create your next adventure.',
 	},
 	notificationsHeading: {
 		id: 'landing.notifications.heading',
@@ -592,18 +559,6 @@ const messages = defineMessages({
 	receivedTime: {
 		id: 'landing.notifications.received-time',
 		defaultMessage: 'Received {time}',
-	},
-	prismLauncherLabel: {
-		id: 'landing.launcher.prism-launcher-label',
-		defaultMessage: 'Prism Launcher',
-	},
-	modrinthAppLabel: {
-		id: 'landing.launcher.modrinth-app-label',
-		defaultMessage: 'Modsynth App',
-	},
-	atlauncherLabel: {
-		id: 'landing.launcher.atlauncher-label',
-		defaultMessage: 'ATLauncher',
 	},
 })
 

@@ -149,14 +149,14 @@ const footerLinks: {
 				label: defineMessage({ id: 'layout.footer.products.plus', defaultMessage: 'Modsynth+' }),
 			},
 			{
-				href: '/app',
-				label: defineMessage({ id: 'layout.footer.products.app', defaultMessage: 'Modsynth App' }),
+				href: '/discover/mods',
+				label: defineMessage({ id: 'layout.footer.products.mods', defaultMessage: 'Mods' }),
 			},
 			{
-				href: '/hosting',
+				href: '/discover/datapacks',
 				label: defineMessage({
-					id: 'layout.footer.products.servers',
-					defaultMessage: 'Modsynth Hosting',
+					id: 'layout.footer.products.datapacks',
+					defaultMessage: 'Data Packs',
 				}),
 			},
 		],

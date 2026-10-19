@@ -330,38 +330,13 @@
 							{{ formatMessage(commonProjectTypeCategoryMessages.server) }}
 						</template>
 					</TeleportOverflowMenu>
-					<ButtonLink
-						type="quiet"
-						to="/hosting"
-						:class="
-							route.name?.startsWith('hosting') ||
-							(route.name?.startsWith('discover-') && !!route.query.sid)
-								? (route.name === 'hosting' ? 'main-nav-primary' : 'main-nav-secondary') ===
-									'main-nav-primary'
-									? '!bg-[var(--color-button-bg-selected)] !text-[var(--color-button-text-selected)] [&>svg]:!text-[var(--color-button-text-selected)]'
-									: '!bg-[var(--color-button-bg)] !text-contrast'
-								: ''
-						"
-					>
-						<ServerStackIcon aria-hidden="true" />
-						{{ formatMessage(navMenuMessages.hostAServer) }}
+					<ButtonLink type="quiet" to="/discover/mods">
+						<BoxIcon aria-hidden="true" />
+						{{ formatMessage(commonProjectTypeCategoryMessages.mod) }}
 					</ButtonLink>
-					<ButtonLink
-						type="quiet"
-						to="/app"
-						:class="
-							route.name === 'app'
-								? true
-									? '!bg-[var(--color-button-bg-selected)] !text-[var(--color-button-text-selected)] [&>svg]:!text-[var(--color-button-text-selected)]'
-									: '!bg-[var(--color-button-bg)] !text-contrast'
-								: ''
-						"
-					>
-						<DownloadIcon aria-hidden="true" />
-						<span class="hidden md:contents">{{
-							formatMessage(navMenuMessages.getModrinthApp)
-						}}</span>
-						<span class="contents md:hidden">{{ formatMessage(navMenuMessages.modrinthApp) }}</span>
+					<ButtonLink type="quiet" to="/discover/datapacks">
+						<BracesIcon aria-hidden="true" />
+						{{ formatMessage(commonProjectTypeCategoryMessages.datapack) }}
 					</ButtonLink>
 				</template>
 			</div>
@@ -826,7 +801,6 @@ import {
 	CollectionPlusIcon,
 	CompassIcon,
 	CurrencyIcon,
-	DownloadIcon,
 	DropdownIcon,
 	FileSearchCornerIcon,
 	GlassesIcon,
@@ -1033,18 +1007,6 @@ const navMenuMessages = defineMessages({
 	discover: {
 		id: 'layout.nav.discover',
 		defaultMessage: 'Discover',
-	},
-	hostAServer: {
-		id: 'layout.nav.host-a-server',
-		defaultMessage: 'Host a server',
-	},
-	getModrinthApp: {
-		id: 'layout.nav.get-modrinth-app',
-		defaultMessage: 'Get Modsynth App',
-	},
-	modrinthApp: {
-		id: 'layout.nav.modrinth-app',
-		defaultMessage: 'Modsynth App',
 	},
 })
 
