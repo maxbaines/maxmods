@@ -1603,7 +1603,7 @@ function changeTheme() {
 			position: relative;
 			background: none;
 			display: flex;
-			flex-basis: 0;
+			flex: 1 1 0;
 			justify-content: center;
 			align-items: center;
 			flex-direction: row;
