@@ -67,28 +67,8 @@
 					</div>
 
 					<div class="flex flex-col gap-3">
-						<ButtonLink
-							v-if="focusedOauthProvider"
-							type="colored"
-							color="brand"
-							class="!w-full !justify-center"
-							:href="getAuthUrl(focusedOauthProvider.id, redirectTarget)"
-							:aria-label="
-								formatMessage(messages.continueWithProvider, {
-									provider: focusedOauthProvider.name,
-								})
-							"
-							@click="onOAuthProviderClick(focusedOauthProvider.id)"
-						>
-							<component :is="focusedOauthProvider.icon" />
-							{{
-								formatMessage(messages.continueWithProvider, {
-									provider: focusedOauthProvider.name,
-								})
-							}}
-						</ButtonLink>
 						<Button
-							v-else-if="focusedReauthAccount.authMethod === 'passkey'"
+							v-if="focusedReauthAccount.authMethod === 'passkey'"
 							type="colored"
 							color="brand"
 							class="!w-full !justify-center"
@@ -134,44 +114,21 @@
 						}}
 					</div>
 
-					<section class="grid grid-cols-1 gap-2.5 sm:grid-cols-2">
-						<ButtonLink
-							v-for="provider in oauthProviders"
-							:key="provider.id"
-							class="relative w-full !justify-center overflow-visible"
-							:class="{
-								'!border !border-[var(--color-brand)]': lastSignInOAuthProvider === provider.id,
-							}"
-							:href="getAuthUrl(provider.id, redirectTarget, requestsAppSession)"
-							:aria-label="
-								formatMessage(messages.continueWithProvider, { provider: provider.name })
-							"
-							@click="onOAuthProviderClick(provider.id)"
-						>
-							<component :is="provider.icon" />
-							<span>{{ provider.name }}</span>
-							<span
-								v-if="lastSignInOAuthProvider === provider.id"
-								class="oauth-provider-last-sign-in-badge"
-							>
-								{{ formatMessage(messages.lastSignInLabel) }}
-							</span>
-						</ButtonLink>
+					<section class="flex flex-col gap-2.5">
 						<Button
-							class="relative !w-full !justify-center overflow-visible sm:col-span-2"
+							type="colored"
+							color="brand"
+							class="relative !w-full !justify-center overflow-visible"
 							:class="{
 								'!border !border-[var(--color-brand)]': lastSignInOAuthProvider === 'passkey',
 							}"
-							role="button"
-							tabindex="0"
 							@click="onPasskeySignIn"
-							@keydown.enter="onPasskeySignIn"
 						>
 							<UserKeyIcon />
 							<span class="ml-1">{{ formatMessage(messages.continueWithPasskey) }}</span>
 							<span
 								v-if="lastSignInOAuthProvider === 'passkey'"
-								class="oauth-provider-last-sign-in-badge"
+								class="last-sign-in-badge"
 							>
 								{{ formatMessage(messages.lastSignInLabel) }}
 							</span>
@@ -241,23 +198,13 @@
 </template>
 
 <script setup lang="ts">
-import {
-	DiscordColorIcon,
-	GitHubColorIcon,
-	GitLabColorIcon,
-	GoogleColorIcon,
-	MailIcon,
-	MicrosoftColorIcon,
-	SteamColorIcon,
-	UserKeyIcon,
-} from '@modrinth/assets'
+import { MailIcon, UserKeyIcon } from '@modrinth/assets'
 import {
 	type AccountChoice,
 	AccountChoiceList,
 	Admonition,
 	Avatar,
 	Button,
-	ButtonLink,
 	commonMessages,
 	defineMessages,
 	Input,
@@ -272,25 +219,8 @@ import PasswordSignInForm from '@/components/ui/auth/PasswordSignInForm.vue'
 import TwoFactorAuthCodeInput from '@/components/ui/auth/TwoFactorAuthCodeInput.vue'
 import {
 	LAST_SIGN_IN_OAUTH_PROVIDER_STORAGE_KEY,
-	PENDING_SIGN_IN_OAUTH_PROVIDER_STORAGE_KEY,
 	type StoredAccountAuthMethod,
 } from '@/composables/accounts.ts'
-import { getAuthUrl } from '@/composables/auth.ts'
-import {
-	isLauncherProtocolV2,
-	LAUNCHER_REAUTH_ACCOUNT_STORAGE_KEY,
-} from '@/composables/launcher-auth.ts'
-
-const oauthProviders = [
-	{ id: 'discord', name: 'Discord', icon: DiscordColorIcon },
-	{ id: 'github', name: 'GitHub', icon: GitHubColorIcon },
-	{ id: 'microsoft', name: 'Microsoft', icon: MicrosoftColorIcon },
-	{ id: 'google', name: 'Google', icon: GoogleColorIcon },
-	{ id: 'steam', name: 'Steam', icon: SteamColorIcon },
-	{ id: 'gitlab', name: 'GitLab', icon: GitLabColorIcon },
-] as const
-
-type AuthProvider = (typeof oauthProviders)[number]['id'] | 'passkey'
 
 interface AuthGlobals {
 	captcha_enabled?: boolean
@@ -309,7 +239,6 @@ interface Props {
 	launcherDeeplink?: string
 	reauthAccount?: LauncherReauthAccount | null
 	flow?: string
-	redirectTarget?: string
 	routeQuery?: LocationQuery
 	globals?: AuthGlobals | null
 	onPasswordSignIn?: () => void
@@ -327,7 +256,6 @@ const {
 	launcherDeeplink = '',
 	reauthAccount = null,
 	flow = '',
-	redirectTarget = '',
 	routeQuery = {},
 	globals = null,
 	onPasswordSignIn = () => {},
@@ -369,41 +297,19 @@ watch(
 	},
 )
 
-const lastSignInOAuthProvider = useStorage<AuthProvider | null>(
+const lastSignInOAuthProvider = useStorage<StoredAccountAuthMethod | null>(
 	LAST_SIGN_IN_OAUTH_PROVIDER_STORAGE_KEY,
 	null,
 	undefined,
 	{ initOnMounted: true },
 )
-const pendingSignInOAuthProvider = useStorage<AuthProvider | null>(
-	PENDING_SIGN_IN_OAUTH_PROVIDER_STORAGE_KEY,
-	null,
-	undefined,
-	{ initOnMounted: true },
-)
-const focusedOauthProvider = computed(() =>
-	oauthProviders.find((provider) => provider.id === reauthAccount?.authMethod),
-)
 const focusedReauthAccount = computed(() => {
 	if (!reauthAccount?.authMethod) return null
-	if (
-		reauthAccount.authMethod === 'password' ||
-		reauthAccount.authMethod === 'passkey' ||
-		focusedOauthProvider.value
-	) {
+	if (reauthAccount.authMethod === 'password' || reauthAccount.authMethod === 'passkey') {
 		return reauthAccount
 	}
 	return null
 })
-const requestsAppSession = computed(
-	() => isLauncherProtocolV2({ query: routeQuery }) && !reauthAccount,
-)
-
-const onOAuthProviderClick = (provider: AuthProvider) => {
-	pendingSignInOAuthProvider.value = provider
-	if (!reauthAccount || !import.meta.client) return
-	window.sessionStorage.setItem(LAUNCHER_REAUTH_ACCOUNT_STORAGE_KEY, reauthAccount.id)
-}
 
 const { formatMessage } = useVIntl()
 
@@ -457,10 +363,6 @@ const messages = defineMessages({
 		defaultMessage:
 			'Enter the 6-digit code from your authenticator app, or one of your backup codes.',
 	},
-	continueWithProvider: {
-		id: 'auth.continue-with-provider',
-		defaultMessage: 'Continue with {provider}',
-	},
 	continueWithEmail: {
 		id: 'auth.sign-in.continue-with-email',
 		defaultMessage: 'Continue with Email',
@@ -477,7 +379,7 @@ const messages = defineMessages({
 </script>
 
 <style scoped lang="scss">
-.oauth-provider-last-sign-in-badge {
+.last-sign-in-badge {
 	position: absolute;
 	top: -0.75rem;
 	right: 0.25rem;
@@ -492,7 +394,7 @@ const messages = defineMessages({
 	line-height: 1;
 	pointer-events: none;
 }
-.oauth-provider-last-sign-in-badge::before {
+.last-sign-in-badge::before {
 	content: '';
 	inset: 0;
 	border-radius: inherit;

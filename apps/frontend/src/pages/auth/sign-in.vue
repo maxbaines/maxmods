@@ -10,7 +10,6 @@
 		:reauth-account="reauthAccountPreview"
 		:on-cancel-reauthenticate="cancelReauth"
 		:flow="flow"
-		:redirect-target="redirectTarget"
 		:route-query="route.query"
 		:globals="globals"
 		:accounts="accountsForView"
@@ -129,7 +128,6 @@ if (route.query.state !== undefined) {
 	)
 }
 
-const redirectTarget = getQueryString(route.query.redirect) ?? ''
 type LauncherCallback = Extract<LauncherHandoff, { type: 'callback' }>
 const launcherHandoff = ref<LauncherCallback | null>(null)
 const reauthAccount = ref<StoredAccount | null>(null)

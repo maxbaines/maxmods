@@ -8,10 +8,7 @@
 		v-else-if="!isCreateAccountStep"
 		v-model:email="email"
 		v-model:password="password"
-		:redirect-target="redirectTarget"
-		:show-other-options="showOtherOptions"
 		:route-query="route.query"
-		:on-toggle-other-options="toggleOtherOptions"
 		:on-continue-with-email="continueWithEmail"
 	/>
 	<CreateAccountView
@@ -130,16 +127,11 @@ const lastSignInOAuthProvider = useStorage(
 	{ initOnMounted: true },
 )
 
-const redirectTarget = getQueryString(route.query.redirect)
-const showOtherOptions = ref(false)
 const isCreateAccountStep = ref(false)
 
 const captcha = ref<{ reset?: () => void } | null>(null)
 const setCaptchaRef = (captchaRef: unknown) => {
 	captcha.value = (captchaRef as { reset?: () => void } | null) ?? null
-}
-const toggleOtherOptions = () => {
-	showOtherOptions.value = !showOtherOptions.value
 }
 
 const { data: globals } = useQuery<AuthGlobalsResponse>({

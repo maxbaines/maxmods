@@ -175,7 +175,7 @@
 			</div>
 		</NewModal>
 
-		<div class="adjacent-input mb-0">
+		<div class="adjacent-input">
 			<label for="manage-passkeys">
 				<span class="label__title">{{ formatMessage(messages.managePasskeyTitle) }}</span>
 				<span class="label__description">{{
@@ -183,7 +183,7 @@
 				}}</span>
 			</label>
 			<div>
-				<Button id="manage-passkeys" @click="showPasskeyModal">
+				<Button id="manage-passkeys" type="colored" color="brand" @click="showPasskeyModal">
 					<UserKeyIcon /> {{ formatMessage(messages.managePasskeyButton) }}
 				</Button>
 			</div>
@@ -247,8 +247,8 @@ const messages = defineMessages({
 		defaultMessage: 'Manage passkeys',
 	},
 	managePasskeyDescription: {
-		id: 'settings.account.security.passkey.description',
-		defaultMessage: 'Manage your registered passkeys, or add a new one.',
+		id: 'settings.account.security.passkey.recommended-description',
+		defaultMessage: 'Recommended: sign in with your fingerprint, face, or device PIN.',
 	},
 	managePasskeyAddPasskeyButton: {
 		id: 'settings.account.security.passkey.add.button',

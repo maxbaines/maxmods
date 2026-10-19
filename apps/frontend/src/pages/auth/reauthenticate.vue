@@ -47,28 +47,7 @@
 				</div>
 			</div>
 
-			<template v-if="oauthProvider">
-				<div class="flex flex-col gap-2.5">
-					<ButtonLink
-						type="colored"
-						color="brand"
-						class="!w-full !justify-center"
-						:href="getAuthUrl(oauthProvider.id, redirectTarget)"
-						:aria-label="
-							formatMessage(messages.signInWithProvider, { provider: oauthProvider.name })
-						"
-						@click="pendingSignInOAuthProvider = oauthProvider.id"
-					>
-						<component :is="oauthProvider.icon" />
-						{{ formatMessage(messages.signInWithProvider, { provider: oauthProvider.name }) }}
-					</ButtonLink>
-					<ButtonLink class="!w-full !justify-center" :to="signInAnotherWayRoute">
-						{{ formatMessage(messages.signInAnotherWay) }}
-					</ButtonLink>
-				</div>
-			</template>
-
-			<template v-else-if="account.authMethod === 'passkey'">
+			<template v-if="account.authMethod === 'passkey'">
 				<div class="flex flex-col gap-2.5">
 					<Button
 						type="colored"
@@ -145,15 +124,9 @@
 
 <script setup lang="ts">
 import {
-	DiscordColorIcon,
-	GitHubColorIcon,
-	GitLabColorIcon,
-	GoogleColorIcon,
 	KeyIcon,
 	MailIcon,
-	MicrosoftColorIcon,
 	RightArrowIcon,
-	SteamColorIcon,
 	UserKeyIcon,
 } from '@modrinth/assets'
 import {
@@ -181,19 +154,8 @@ import {
 	type StoredAccountAuthMethod,
 	useStoredAccounts,
 } from '@/composables/accounts.ts'
-import { getAuthUrl, promotePendingSignInOAuthProvider } from '@/composables/auth.ts'
+import { promotePendingSignInOAuthProvider } from '@/composables/auth.ts'
 import { getPasskeyCredential } from '@/helpers/passkey.ts'
-
-const oauthProviders = [
-	{ id: 'discord', name: 'Discord', icon: DiscordColorIcon },
-	{ id: 'github', name: 'GitHub', icon: GitHubColorIcon },
-	{ id: 'microsoft', name: 'Microsoft', icon: MicrosoftColorIcon },
-	{ id: 'google', name: 'Google', icon: GoogleColorIcon },
-	{ id: 'steam', name: 'Steam', icon: SteamColorIcon },
-	{ id: 'gitlab', name: 'GitLab', icon: GitLabColorIcon },
-] as const
-
-type OAuthProviderId = (typeof oauthProviders)[number]['id']
 
 interface AuthGlobalsResponse {
 	captcha_enabled?: boolean
@@ -245,10 +207,6 @@ const messages = defineMessages({
 		defaultMessage:
 			'It was last signed into with {method, select, password {a password} passkey {a passkey} github {GitHub} discord {Discord} google {Google} microsoft {Microsoft} gitlab {GitLab} steam {Steam} paypal {PayPal} other {{method}} }.',
 	},
-	signInWithProvider: {
-		id: 'auth.reauthenticate.sign-in-with-provider',
-		defaultMessage: 'Sign in with {provider}',
-	},
 	signInAnotherWay: {
 		id: 'auth.reauthenticate.sign-in-another-way',
 		defaultMessage: 'Sign in another way',
@@ -286,10 +244,6 @@ const redirectTarget = computed(
 		(account.value ? `/user/${account.value.username}` : ''),
 )
 const loginIdentifier = computed(() => account.value?.username || '')
-const oauthProvider = computed(() =>
-	oauthProviders.find((provider) => provider.id === account.value?.authMethod),
-)
-
 const signInAnotherWayRoute = computed(() => ({
 	path: '/auth/sign-in',
 	query: {
@@ -297,7 +251,7 @@ const signInAnotherWayRoute = computed(() => ({
 	},
 }))
 
-const pendingSignInOAuthProvider = useStorage<OAuthProviderId | StoredAccountAuthMethod | null>(
+const pendingSignInOAuthProvider = useStorage<StoredAccountAuthMethod | null>(
 	PENDING_SIGN_IN_OAUTH_PROVIDER_STORAGE_KEY,
 	null,
 	undefined,

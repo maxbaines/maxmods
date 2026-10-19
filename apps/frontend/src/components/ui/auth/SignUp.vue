@@ -6,65 +6,6 @@
 			{{ formatMessage(messages.signUpWithTitle) }}
 		</div>
 		<section class="flex flex-col gap-2.5">
-			<ButtonLink
-				:href="getAuthUrl('google', redirectTarget, requestsAppSession)"
-				@click="onOAuthProviderClick('google')"
-			>
-				<GoogleColorIcon />
-				<span>{{ formatMessage(messages.continueWithProvider, { provider: 'Google' }) }}</span>
-			</ButtonLink>
-			<ButtonLink
-				:href="getAuthUrl('microsoft', redirectTarget, requestsAppSession)"
-				@click="onOAuthProviderClick('microsoft')"
-			>
-				<MicrosoftColorIcon />
-				<span>{{ formatMessage(messages.continueWithProvider, { provider: 'Microsoft' }) }}</span>
-			</ButtonLink>
-			<ButtonLink
-				:href="getAuthUrl('discord', redirectTarget, requestsAppSession)"
-				@click="onOAuthProviderClick('discord')"
-			>
-				<DiscordColorIcon />
-				<span>{{ formatMessage(messages.continueWithProvider, { provider: 'Discord' }) }}</span>
-			</ButtonLink>
-			<template v-if="showOtherOptions">
-				<ButtonLink
-					:href="getAuthUrl('github', redirectTarget, requestsAppSession)"
-					@click="onOAuthProviderClick('github')"
-				>
-					<GitHubColorIcon />
-					<span>{{ formatMessage(messages.continueWithProvider, { provider: 'GitHub' }) }}</span>
-				</ButtonLink>
-				<ButtonLink
-					:href="getAuthUrl('gitlab', redirectTarget, requestsAppSession)"
-					@click="onOAuthProviderClick('gitlab')"
-				>
-					<GitLabColorIcon />
-					<span>{{ formatMessage(messages.continueWithProvider, { provider: 'GitLab' }) }}</span>
-				</ButtonLink>
-				<ButtonLink
-					:href="getAuthUrl('steam', redirectTarget, requestsAppSession)"
-					@click="onOAuthProviderClick('steam')"
-				>
-					<SteamColorIcon />
-					<span>{{ formatMessage(messages.continueWithProvider, { provider: 'Steam' }) }}</span>
-				</ButtonLink>
-			</template>
-			<button
-				class="mx-auto -mb-3 bg-transparent pt-1 text-center text-base font-semibold text-secondary transition-all hover:text-primary"
-				@click="onToggleOtherOptions()"
-			>
-				{{
-					showOtherOptions
-						? formatMessage(messages.showFewerOptions)
-						: formatMessage(messages.showOtherOptions)
-				}}
-			</button>
-		</section>
-
-		<div class="h-px w-full bg-surface-5"></div>
-
-		<section class="flex flex-col gap-2.5">
 			<label for="email" hidden>{{ formatMessage(commonMessages.emailLabel) }}</label>
 			<Input
 				id="email"
@@ -129,73 +70,35 @@
 </template>
 
 <script setup lang="ts">
-import {
-	DiscordColorIcon,
-	GitHubColorIcon,
-	GitLabColorIcon,
-	GoogleColorIcon,
-	KeyIcon,
-	MailIcon,
-	MicrosoftColorIcon,
-	RightArrowIcon,
-	SteamColorIcon,
-} from '@modrinth/assets'
+import { KeyIcon, MailIcon, RightArrowIcon } from '@modrinth/assets'
 import {
 	Button,
-	ButtonLink,
 	commonMessages,
 	defineMessages,
 	Input,
 	IntlFormatted,
 	useVIntl,
 } from '@modrinth/ui'
-import { useStorage } from '@vueuse/core'
 import type { LocationQuery } from 'vue-router'
 
-import { PENDING_SIGN_IN_OAUTH_PROVIDER_STORAGE_KEY } from '@/composables/accounts.ts'
-import { getAuthUrl } from '@/composables/auth.ts'
-import { isLauncherProtocolV2 } from '@/composables/launcher-auth.ts'
-
-type AuthProvider = 'discord' | 'google' | 'github' | 'gitlab' | 'steam' | 'microsoft'
-
 interface Props {
-	redirectTarget?: string
-	showOtherOptions?: boolean
 	routeQuery?: LocationQuery
-	onToggleOtherOptions?: () => void
 	onContinueWithEmail?: () => void
 }
 
 const {
-	redirectTarget = '',
-	showOtherOptions = false,
 	routeQuery = {},
-	onToggleOtherOptions = () => {},
 	onContinueWithEmail = () => {},
 } = defineProps<Props>()
 
 const emailModel = defineModel<string>('email', { default: '' })
 const passwordModel = defineModel<string>('password', { default: '' })
-const requestsAppSession = computed(() => isLauncherProtocolV2({ query: routeQuery }))
-
-const pendingSignInOAuthProvider = useStorage<AuthProvider | null>(
-	PENDING_SIGN_IN_OAUTH_PROVIDER_STORAGE_KEY,
-	null,
-)
-const onOAuthProviderClick = (provider: AuthProvider) => {
-	pendingSignInOAuthProvider.value = provider
-}
-
 const { formatMessage } = useVIntl()
 
 const messages = defineMessages({
 	signUpWithTitle: {
 		id: 'auth.sign-up.title.sign-up-with',
 		defaultMessage: 'Create an Account',
-	},
-	continueWithProvider: {
-		id: 'auth.continue-with-provider',
-		defaultMessage: 'Continue with {provider}',
 	},
 	legalDisclaimer: {
 		id: 'auth.sign-up.legal-dislaimer',
@@ -209,14 +112,6 @@ const messages = defineMessages({
 	continueWithEmail: {
 		id: 'auth.sign-up.continue-with-email',
 		defaultMessage: 'Continue with Email',
-	},
-	showFewerOptions: {
-		id: 'auth.sign-up.show-fewer-options',
-		defaultMessage: 'Show fewer options',
-	},
-	showOtherOptions: {
-		id: 'auth.sign-up.show-other-options',
-		defaultMessage: 'Show other options',
 	},
 })
 </script>

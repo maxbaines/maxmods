@@ -343,45 +343,10 @@
 				</template>
 			</div>
 		</NewModal>
-		<NewModal
-			ref="manageProvidersModal"
-			width="500px"
-			:header="formatMessage(messages.manageProvidersModalHeader)"
-		>
-			<div class="flex flex-col gap-4">
-				<Table :columns="manageProvidersColumns" :data="authProviders" row-key="id">
-					<template #cell-provider="{ row }">
-						<span class="inline-flex items-center gap-1.5">
-							<component :is="row.icon" class="size-5" />
-							{{ row.display }}
-						</span>
-					</template>
-					<template #cell-actions="{ row }">
-						<Button
-							v-if="auth.user.auth_providers.includes(row.id)"
-							class="!w-full"
-							@click="handleRemoveAuthProvider(row.id)"
-						>
-							<TrashIcon /> {{ formatMessage(commonMessages.removeButton) }}
-						</Button>
-						<ButtonLink
-							v-else
-							:href="`${getAuthUrl(row.id, '/settings/account')}&token=${auth.token}`"
-						>
-							<ExternalIcon /> {{ formatMessage(messages.providerAddButton) }}
-						</ButtonLink>
-					</template>
-				</Table>
-				<div class="self-end">
-					<Button @click="$refs.manageProvidersModal.hide()">
-						<XIcon />
-						{{ formatMessage(commonMessages.closeButton) }}
-					</Button>
-				</div>
-			</div>
-		</NewModal>
 		<section class="universal-card">
 			<h2 class="text-2xl">{{ formatMessage(messages.accountSecurityTitle) }}</h2>
+
+			<PasskeySettings />
 
 			<div class="adjacent-input">
 				<label for="theme-selector">
@@ -455,20 +420,6 @@
 					</Button>
 				</div>
 			</div>
-			<div class="adjacent-input">
-				<label for="theme-selector">
-					<span class="label__title">{{ formatMessage(messages.manageProvidersFieldTitle) }}</span>
-					<span class="label__description">{{
-						formatMessage(messages.manageProvidersFieldDescription)
-					}}</span>
-				</label>
-				<div>
-					<Button @click="$refs.manageProvidersModal.show()">
-						<SettingsIcon /> {{ formatMessage(messages.manageProvidersButton) }}
-					</Button>
-				</div>
-			</div>
-			<PasskeySettings />
 		</section>
 
 		<section id="data-export" class="universal-card">
@@ -504,12 +455,10 @@ import {
 	CheckIcon,
 	DownloadIcon,
 	EditIcon,
-	ExternalIcon,
 	LeftArrowIcon,
 	PlusIcon,
 	RightArrowIcon,
 	SaveIcon,
-	SettingsIcon,
 	TrashIcon,
 	UpdatedIcon,
 	XIcon,
@@ -525,23 +474,15 @@ import {
 	Input,
 	IntlFormatted,
 	NewModal,
-	Table,
 	useVIntl,
 } from '@modrinth/ui'
 import KeyIcon from 'assets/icons/auth/key.svg'
-import DiscordIcon from 'assets/icons/auth/sso-discord.svg'
-import GithubIcon from 'assets/icons/auth/sso-github.svg'
-import GitLabIcon from 'assets/icons/auth/sso-gitlab.svg'
-import GoogleIcon from 'assets/icons/auth/sso-google.svg'
-import MicrosoftIcon from 'assets/icons/auth/sso-microsoft.svg'
-import SteamIcon from 'assets/icons/auth/sso-steam.svg'
 import QrcodeVue from 'qrcode.vue'
 import { nextTick, watch } from 'vue'
 
 import PasskeySettings from '~/components/ui/auth/PasskeySettings.vue'
 import TwoFactorAuthCodeInput from '~/components/ui/auth/TwoFactorAuthCodeInput.vue'
 import { forgetStoredAccount } from '~/composables/accounts.ts'
-import { getAuthUrl, removeAuthProvider } from '~/composables/auth.ts'
 import { useAuthCookie } from '~/composables/auth-cookie.ts'
 
 definePageMeta({
@@ -766,35 +707,6 @@ const messages = defineMessages({
 		id: 'settings.account.button.complete-setup',
 		defaultMessage: 'Complete setup',
 	},
-	manageProvidersModalHeader: {
-		id: 'settings.account.providers.modal.header',
-		defaultMessage: 'Authentication providers',
-	},
-	providersTableProvider: {
-		id: 'settings.account.providers.table.provider',
-		defaultMessage: 'Provider',
-	},
-	providersTableActions: {
-		id: 'settings.account.providers.table.actions',
-		defaultMessage: 'Actions',
-	},
-	providerAddButton: {
-		id: 'settings.account.providers.action.add',
-		defaultMessage: 'Add',
-	},
-	manageProvidersFieldTitle: {
-		id: 'settings.account.security.providers.title',
-		defaultMessage: 'Manage authentication providers',
-	},
-	manageProvidersFieldDescription: {
-		id: 'settings.account.security.providers.description',
-		defaultMessage:
-			'Add or remove sign-on methods from your account, including GitHub, GitLab, Microsoft, Discord, Steam, and Google.',
-	},
-	manageProvidersButton: {
-		id: 'settings.account.security.providers.action.manage',
-		defaultMessage: 'Manage providers',
-	},
 	dataExportTitle: {
 		id: 'settings.account.data-export.title',
 		defaultMessage: 'Data export',
@@ -856,14 +768,6 @@ async function saveEmail() {
 		})
 	}
 	stopLoading()
-}
-
-async function handleRemoveAuthProvider(provider) {
-	try {
-		await removeAuthProvider(provider)
-	} catch (error) {
-		handleError(error)
-	}
 }
 
 const managePasswordModal = ref()
@@ -999,51 +903,6 @@ async function removeTwoFactor() {
 		stopLoading()
 	}
 }
-
-const authProviders = [
-	{
-		id: 'github',
-		display: 'GitHub',
-		icon: GithubIcon,
-	},
-	{
-		id: 'gitlab',
-		display: 'GitLab',
-		icon: GitLabIcon,
-	},
-	{
-		id: 'steam',
-		display: 'Steam',
-		icon: SteamIcon,
-	},
-	{
-		id: 'discord',
-		display: 'Discord',
-		icon: DiscordIcon,
-	},
-	{
-		id: 'microsoft',
-		display: 'Microsoft',
-		icon: MicrosoftIcon,
-	},
-	{
-		id: 'google',
-		display: 'Google',
-		icon: GoogleIcon,
-	},
-]
-const manageProvidersColumns = computed(() => [
-	{
-		key: 'provider',
-		label: formatMessage(messages.providersTableProvider),
-	},
-	{
-		key: 'actions',
-		label: formatMessage(messages.providersTableActions),
-		align: 'right',
-		width: '10rem',
-	},
-])
 
 async function deleteAccount() {
 	startLoading()
