@@ -42,13 +42,13 @@ services:
       ALLOWED_CALLBACK_URLS: '["modsynth.app","mods.maxbain.es"]'
       ANALYTICS_ALLOWED_ORIGINS: '["https://modsynth.app","https://mods.maxbain.es"]'
       WHITELISTED_MODPACK_DOMAINS: '["files.modsynth.app","files.mods.maxbain.es","cdn.modrinth.com","github.com","raw.githubusercontent.com"]'
-      SMTP_HOST: ${SMTP_HOST:-localhost}
+      SMTP_HOST: ${SMTP_HOST:-smtp.resend.com}
       SMTP_PORT: ${SMTP_PORT:-465}
       SMTP_TLS: tls
       SMTP_USERNAME: resend
       SMTP_PASSWORD: ${RESEND_API_KEY:-}
       SMTP_FROM_NAME: Modsynth
-      SMTP_FROM_ADDRESS: ${SMTP_FROM_ADDRESS:-noreply@hungrycampers.com}
+      SMTP_FROM_ADDRESS: ${SMTP_FROM_ADDRESS:-noreply@modsynth.app}
       WEBAUTHN_RP_NAME: Modsynth
       RUST_LOG: info,sqlx::query=warn
       SENTRY_ENVIRONMENT: selfhost
