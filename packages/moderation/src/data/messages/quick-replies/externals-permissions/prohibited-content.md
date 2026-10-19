@@ -1,1 +1,1 @@
-Modrinth does not permit the distribution of external content that violates [Modrinth's Content Rules](https://modrinth.com/legal/rules).
+Modsynth does not permit the distribution of external content that violates [Modsynth's Content Rules](https://modsynth.app/legal/rules).

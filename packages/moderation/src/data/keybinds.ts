@@ -12,7 +12,7 @@ const copyProjectLink = async (
 	if (relative) {
 		url += `${globalThis.location.origin}`
 	} else {
-		url += `https://modrinth.com`
+		url += `https://modsynth.app`
 	}
 
 	if (permalink) {
