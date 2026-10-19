@@ -5,7 +5,11 @@ SET body_fetch_url = regexp_replace(body_fetch_url,
     '^https://(modrinth\.com|mods\.maxbain\.es|modsynth\.app)/(email/|_internal/templates/email/)',
     'https://modsynth.app/_internal/templates/email/'),
     subject_line = replace(replace(subject_line, 'Modrinth', 'Modsynth'), 'MaxMods', 'Modsynth'),
-    plaintext_fallback = replace(replace(plaintext_fallback, 'Modrinth', 'Modsynth'), 'MaxMods', 'Modsynth');
+    plaintext_fallback = replace(replace(replace(replace(replace(
+        plaintext_fallback, 'Modrinth', 'Modsynth'), 'MaxMods', 'Modsynth'),
+        'https://mods.maxbain.es', 'https://modsynth.app'),
+        'https://modrinth.com', 'https://modsynth.app'),
+        'https://support.modrinth.com', 'https://modsynth.app/support');
 UPDATE notifications_templates SET body_fetch_url = replace(body_fetch_url, '/auth-provider-added', '/auth-method-added') WHERE body_fetch_url = 'https://modsynth.app/_internal/templates/email/auth-provider-added';
 UPDATE notifications_templates SET body_fetch_url = replace(body_fetch_url, '/auth-provider-removed', '/auth-method-removed') WHERE body_fetch_url = 'https://modsynth.app/_internal/templates/email/auth-provider-removed';
 UPDATE notifications_templates SET body_fetch_url = replace(body_fetch_url, '/two-factor-enabled', '/two-factor-added') WHERE body_fetch_url = 'https://modsynth.app/_internal/templates/email/two-factor-enabled';
