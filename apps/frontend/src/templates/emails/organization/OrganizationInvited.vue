@@ -32,7 +32,7 @@ import StyledEmail from '../shared/StyledEmail.vue'
 		<Text class="text-base"
 			>Modsynth user
 			<b
-				><VLink href="https://modsynth.app/user/{inviter.name}" class="text-green underline">
+				><VLink href="https://modsynth.app/user/{inviter.name}" class="text-brand underline">
 					{inviter.name}
 				</VLink></b
 			>
@@ -40,7 +40,7 @@ import StyledEmail from '../shared/StyledEmail.vue'
 			<b
 				><VLink
 					href="https://modsynth.app/organization/{organization.id}"
-					class="text-green underline"
+					class="text-brand underline"
 				>
 					{organization.name}
 				</VLink></b
@@ -66,7 +66,7 @@ import StyledEmail from '../shared/StyledEmail.vue'
 		<Text class="text-base">
 			If you were not expecting this invitation you should reject it. If you believe this was sent
 			in error or is abusive, please contact support
-			<VLink href="https://modsynth.app/support" class="text-green underline">
+			<VLink href="https://modsynth.app/support" class="text-brand underline">
 				through the Support Portal</VLink
 			>.
 		</Text>

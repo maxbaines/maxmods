@@ -36,7 +36,7 @@ import StyledEmail from '../shared/StyledEmail.vue'
 			<b>{project.newstatus}</b> by the moderation team. Please review any messages left in the
 			<VLink
 				href="https://modsynth.app/project/{project.id}/moderation"
-				class="text-green underline"
+				class="text-brand underline"
 				>moderation thread</VLink
 			>
 			which might be relevant to why the status was changed.
@@ -53,7 +53,7 @@ import StyledEmail from '../shared/StyledEmail.vue'
 		<Text class="text-base">
 			If you believe this status was applied in error, you can reply in the moderation thread or
 			contact support through our
-			<VLink href="https://modsynth.app/support" class="text-green underline">Support Portal</VLink
+			<VLink href="https://modsynth.app/support" class="text-brand underline">Support Portal</VLink
 			>.
 		</Text>
 

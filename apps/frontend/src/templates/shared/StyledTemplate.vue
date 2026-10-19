@@ -23,9 +23,9 @@ const tailwindConfig = {
 				purple: '#8e32f3',
 				gray: '#595b61',
 				brand: {
-					DEFAULT: '#00af5c',
-					highlight: 'rgba(0, 175, 92, 0.25)',
-					shadow: 'rgba(0, 175, 92, 0.7)',
+					DEFAULT: '#6750ed',
+					highlight: 'rgba(103, 80, 237, 0.25)',
+					shadow: 'rgba(103, 80, 237, 0.7)',
 				},
 				highlight: {
 					red: 'rgba(203, 34, 69, 0.25)',
@@ -42,7 +42,7 @@ const tailwindConfig = {
 					blue: 'rgba(31, 104, 192, 0.1)',
 					purple: 'rgba(142, 50, 243, 0.1)',
 				},
-				link: { DEFAULT: '#1f68c0', hover: '#1f68c0', active: '#1f68c0' },
+				link: { DEFAULT: '#6750ed', hover: '#6750ed', active: '#6750ed' },
 				muted: '#777777',
 				footerText: '#4d4d4d',
 			},
@@ -77,7 +77,7 @@ const tailwindConfig = {
 				/* Outlook.com centering + line-height fixes */ .ExternalClass { width:100%; }
 				.ExternalClass p, .ExternalClass span, .ExternalClass font, .ExternalClass td {
 				line-height:100%; } table { border-collapse:separate; } a, a:link, a:visited {
-				text-decoration:none; color:#1f68c0; } a:hover { text-decoration:underline; }
+				text-decoration:none; color:#6750ed; } a:hover { text-decoration:underline; }
 				h1,h2,h3,h4,h5,h6 { color:#000 !important; margin:0; mso-line-height-rule:exactly; }
 				.no-auto-link, .no-auto-link a, .no-auto-link a:link, .no-auto-link a:visited, .no-auto-link
 				a[x-apple-data-detectors] { color:inherit !important; text-decoration:none !important;

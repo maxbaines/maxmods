@@ -603,7 +603,7 @@ const messages = defineMessages({
 	launcherGraphicAlt: {
 		id: 'landing.launcher.graphic-alt',
 		defaultMessage:
-			'A simplified representation of a Minecraft window, with the Mojang Studios logo in Modsynth green.',
+			'A simplified representation of a Minecraft window, with the Mojang Studios logo in Modsynth blue.',
 	},
 	prismLauncherLabel: {
 		id: 'landing.launcher.prism-launcher-label',

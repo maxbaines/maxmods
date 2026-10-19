@@ -35,7 +35,7 @@ import StyledEmail from '../shared/StyledEmail.vue'
 			Modsynth's moderation team has left a message on your project,
 			<VLink
 				href="https://modsynth.app/project/{project.id}/moderation"
-				class="text-green underline"
+				class="text-brand underline"
 				>{project.name}</VLink
 			>.
 		</Text>
@@ -45,7 +45,7 @@ import StyledEmail from '../shared/StyledEmail.vue'
 				Please
 				<VLink
 					href="https://modsynth.app/project/{project.id}/moderation"
-					class="text-green underline"
+					class="text-brand underline"
 					>sign in to view the message</VLink
 				>
 				and reply if requested. It's important to address feedback from the moderation team

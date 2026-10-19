@@ -844,7 +844,7 @@ useSeoMeta({
 									gradientUnits="userSpaceOnUse"
 								>
 									<stop stop-color="#A7D0FF" />
-									<stop offset="0.414928" stop-color="#00BD3C" />
+									<stop offset="0.414928" stop-color="#6750ED" />
 								</linearGradient>
 							</defs>
 						</svg>
@@ -918,7 +918,7 @@ useSeoMeta({
 									gradientUnits="userSpaceOnUse"
 								>
 									<stop stop-color="#A7D0FF" />
-									<stop offset="0.414928" stop-color="#00BD3C" />
+									<stop offset="0.414928" stop-color="#6750ED" />
 								</linearGradient>
 							</defs>
 						</svg>
@@ -979,7 +979,7 @@ useSeoMeta({
 									gradientUnits="userSpaceOnUse"
 								>
 									<stop stop-color="#A7D0FF" />
-									<stop offset="0.414928" stop-color="#00BD3C" />
+									<stop offset="0.414928" stop-color="#6750ED" />
 								</linearGradient>
 							</defs>
 						</svg>
@@ -2368,7 +2368,7 @@ useSeoMeta({
 
 .main-header-strong {
 	font-weight: 600;
-	background-color: #00bd3c;
+	background-color: #6750ed;
 	background-image: linear-gradient(180deg, #a7d0ff 0%, var(--color-brand) 60%);
 	background-size: 100%;
 	background-clip: text;

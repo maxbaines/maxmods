@@ -29,7 +29,7 @@ import StyledEmail from '../shared/StyledEmail.vue'
 		<Text class="text-base">
 			The ownership of
 			<b>
-				<VLink href="https://modsynth.app/project/{project.id}" class="text-green underline">
+				<VLink href="https://modsynth.app/project/{project.id}" class="text-brand underline">
 					{project.name}
 				</VLink>
 			</b>
@@ -37,7 +37,7 @@ import StyledEmail from '../shared/StyledEmail.vue'
 			<b
 				><VLink
 					href="https://modsynth.app/{new_owner.type}/{new_owner.name}"
-					class="text-green underline"
+					class="text-brand underline"
 					>{new_owner.name}</VLink
 				></b
 			>.
@@ -53,7 +53,7 @@ import StyledEmail from '../shared/StyledEmail.vue'
 
 		<Text class="text-base">
 			If you did not initiate this transfer, please contact support immediately through the
-			<VLink href="https://modsynth.app/support" class="text-green underline">Support Portal</VLink
+			<VLink href="https://modsynth.app/support" class="text-brand underline">Support Portal</VLink
 			>.
 		</Text>
 	</StyledEmail>

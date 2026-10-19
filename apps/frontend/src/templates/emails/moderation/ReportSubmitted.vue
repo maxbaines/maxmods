@@ -28,7 +28,7 @@ import StyledEmail from '../shared/StyledEmail.vue'
 
 		<Text class="text-base">
 			Our team takes all reports seriously and will investigate according to our
-			<VLink href="https://modsynth.app/legal/rules" class="text-green underline"
+			<VLink href="https://modsynth.app/legal/rules" class="text-brand underline"
 				>Content Rules</VLink
 			>, <VLink href="https://modsynth.app/legal/terms">Terms of Service</VLink> and
 			<VLink href="https://modsynth.app/legal/copyright">Copyright Policy</VLink>. You'll receive an
@@ -39,7 +39,7 @@ import StyledEmail from '../shared/StyledEmail.vue'
 			If you have any additional information about this report, you can
 			<VLink
 				href="https://modsynth.app/dashboard/report/{newreport.id}"
-				class="text-green underline"
+				class="text-brand underline"
 				>view it here</VLink
 			>.
 		</Text>

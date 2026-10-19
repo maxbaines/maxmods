@@ -19,7 +19,7 @@ import StyledEmail from '../shared/StyledEmail.vue'
 		<Text class="text-base">
 			Modsynth user
 			<b
-				><VLink href="https://modsynth.app/user/{inviter.name}" class="text-green underline">
+				><VLink href="https://modsynth.app/user/{inviter.name}" class="text-brand underline">
 					{inviter.name}
 				</VLink></b
 			>
@@ -50,7 +50,7 @@ import StyledEmail from '../shared/StyledEmail.vue'
 			To accept or reject this invitation, create a Modsynth account and review the invite from your
 			notifications dashboard. If you were not expecting this invitation, contact the server owner
 			or reach out to Modsynth Support
-			<VLink href="https://modsynth.app/support" class="text-green underline">
+			<VLink href="https://modsynth.app/support" class="text-brand underline">
 				through the Support Portal</VLink
 			>.
 		</Text>

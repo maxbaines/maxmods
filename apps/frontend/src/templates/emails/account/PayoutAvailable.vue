@@ -34,7 +34,7 @@ import StyledEmail from '../shared/StyledEmail.vue'
 		<Text class="text-base">
 			If you have any questions about the creator rewards program, please contact support through
 			the
-			<VLink href="https://modsynth.app/support" class="text-green underline">Support Portal</VLink
+			<VLink href="https://modsynth.app/support" class="text-brand underline">Support Portal</VLink
 			>.
 		</Text>
 

@@ -30,7 +30,7 @@ import StyledEmail from '../shared/StyledEmail.vue'
 
 		<Text class="text-base">
 			Your project
-			<VLink href="https://modsynth.app/project/{project.id}" class="text-green underline"
+			<VLink href="https://modsynth.app/project/{project.id}" class="text-brand underline"
 				>{project.name}</VLink
 			>
 			has been <b>approved</b> by the moderation team!
@@ -46,7 +46,7 @@ import StyledEmail from '../shared/StyledEmail.vue'
 
 		<Text class="text-base">
 			If you have questions or believe something isn't correct, you can reach out via the
-			<VLink href="https://modsynth.app/support" class="text-green underline">Support Portal</VLink
+			<VLink href="https://modsynth.app/support" class="text-brand underline">Support Portal</VLink
 			>.
 		</Text>
 

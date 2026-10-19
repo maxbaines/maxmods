@@ -1210,7 +1210,7 @@ useSeoMeta({
 				'Discover and publish projects on Modsynth with a modern, easy to use interface and API.',
 		}),
 	publisher: 'Modsynth',
-	themeColor: '#1bd96a',
+	themeColor: '#6750ed',
 	colorScheme: 'dark light',
 
 	// OpenGraph

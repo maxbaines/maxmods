@@ -33,7 +33,7 @@ import StyledEmail from '../shared/StyledEmail.vue'
 		<Text class="text-muted text-base">
 			Thank you for choosing Modsynth! If you have any questions or need help with your
 			subscription, visit our
-			<VLink href="https://modsynth.app/support" class="text-green underline">Support Portal</VLink
+			<VLink href="https://modsynth.app/support" class="text-brand underline">Support Portal</VLink
 			>.
 		</Text>
 

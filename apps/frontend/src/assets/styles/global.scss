@@ -127,10 +127,10 @@ html {
 	--landing-card-bg: rgba(255, 255, 255, 0.8);
 	--landing-card-shadow: 2px 2px 12px rgba(0, 0, 0, 0.16);
 
-	--landing-blue-label: #0098ba;
-	--landing-blue-label-bg: rgba(0, 177, 216, 0.15);
-	--landing-green-label: #00a936;
-	--landing-green-label-bg: rgba(0, 216, 69, 0.15);
+	--landing-blue-label: var(--color-brand);
+	--landing-blue-label-bg: var(--color-brand-highlight);
+	--landing-green-label: var(--color-brand);
+	--landing-green-label-bg: var(--color-brand-highlight);
 
 	--landing-raw-bg: #fff;
 
@@ -240,10 +240,10 @@ html {
 	--landing-card-bg: rgba(59, 63, 85, 0.15);
 	--landing-card-shadow: 2px 2px 12px rgba(0, 0, 0, 0.16);
 
-	--landing-blue-label: #10c0e7;
-	--landing-blue-label-bg: rgba(0, 177, 216, 0.15);
-	--landing-green-label: #00d845;
-	--landing-green-label-bg: rgba(0, 216, 69, 0.15);
+	--landing-blue-label: var(--color-brand);
+	--landing-blue-label-bg: var(--color-brand-highlight);
+	--landing-green-label: var(--color-brand);
+	--landing-green-label-bg: var(--color-brand-highlight);
 
 	--landing-raw-bg: #000;
 
@@ -292,8 +292,8 @@ html {
 	--color-secondary: #9b9e98;
 	--color-contrast: #e6e2d1;
 
-	--color-brand: #4d9227;
-	--color-brand-highlight: #25421e;
+	--color-brand: #6750ed;
+	--color-brand-highlight: #302662;
 	--color-accent-contrast: #ffffff;
 	--color-ad: var(--color-brand-highlight);
 	--color-ad-raised: var(--color-brand);

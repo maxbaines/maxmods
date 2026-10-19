@@ -79,7 +79,7 @@ const socialLinks = Object.freeze<readonly SocialLink[]>([])
 		>
 			This email was sent to you as a registered user of Modsynth. You can customize the
 			emails you recieve in your
-			<VLink href="https://modsynth.app/settings/notifications" class="text-green underline"
+			<VLink href="https://modsynth.app/settings/notifications" class="text-brand underline"
 				>notification settings</VLink
 			>. Some emails are required to keep your account secure and cannot be disabled.
 		</Text> -->
