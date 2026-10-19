@@ -273,8 +273,8 @@
 									y2="37"
 									gradientUnits="userSpaceOnUse"
 								>
-									<stop stop-color="#C1E1B1" />
-									<stop offset="1" stop-color="#A7BDE6" />
+									<stop stop-color="#C3B5FF" />
+									<stop offset="1" stop-color="#A08CFF" />
 								</linearGradient>
 							</defs>
 						</svg>
@@ -300,8 +300,8 @@
 									y2="23.5"
 									gradientUnits="userSpaceOnUse"
 								>
-									<stop stop-color="#C1E1B1" />
-									<stop offset="1" stop-color="#A7BDE6" />
+									<stop stop-color="#C3B5FF" />
+									<stop offset="1" stop-color="#A08CFF" />
 								</linearGradient>
 							</defs>
 						</svg>
@@ -325,8 +325,8 @@
 									y2="29.375"
 									gradientUnits="userSpaceOnUse"
 								>
-									<stop stop-color="#C1E1B1" />
-									<stop offset="1" stop-color="#A7BDE6" />
+									<stop stop-color="#C3B5FF" />
+									<stop offset="1" stop-color="#A08CFF" />
 								</linearGradient>
 							</defs>
 						</svg>
@@ -350,8 +350,8 @@
 									y2="38.25"
 									gradientUnits="userSpaceOnUse"
 								>
-									<stop stop-color="#C1E1B1" />
-									<stop offset="1" stop-color="#A7BDE6" />
+									<stop stop-color="#C3B5FF" />
+									<stop offset="1" stop-color="#A08CFF" />
 								</linearGradient>
 							</defs>
 						</svg>
@@ -377,8 +377,8 @@
 									y2="38.25"
 									gradientUnits="userSpaceOnUse"
 								>
-									<stop stop-color="#C1E1B1" />
-									<stop offset="1" stop-color="#A7BDE6" />
+									<stop stop-color="#C3B5FF" />
+									<stop offset="1" stop-color="#A08CFF" />
 								</linearGradient>
 							</defs>
 						</svg>
@@ -402,8 +402,8 @@
 									y2="31.5"
 									gradientUnits="userSpaceOnUse"
 								>
-									<stop stop-color="#C1E1B1" />
-									<stop offset="1" stop-color="#A7BDE6" />
+									<stop stop-color="#C3B5FF" />
+									<stop offset="1" stop-color="#A08CFF" />
 								</linearGradient>
 							</defs>
 						</svg>
@@ -910,7 +910,7 @@ const creatorFeatureMessages = defineMessages({
 					z-index: -1;
 					inset: 0 0 -0.75rem -0.75rem;
 
-					background: linear-gradient(0deg, #05ce45 0%, rgba(5, 206, 69, 0) 100%);
+					background: linear-gradient(0deg, #6750ed 0%, rgba(103, 80, 237, 0) 100%);
 					opacity: 0.2;
 					border-radius: 1rem;
 					margin-top: auto;
